@@ -1,0 +1,219 @@
+{
+  "_easymde-DRAxgiKS.js": {
+    "file": "js/easymde-DRAxgiKS.js",
+    "name": "easymde",
+    "isDynamicEntry": true
+  },
+  "_motion-BZzlqNTp.js": {
+    "file": "js/motion-BZzlqNTp.js",
+    "name": "motion",
+    "isDynamicEntry": true
+  },
+  "_slider-BuG89B14.js": {
+    "file": "js/slider-BuG89B14.js",
+    "name": "slider",
+    "isDynamicEntry": true
+  },
+  "assets/images/editorial/hero.webp": {
+    "file": "media/hero-Sofaejc7.webp",
+    "src": "assets/images/editorial/hero.webp"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-cyrillic-ext-wght-normal.woff2": {
+    "file": "media/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-cyrillic-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-cyrillic-wght-normal.woff2": {
+    "file": "media/inter-cyrillic-wght-normal-DqGufNeO.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-cyrillic-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-greek-ext-wght-normal.woff2": {
+    "file": "media/inter-greek-ext-wght-normal-DlzME5K_.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-greek-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-greek-wght-normal.woff2": {
+    "file": "media/inter-greek-wght-normal-CkhJZR-_.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-greek-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2": {
+    "file": "media/inter-latin-ext-wght-normal-DO1Apj_S.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2": {
+    "file": "media/inter-latin-wght-normal-Dx4kXJAl.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/inter/files/inter-vietnamese-wght-normal.woff2": {
+    "file": "media/inter-vietnamese-wght-normal-CBcvBZtf.woff2",
+    "src": "node_modules/@fontsource-variable/inter/files/inter-vietnamese-wght-normal.woff2"
+  },
+  "node_modules/@fontsource/forum/files/forum-cyrillic-400-normal.woff": {
+    "file": "media/forum-cyrillic-400-normal-oUH9Q3Rg.woff",
+    "src": "node_modules/@fontsource/forum/files/forum-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/forum/files/forum-cyrillic-400-normal.woff2": {
+    "file": "media/forum-cyrillic-400-normal-Cl8kDjnZ.woff2",
+    "src": "node_modules/@fontsource/forum/files/forum-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/forum/files/forum-latin-400-normal.woff": {
+    "file": "media/forum-latin-400-normal-DH65psBc.woff",
+    "src": "node_modules/@fontsource/forum/files/forum-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/forum/files/forum-latin-400-normal.woff2": {
+    "file": "media/forum-latin-400-normal-OEvxT1Ba.woff2",
+    "src": "node_modules/@fontsource/forum/files/forum-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-400-normal.woff": {
+    "file": "media/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-400-normal.woff2": {
+    "file": "media/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-700-normal.woff": {
+    "file": "media/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-700-normal.woff"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-700-normal.woff2": {
+    "file": "media/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-cyrillic-700-normal.woff2"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff": {
+    "file": "media/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff2": {
+    "file": "media/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff": {
+    "file": "media/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff"
+  },
+  "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff2": {
+    "file": "media/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "src": "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff2"
+  },
+  "node_modules/@fontsource/oranienbaum/files/oranienbaum-cyrillic-400-normal.woff": {
+    "file": "media/oranienbaum-cyrillic-400-normal-DhMiF5E-.woff",
+    "src": "node_modules/@fontsource/oranienbaum/files/oranienbaum-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/oranienbaum/files/oranienbaum-cyrillic-400-normal.woff2": {
+    "file": "media/oranienbaum-cyrillic-400-normal-DJ9meR3m.woff2",
+    "src": "node_modules/@fontsource/oranienbaum/files/oranienbaum-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/oranienbaum/files/oranienbaum-latin-400-normal.woff": {
+    "file": "media/oranienbaum-latin-400-normal--Nb-tlzl.woff",
+    "src": "node_modules/@fontsource/oranienbaum/files/oranienbaum-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/oranienbaum/files/oranienbaum-latin-400-normal.woff2": {
+    "file": "media/oranienbaum-latin-400-normal-Pblm6D9w.woff2",
+    "src": "node_modules/@fontsource/oranienbaum/files/oranienbaum-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/prata/files/prata-cyrillic-400-normal.woff": {
+    "file": "media/prata-cyrillic-400-normal-DdkJ869o.woff",
+    "src": "node_modules/@fontsource/prata/files/prata-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/prata/files/prata-cyrillic-400-normal.woff2": {
+    "file": "media/prata-cyrillic-400-normal-CW5LVkdR.woff2",
+    "src": "node_modules/@fontsource/prata/files/prata-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/prata/files/prata-latin-400-normal.woff": {
+    "file": "media/prata-latin-400-normal-C4yJuFIr.woff",
+    "src": "node_modules/@fontsource/prata/files/prata-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/prata/files/prata-latin-400-normal.woff2": {
+    "file": "media/prata-latin-400-normal-DtyCfkTi.woff2",
+    "src": "node_modules/@fontsource/prata/files/prata-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-400-normal.woff": {
+    "file": "media/pt-sans-cyrillic-400-normal-DR9of8nb.woff",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-400-normal.woff2": {
+    "file": "media/pt-sans-cyrillic-400-normal-BgFH0IXl.woff2",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-700-normal.woff": {
+    "file": "media/pt-sans-cyrillic-700-normal-DzVkanQm.woff",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-700-normal.woff"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-700-normal.woff2": {
+    "file": "media/pt-sans-cyrillic-700-normal-TNhnPAH_.woff2",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-cyrillic-700-normal.woff2"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-latin-400-normal.woff": {
+    "file": "media/pt-sans-latin-400-normal-v0jdzXSm.woff",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-latin-400-normal.woff2": {
+    "file": "media/pt-sans-latin-400-normal-Cwy9XeGQ.woff2",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-latin-700-normal.woff": {
+    "file": "media/pt-sans-latin-700-normal-CyjbL83V.woff",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-latin-700-normal.woff"
+  },
+  "node_modules/@fontsource/pt-sans/files/pt-sans-latin-700-normal.woff2": {
+    "file": "media/pt-sans-latin-700-normal-DmHhLLdt.woff2",
+    "src": "node_modules/@fontsource/pt-sans/files/pt-sans-latin-700-normal.woff2"
+  },
+  "node_modules/easymde/dist/easymde.min.css": {
+    "file": "css/easymde-DaCrUmpA.css",
+    "src": "node_modules/easymde/dist/easymde.min.css"
+  },
+  "src/js/main.js": {
+    "file": "js/main-BRAi3hYk.js",
+    "name": "main",
+    "src": "src/js/main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "_motion-BZzlqNTp.js",
+      "_motion-BZzlqNTp.js",
+      "_slider-BuG89B14.js",
+      "_slider-BuG89B14.js",
+      "_easymde-DRAxgiKS.js"
+    ],
+    "css": [
+      "css/main-Bpqwvxmw.css"
+    ],
+    "assets": [
+      "media/hero-Sofaejc7.webp",
+      "media/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
+      "media/inter-cyrillic-wght-normal-DqGufNeO.woff2",
+      "media/inter-greek-ext-wght-normal-DlzME5K_.woff2",
+      "media/inter-greek-wght-normal-CkhJZR-_.woff2",
+      "media/inter-vietnamese-wght-normal-CBcvBZtf.woff2",
+      "media/inter-latin-ext-wght-normal-DO1Apj_S.woff2",
+      "media/inter-latin-wght-normal-Dx4kXJAl.woff2",
+      "media/oranienbaum-cyrillic-400-normal-DJ9meR3m.woff2",
+      "media/oranienbaum-cyrillic-400-normal-DhMiF5E-.woff",
+      "media/oranienbaum-latin-400-normal-Pblm6D9w.woff2",
+      "media/oranienbaum-latin-400-normal--Nb-tlzl.woff",
+      "media/forum-cyrillic-400-normal-Cl8kDjnZ.woff2",
+      "media/forum-cyrillic-400-normal-oUH9Q3Rg.woff",
+      "media/forum-latin-400-normal-OEvxT1Ba.woff2",
+      "media/forum-latin-400-normal-DH65psBc.woff",
+      "media/prata-cyrillic-400-normal-CW5LVkdR.woff2",
+      "media/prata-cyrillic-400-normal-DdkJ869o.woff",
+      "media/prata-latin-400-normal-DtyCfkTi.woff2",
+      "media/prata-latin-400-normal-C4yJuFIr.woff",
+      "media/pt-sans-cyrillic-400-normal-BgFH0IXl.woff2",
+      "media/pt-sans-cyrillic-400-normal-DR9of8nb.woff",
+      "media/pt-sans-latin-400-normal-Cwy9XeGQ.woff2",
+      "media/pt-sans-latin-400-normal-v0jdzXSm.woff",
+      "media/pt-sans-cyrillic-700-normal-TNhnPAH_.woff2",
+      "media/pt-sans-cyrillic-700-normal-DzVkanQm.woff",
+      "media/pt-sans-latin-700-normal-DmHhLLdt.woff2",
+      "media/pt-sans-latin-700-normal-CyjbL83V.woff",
+      "media/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+      "media/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+      "media/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+      "media/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+      "media/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+      "media/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+      "media/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+      "media/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff"
+    ]
+  }
+}

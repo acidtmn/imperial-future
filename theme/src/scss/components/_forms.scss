@@ -1,0 +1,212 @@
+.search-form,
+.contact-panel {
+  display: grid;
+  gap: .85rem;
+}
+
+.search-form {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.search-field,
+.auth-form input,
+.account-card input,
+.newsletter-form input,
+.imperial-search input,
+.contact-panel input,
+.contact-panel textarea {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: rgba(244, 231, 197, .08);
+  color: var(--color-text);
+  padding: .85rem 1rem;
+  outline: none;
+}
+
+.search-field:focus,
+.auth-form input:focus,
+.account-card input:focus,
+.newsletter-form input:focus,
+.imperial-search input:focus,
+.contact-panel input:focus,
+.contact-panel textarea:focus {
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-glow);
+}
+
+.auth-form label,
+.account-card label,
+.newsletter-form label {
+  display: grid;
+  gap: .42rem;
+  color: var(--color-paper);
+}
+
+.imperial-check {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+}
+
+.imperial-check input {
+  width: 18px;
+  min-height: 18px;
+}
+
+.imperial-password-meter {
+  display: grid;
+  gap: .38rem;
+}
+
+.imperial-password-meter::before {
+  height: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-round);
+  background: rgba(244, 231, 197, .08);
+  content: '';
+}
+
+.imperial-password-meter span {
+  height: 10px;
+  margin-top: -10px;
+  border-radius: var(--radius-round);
+  background: linear-gradient(90deg, var(--color-red), var(--color-gold), #8fbf8f);
+  box-shadow: var(--shadow-glow);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .22s ease;
+}
+
+.imperial-password-meter strong {
+  color: var(--color-gold);
+  font-size: .86rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 4rem 0;
+}
+
+.contact-panel,
+.contact-note {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: var(--color-panel-soft);
+  padding: 1.25rem;
+}
+
+.contact-panel h2,
+.contact-note h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.contact-note p { font-size: 1rem; line-height: 1.7; }
+.contact-grid > .imperial-ad { grid-column: 1 / -1; }
+
+.contact-alert {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: rgba(212, 175, 55, .1);
+  color: var(--color-paper);
+  padding: .85rem 1rem;
+}
+
+.contact-alert--sent {
+  border-color: rgba(91, 148, 104, .55);
+  background: rgba(91, 148, 104, .13);
+}
+
+.contact-panel textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.contact-panel label {
+  display: grid;
+  gap: .42rem;
+  color: var(--color-paper);
+}
+
+.contact-panel__captcha {
+  display: grid;
+  gap: .72rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-small);
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, .09), transparent 58%),
+    rgba(244, 231, 197, .04);
+  color: var(--color-paper);
+  padding: .85rem;
+}
+
+.imperial-drag-captcha__track img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 112;
+  background: #eee0b8;
+}
+
+.contact-panel__captcha input[name='captcha'] {
+  min-height: 38px;
+  font-size: .9rem;
+}
+
+.imperial-drag-captcha__track {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  overflow: hidden;
+}
+
+.imperial-drag-captcha__seal {
+  position: absolute;
+  top: 50%;
+  left: max(22px, 12%);
+  z-index: 2;
+  width: 16%;
+  height: auto;
+  min-width: 44px;
+  min-height: 44px;
+  aspect-ratio: 1;
+  border: 3px double #d4af37;
+  border-radius: 50%;
+  background: #211c17;
+  color: #f4e7c5;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.imperial-drag-captcha__seal:active { cursor: grabbing; }
+.imperial-drag-captcha__seal:focus-visible { outline: 2px solid #211c17; outline-offset: 3px; }
+
+.imperial-drag-captcha small {
+  display: block;
+  margin-top: .45rem;
+  color: var(--color-muted);
+}
+
+.contact-panel__trap {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (min-width: 860px) {
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+}

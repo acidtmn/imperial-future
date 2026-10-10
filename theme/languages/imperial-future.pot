@@ -1,0 +1,3198 @@
+# Copyright (C) 2026 Кирилл Александров
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Imperial Future 1.1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/acidtmn/imperial-future/issues\n"
+"Last-Translator: Кирилл Александров\n"
+"Language-Team: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-10T03:19:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: imperial-future\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Imperial Future"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://kodalexandrova.ru/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Кастомная тема персонального блога в эстетике цифрового архива Российской Империи будущего."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+#: inc/Seed/EditorialCatalog.php:64
+#: inc/Seed/EditorialRefreshService.php:162
+msgid "Кирилл Александров"
+msgstr ""
+
+#: 404.php:12
+msgid "Ошибка 404"
+msgstr ""
+
+#: 404.php:13
+msgid "Эта папка архива исчезла в электрическом тумане"
+msgstr ""
+
+#: 404.php:14
+msgid "Можно вернуться на главную или отправить новый поисковый запрос."
+msgstr ""
+
+#: 404.php:16
+msgid "На главную"
+msgstr ""
+
+#: 404.php:17
+msgid "Искать в архиве"
+msgstr ""
+
+#: archive.php:26
+msgid "В этой папке пока нет публикаций."
+msgstr ""
+
+#: author.php:15
+#: inc/Settings/ThemeOptions.php:53
+msgid "Авторский кабинет"
+msgstr ""
+
+#: author.php:17
+msgid "Публикации автора из цифрового архива."
+msgstr ""
+
+#: comments.php:17
+msgid "Архивные пометки"
+msgstr ""
+
+#: comments.php:38
+msgid "Канцелярия закрыла обсуждение этой публикации."
+msgstr ""
+
+#: footer.php:17
+msgid "Архив будущего"
+msgstr ""
+
+#: footer.php:24
+#: inc/Support/ThemeSetup.php:45
+msgid "Нижняя навигация"
+msgstr ""
+
+#: header.php:20
+msgid "Перейти к содержимому"
+msgstr ""
+
+#: header.php:60
+msgid "Открыть поиск"
+msgstr ""
+
+#: header.php:66
+#: inc/Settings/ThemeOptions.php:56
+msgid "Открыть кабинет"
+msgstr ""
+
+#: header.php:70
+msgid "Открыть вход в кабинет"
+msgstr ""
+
+#: header.php:75
+msgid "Переключить тему"
+msgstr ""
+
+#: inc/Ads/AdRenderer.php:29
+msgid "Рекламный блок"
+msgstr ""
+
+#: inc/Bookmark/BookmarkAjaxController.php:23
+msgid "Войдите, чтобы сохранить публикацию."
+msgstr ""
+
+#: inc/Bookmark/BookmarkAjaxController.php:37
+msgid "Слишком много быстрых действий с закладками. Попробуйте чуть позже."
+msgstr ""
+
+#: inc/Bookmark/BookmarkAjaxController.php:43
+#: inc/Rating/RatingAjaxController.php:49
+msgid "Материал не найден."
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:34
+#: inc/Support/FrontendStrings.php:39
+msgid "Ж"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:35
+msgid "Жирный: **текст**"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:36
+#: inc/Seed/EditorialCatalog.php:62
+#: inc/Support/FrontendStrings.php:41
+msgid "К"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:37
+msgid "Курсив: *текст*"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:38
+msgid "Ссылка: [текст](url)"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:39
+#: inc/Support/FrontendStrings.php:44
+msgid "Цитата"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:40
+msgid "Цитата: > текст"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:41
+msgid "• список"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:42
+#: inc/Support/FrontendStrings.php:46
+msgid "Маркированный список"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:43
+msgid "1. список"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:44
+#: inc/Support/FrontendStrings.php:47
+msgid "Нумерованный список"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:45
+msgid "Код: `код` или ```блок```"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:46
+msgid "Комментарий сохраняется в Markdown: **жирный**, *курсив*, [ссылка](https://example.com), > цитата, списки и `код`. HTML-теги больше не вставляются."
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:47
+msgid "URL ссылки"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:48
+msgid "текст ссылки"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:49
+msgid "цитата"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:50
+msgid "код"
+msgstr ""
+
+#: inc/Comments/AdminMarkdownCommentEditor.php:51
+msgid "текст"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:28
+msgid "Имя"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:29
+#: page-account.php:98
+#: parts/auth/modal.php:60
+msgid "Email"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:30
+msgid "Сайт"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:38
+msgid "Оставить архивную пометку"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:42
+msgid "Отправить пометку"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:43
+msgid "Комментарий можно писать обычным текстом или Markdown-разметкой."
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:51
+msgid "Комментарий"
+msgstr ""
+
+#: inc/Comments/CommentSupport.php:53
+msgid "Редактор поддерживает жирный текст, курсив, ссылки, цитаты, списки, код и предпросмотр."
+msgstr ""
+
+#: inc/Comments/CommentVoteAjaxController.php:24
+msgid "Войдите, чтобы оценить комментарий."
+msgstr ""
+
+#: inc/Comments/CommentVoteAjaxController.php:38
+msgid "Слишком много оценок комментариев подряд. Попробуйте чуть позже."
+msgstr ""
+
+#: inc/Comments/CommentVoteAjaxController.php:46
+msgid "Комментарий не найден."
+msgstr ""
+
+#: inc/Comments/CommentVoteAjaxController.php:50
+msgid "Такой оценки комментария нет."
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:30
+#, php-format
+msgid "%1$s в %2$s"
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:36
+msgid "Комментарий ожидает модерации редакции."
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:45
+#: parts/rating/panel.php:66
+msgid "Нравится"
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:49
+#: parts/rating/panel.php:66
+msgid "Не нравится"
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:61
+msgid "Ответить"
+msgstr ""
+
+#: inc/Comments/ImperialCommentWalker.php:63
+msgid "Править"
+msgstr ""
+
+#: inc/Contact/ContactMessageBuilder.php:17
+msgid "Сообщение без темы"
+msgstr ""
+
+#: inc/Content/FileBlockEnhancer.php:43
+msgid "Скачать"
+msgstr ""
+
+#: inc/Content/FileBlockEnhancer.php:83
+msgid "Файл архива"
+msgstr ""
+
+#: inc/Embed/ExternalMetadataService.php:18
+msgid "Внешняя ссылка"
+msgstr ""
+
+#: inc/Embed/LinkCardRenderer.php:34
+msgid "Из архива"
+msgstr ""
+
+#: inc/External/ExternalExitController.php:52
+msgid "Внешний переход"
+msgstr ""
+
+#: inc/External/ExternalExitController.php:53
+#, php-format
+msgid "Вы покидаете %s"
+msgstr ""
+
+#: inc/External/ExternalExitController.php:58
+msgid "сек. до перехода"
+msgstr ""
+
+#: inc/External/ExternalExitController.php:61
+msgid "Продолжить переход"
+msgstr ""
+
+#: inc/Media/DefaultAvatar.php:21
+msgid "Имперская печать"
+msgstr ""
+
+#: inc/Navigation/HeaderMenuRenderer.php:44
+#: inc/SEO/Breadcrumbs.php:43
+msgid "Главная"
+msgstr ""
+
+#: inc/Navigation/HeaderMenuRenderer.php:84
+#: inc/Navigation/HeaderMenuRenderer.php:91
+msgid "Рубрики"
+msgstr ""
+
+#: inc/Newsletter/CommentNotificationService.php:82
+#, php-format
+msgid "Новый отклик в архиве: %s"
+msgstr ""
+
+#: inc/Newsletter/DigestService.php:160
+msgid "Отписаться от дайджеста:"
+msgstr ""
+
+#: inc/Newsletter/DigestService.php:161
+#, php-format
+msgid "Еженедельный дайджест: %s"
+msgstr ""
+
+#: inc/Newsletter/SubscriptionService.php:82
+msgid "Подтверди подписку на дайджест"
+msgstr ""
+
+#: inc/Newsletter/SubscriptionService.php:83
+#, php-format
+msgid ""
+"Подтверди подписку по ссылке в течение 24 часов:\n"
+"%s\n"
+"\n"
+"Если ты не запрашивал подписку, просто проигнорируй письмо."
+msgstr ""
+
+#: inc/Rating/RatingAjaxController.php:24
+msgid "Войдите в кабинет, чтобы поставить оценку."
+msgstr ""
+
+#: inc/Rating/RatingAjaxController.php:32
+msgid "Оценки сейчас отключены."
+msgstr ""
+
+#: inc/Rating/RatingAjaxController.php:42
+msgid "Слишком много оценок подряд. Попробуйте чуть позже."
+msgstr ""
+
+#: inc/Rating/RatingAjaxController.php:53
+msgid "Такой реакции в рейтинге нет."
+msgstr ""
+
+#: inc/Search/LiveSearchController.php:29
+msgid "Поиск временно закрыт архивариусом."
+msgstr ""
+
+#: inc/Search/LiveSearchController.php:36
+msgid "Поиск получил слишком много запросов. Попробуйте чуть позже."
+msgstr ""
+
+#: inc/Seed/DemoContentSeeder.php:167
+msgid "Имперский архив будущего"
+msgstr ""
+
+#: inc/Seed/DemoImportController.php:20
+#: parts/admin/demo-import.php:8
+msgid "Демо Imperial Future"
+msgstr ""
+
+#: inc/Seed/DemoImportController.php:34
+msgid "Недостаточно прав."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:15
+msgid "Первый проект цифровой мастерской: каталог домашних вещей"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:15
+msgid "Собираем небольшой каталог домашних вещей: от ясного задания и вымышленных данных до проверки сохранения, ошибок и восстановления."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:15
+msgid "Мастерская"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:15
+msgid "Разработка"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:15
+msgid "Первый проект"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:16
+msgid "Независимая резервная копия: репетиция возвращения файлов"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:16
+msgid "Разделяем рабочую папку и архив, выбираем независимые места хранения и проверяем восстановление до первой настоящей потери."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:16
+msgid "Резервные копии"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:16
+msgid "Файлы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:16
+#: page-account.php:76
+#: page-account.php:142
+msgid "Безопасность"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:17
+msgid "Домашняя лаборатория Docker без лишних открытых дверей"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:17
+msgid "Один контейнер и одна понятная папка вместо домашнего дата-центра: локальные порты, постоянные данные и безопасная уборка эксперимента."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:17
+msgid "Docker"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:17
+#: inc/Seed/EditorialCatalog.php:29
+msgid "Домашняя лаборатория"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:17
+msgid "Инфраструктура"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:18
+msgid "Ключи доступа и пароли: сначала проверь запасной вход"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:18
+msgid "Что меняется при переходе на passkey, почему важна защита устройства и как подготовить восстановление без обещания полной неуязвимости."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:18
+#: inc/Seed/EditorialCatalog.php:30
+msgid "Ключи доступа"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:18
+msgid "Пароли"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:18
+msgid "Аккаунты"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:19
+msgid "Читаемый интерфейс: одна страница, один понятный следующий шаг"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:19
+msgid "Проверяем страницу статьи глазами читателя: порядок содержания, спокойные акценты, понятные кнопки и состояния, которые не прячут результат."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:19
+msgid "Интерфейсы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:19
+msgid "Типографика"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:19
+msgid "Доступность"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:20
+msgid "Информационная гигиена: читать технологии без вечной очереди"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:20
+msgid "Настраиваем личный поток чтения: отделяем срочное от интересного, проверяем источники и сохраняем только то, что помогает принять решение."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:20
+msgid "Информационная гигиена"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:20
+msgid "Чтение"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:20
+msgid "Рабочие привычки"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:27
+msgid "Цифровая мастерская"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:27
+msgid "Рабочее место в ретрофутуристической цифровой мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:28
+msgid "Независимый архив"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:28
+msgid "Редакционная иллюстрация независимого хранения резервных копий"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:29
+msgid "Небольшая домашняя компьютерная лаборатория в имперской мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:30
+msgid "Редакционная иллюстрация ключей доступа и защиты учётных записей"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:31
+msgid "Читаемый интерфейс"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:31
+msgid "Редакционная иллюстрация ясной структуры и читаемого интерфейса"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:32
+msgid "Спокойный телеграф"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:32
+msgid "Редакционная иллюстрация спокойного чтения и отбора информации"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:33
+msgid "Имперский архив: мастерская технологий"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:33
+msgid "Ретрофутуристическая мастерская Имперского архива"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:40
+msgid "Технологии без лишнего шума"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:41
+#: inc/Seed/EditorialRefreshService.php:79
+msgid "Имперский архив"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:42
+msgid "Личная мастерская технологий: код, безопасность и ясные интерфейсы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:43
+msgid "Читать статьи"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:45
+#: inc/Seed/EditorialWidgets.php:38
+msgid "Написать автору"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:50
+msgid "Проект цифровой мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:50
+msgid "Копия, которую можно восстановить"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:50
+msgid "Домашняя лаборатория Docker"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:50
+msgid "Ясный интерфейс и спокойное чтение"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:51
+msgid "Практика"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:52
+msgid "Из архива в мастерскую"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:53
+msgid "Шесть материалов о работе с технологиями: от первого проекта до защиты файлов, понятного интерфейса и собственного ритма чтения."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:55
+msgid "Короткий маршрут"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:56
+msgid "Что разобрать следующим"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:58
+msgid "Хороший инструмент оставляет после себя понятный результат, а не только впечатление от демонстрации."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:59
+msgid "Принцип мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:60
+msgid "Знание становится полезным, когда помогает выбрать следующий небольшой шаг."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:61
+msgid "Редакционная заметка"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:63
+msgid "Автор архива"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:65
+msgid "Пишу об IT и цифровой мастерской простым языком. Здесь важны ясные объяснения, небольшие эксперименты и проверяемые выводы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:66
+msgid "Об авторе"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:67
+msgid "Имперский архив: понятные статьи о технологиях, Docker, резервных копиях, безопасности и читаемых интерфейсах."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:68
+msgid "цифровая мастерская"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:68
+msgid "резервная копия"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:68
+msgid "ключи доступа"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:68
+msgid "читаемый интерфейс"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:75
+msgid "Цифровая мастерская начинается с небольшого полезного инструмента. Например, с каталога домашних вещей: название, место хранения и короткая заметка. Такой проект помогает освоить устройство интерфейса и работу с данными без сложной инфраструктуры. Его результат легко проверить: нужная вещь находится за несколько секунд, а записи остаются доступны после закрытия страницы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:76
+msgid "Начни с одного обычного действия"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:77
+msgid "Опиши не устройство программы, а свой будущий вечер: открыть каталог, найти паяльник и понять, в какой коробке он лежит. От этого действия легко перейти к минимальным полям и нужной кнопке поиска. Учёт расходов, совместный доступ и распознавание фотографий пока не нужны. Запиши их отдельно, чтобы интересная идея не меняла задачу посреди работы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:78
+msgid "Сразу реши, где останутся записи после закрытия страницы. Локальное хранение в браузере подходит для учебного опыта, но не обещает сохранность при очистке профиля. Файл или база требуют другого способа запуска и отдельной копии. Запиши выбранный способ хранения и условия, при которых данные могут исчезнуть."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:79
+msgid "Подготовь безопасный материал"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:80
+msgid "Первые записи сделай вымышленными. Не используй фотографии документов, адреса знакомых или настоящие ключи от сервисов ради демонстрации. Если программа читает папку проекта, проверь, какие файлы ей доступны. Конфигурация с паролями не должна попадать в общедоступный каталог."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:81
+msgid "До первой правки сохрани рабочее состояние привычным способом. Это может быть история версий или заранее подготовленный архив. Важно не название инструмента, а возможность вернуться к известному состоянию и понять, что именно изменилось. Не используй единственную папку с важными данными как площадку для обучения."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:82
+msgid "Задание должно помещаться на одну страницу"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:84
+msgid "Каталог открывается на компьютере и телефоне без обязательной регистрации."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:85
+msgid "У записи есть название, место хранения и необязательная заметка."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:86
+msgid "Поиск находит запись по названию; пустая выдача понятна без объяснений."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:87
+msgid "После перезапуска записи сохраняются выбранным способом."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:88
+msgid "Экспорт позволяет сохранить записи отдельным файлом."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:90
+msgid "Отложи функции, которые не нужны для повседневного поиска вещей. Платежи, несколько серверов и сложная регистрация увеличивают объём работы, но не помогают найти паяльник. Сначала сделай небольшой законченный инструмент, затем решай, чего действительно не хватает."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:91
+msgid "Проверяй после каждого небольшого изменения"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:92
+msgid "Сначала добейся открытия страницы. Затем добавления одной записи. После этого проверь сохранение и только потом поиск. Меняя всё сразу, трудно отличить новую ошибку от старой. Оценивай результат через действие пользователя: созданная запись должна быть видна после повторного открытия."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:93
+msgid "Обязательно попробуй неудобные данные: длинное название, пробелы вместо текста и две одинаковые записи. Нажми сохранение дважды. Закрой страницу, снова открой её и сравни результат. Если предусмотрен экспорт, открой полученный файл отдельно. Сообщение об успехе ещё не доказывает, что внутри находятся нужные сведения."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:94
+msgid "Хороший инструмент не требует веры в обещания. Его результат можно проверить."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:95
+msgid "Оставь себе понятный рабочий результат"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:96
+msgid "В конце запиши, как запускается проект, где лежат данные и как восстановить сохранённую версию. Убери временные примеры, сохрани рабочий архив и проверь экспорт. Небольшой инструмент готов, когда основной сценарий повторяется без дополнительных подсказок."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:97
+msgid "После этого выбери одно улучшение, которое действительно заметишь в работе. Например, быстрый фильтр по коробке. Следующий шаг должен опираться на опыт использования. Первый проект учит удерживать задачу, сохранять результат и отличать работающую функцию от красивого описания."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:104
+msgid "Проверку резервной копии удобно начать с простого вопроса: что останется, если завтра исчезнет рабочая папка? Не компьютер вообще, а конкретные документы, фотографии или заметки. Ответ «они ещё в облаке» требует уточнения. Облако может хранить независимую историю, а может быстро повторять каждое удаление. Пока это не проверено, перед нами удобный доступ к файлам, но ещё не понятный план восстановления."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:105
+msgid "Составь короткую карту потерь"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:106
+msgid "Выдели данные, которые нельзя просто скачать заново: семейные фотографии, собственные тексты, рабочие проекты и настройки, на которые ушло время. Не обязательно начинать со всего диска. Маленький проверенный архив важнее огромной копии, из которой никто не умеет извлечь нужную папку. Для каждой группы запиши место хранения и допустимую потерю последних изменений."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:107
+msgid "Документ, который меняется каждый день, и завершённый фотоальбом требуют разного расписания. Одному полезны частые версии, другому достаточно новой копии после пополнения. Если приложение хранит всё в своей базе, обычная папка может оказаться неполной. Найди штатный экспорт и проверь, входят ли в него вложения, подписи и другие важные части."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:108
+msgid "Независимость важнее числа устройств"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:109
+msgid "Второй раздел одного диска не переживёт отказ самого накопителя. Постоянно подключённый внешний диск доступен тем же программам, что и рабочая папка. Два устройства в одной сумке могут потеряться вместе. Поэтому полезно разделять не только экземпляры, но и причины, по которым они могут одновременно исчезнуть."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:111
+msgid "Рабочая версия остаётся там, где ты обычно редактируешь файлы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:112
+msgid "Версионная копия позволяет вернуться к состоянию до незамеченной ошибки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:113
+msgid "Отдельный носитель после копирования отключается от рабочего компьютера."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:114
+msgid "Ещё один экземпляр хранится отдельно от основного места и защищён от чужого доступа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:116
+msgid "Это не обязательный список покупок. Сначала используй доступные средства и выясни, какую угрозу они закрывают. Удалённое хранилище помогает пережить потерю оборудования дома, но зависит от доступа к аккаунту. Отключённый диск уменьшает риск случайной перезаписи, однако сам требует аккуратного хранения и периодической проверки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:117
+msgid "У копии должен быть понятный возраст"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:118
+msgid "Успешное задание копирования ещё не означает, что архив свежий. Посмотри дату последнего завершённого запуска и наличие недавнего файла. Сообщения об ошибках должны попадать туда, где ты их заметишь. Если переполнился диск или закончился доступ к сервису, месяцы зелёного значка на старой копии не помогут восстановить вчерашнюю работу."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:119
+msgid "Не заменяй единственный старый архив новым вслепую. Сохраняй несколько состояний, чтобы обнаруженная поздно ошибка не стала единственной доступной версией. Срок хранения зависит от ценности данных и объёма носителя. Лучше честно хранить несколько проверенных недель, чем обещать бесконечную историю, которая однажды перестанет помещаться."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:120
+msgid "Репетиция восстановления занимает отдельное время"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:122
+msgid "Создай пустую папку вне рабочего каталога и отключи автоматическую синхронизацию для неё."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:123
+msgid "Верни один свежий документ, старую фотографию и файл из вложенной папки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:124
+msgid "Открой файлы в соответствующих программах, проверь содержимое и даты."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:125
+msgid "Запиши, какой доступ понадобился и сколько времени заняла операция."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:127
+msgid "Не восстанавливай тест поверх оригинала: иначе сама проверка превращается в риск. Для большого архива сначала достаточно нескольких разных файлов, но важную базу или проект полезно периодически поднимать целиком в отдельной среде. Только так обнаруживаются забытые зависимости: приложение, версия формата, пароль шифрования или отсутствующее вложение."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:128
+msgid "Что делать с паролем от зашифрованной копии"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:128
+msgid "Сохрани способ восстановления отдельно от единственного компьютера. Проверь, что сможешь получить его без рабочей папки и без потерянного телефона. Не записывай секрет рядом с общедоступной копией. Удобство доступа и защита от посторонних требуют отдельного решения, а не одного универсального места для всего."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:129
+msgid "Хорошая резервная схема заканчивается не архивом с красивым названием, а возвращённым документом. Назначь следующую проверку после заметного изменения устройства, программы или способа хранения. Если восстановление получилось сегодня и его порядок понятен без памяти о прошлой настройке, у тебя уже есть рабочая защита, которую можно постепенно улучшать."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:136
+msgid "Домашняя лаборатория Docker может начинаться с одного контейнера, который показывает локальную страницу. Её задача не заменить промышленный сервер, а дать место для эксперимента: изменить настройку, увидеть результат и спокойно убрать всё лишнее. Для этого важнее понимать доступ к папкам и портам, чем запускать десяток сервисов из чужой инструкции. В первом опыте обойдёмся без личных данных, базы и доступа из интернета."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:137
+msgid "Отдели эксперимент от обычной работы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:138
+msgid "Создай отдельный каталог лаборатории и вложенную папку site. Положи в неё простой index.html с коротким текстом. Не подключай домашний каталог целиком: контейнеру незачем видеть документы, фотографии и ключи. Для публикации статической страницы ему достаточно одной папки, причём только для чтения. Такой небольшой объём доступа проще проверить."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:139
+msgid "У контейнера есть собственный жизненный цикл. Его можно пересоздать, и изменения внутри его файловой системы при этом могут исчезнуть. Bind mount связывает определённую папку компьютера с путём внутри контейнера. Это удобно для опытов, но означает прямой доступ программы к указанным файлам. Контейнер не превращает любую подключённую папку в безопасную песочницу."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:140
+msgid "Начни с короткого Compose-файла"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:142
+msgid "Сохрани пример как compose.yaml рядом с папкой site. Адрес 127.0.0.1 ограничивает опубликованный порт самим компьютером. Номер 18080 выбран для опыта; если он занят, возьми другой свободный порт. Метка образа показывает ветку, но не фиксирует неизменные байты. Для повторяемого важного окружения отдельно проверяют и записывают конкретную версию или digest образа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:143
+msgid "Запусти docker compose up -d из каталога лаборатории и открой http://127.0.0.1:18080. Если страницы нет, сначала проверь docker compose ps, затем docker compose logs web. Не отключай межсетевой экран и не открывай порты роутера ради локального примера. Ошибка пути или занятый порт решаются на своём уровне, без расширения доступа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:144
+msgid "Измени файл и проверь границы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:145
+msgid "Отредактируй текст в index.html и обнови страницу. Изменение видно без пересборки образа, потому что сервер читает подключённую папку. Затем пересоздай контейнер и убедись, что текст остался. Он живёт на компьютере, а не только внутри контейнера. Это маленькая, но полезная проверка того, где действительно находятся данные."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:146
+msgid "Перезапуск проверяет работу процесса. Пересоздание помогает проверить, где остались файлы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:147
+msgid "Действие"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:147
+msgid "Что ожидать"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:148
+msgid "Контейнер останавливается, его состояние пока остаётся."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:149
+msgid "Контейнер и сеть проекта удаляются; папка site остаётся."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:150
+msgid "Дополнительно удаляются управляемые Compose тома; это не команда обычной остановки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:152
+msgid "Добавляй только понятные зависимости"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:153
+msgid "Когда понадобится приложение с базой, сначала выясни штатный способ сохранения и восстановления его данных. Копирование каталога работающей базы не всегда даёт согласованную копию. Используй предусмотренный экспорт или остановку, если этого требует документация. Названный том удобен, но не является резервной копией и может быть удалён командой уборки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:154
+msgid "Не подключай Docker socket к случайному сервису и не включай privileged без конкретной причины. Такие настройки существенно расширяют возможности контейнера. Секреты не стоит помещать прямо в публикуемый Compose-файл. Даже учебная лаборатория выигрывает от минимальных прав, понятных образов и короткого списка зависимостей, которые ты действительно используешь."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:155
+msgid "Закончи опыт уборкой своего проекта"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:156
+msgid "Останови лабораторию командой docker compose down и проверь, что страница больше не открывается. Папку site оставь для следующего опыта или удали осознанно. Не запускай глобальную очистку Docker на компьютере, где есть другие проекты: чужой неактивный ресурс может быть нужен. Хорошая лаборатория оставляет понятный результат, понятные данные и понятный способ всё остановить."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:157
+msgid "Документация Docker: подключение папок с помощью bind mounts"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:164
+msgid "Предложение создать ключ доступа выглядит как удобная замена паролю: подтвердил вход на телефоне и продолжил работу. Но выбирать способ входа лучше вместе со способом восстановления. Пока не понятно, как попасть в аккаунт без основного устройства, новая кнопка решает только половину задачи. Разберём переход без обещаний, что пароли исчезнут к определённой дате или что одна технология закроет все угрозы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:165
+msgid "Что именно меняется при входе"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:166
+msgid "Passkey использует пару ключей. Сервис хранит открытый ключ, а пользователь подтверждает операцию с помощью закрытого, которым управляет его устройство или провайдер учётных данных. Вместо передачи общей секретной строки устройство подписывает запрос. Сам секрет не вводится в форму сайта. Это уменьшает риск, связанный с повторяющимися паролями и их выманиванием через поддельную страницу."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:167
+msgid "Ключ связан с сервисом, для которого создан. Поддельный домен не получает готовый секрет для входа на настоящий сайт. При этом защита входа не равна защите всего аккаунта: остаются восстановление, уже открытые сеансы, вредоносные программы и действия после авторизации. Поэтому слово «устойчивый к фишингу» не стоит превращать в обещание полной неуязвимости."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:168
+msgid "Биометрия не становится паролем сайта"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:169
+msgid "Отпечаток, лицо или PIN обычно разрешают устройству использовать ключ локально. Сайт получает результат криптографической проверки, а не фотографию лица вместо пароля. Но само устройство всё равно нужно блокировать и обновлять. Если посторонний управляет твоим разблокированным компьютером, удобный вход не отменяет этот риск."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:170
+msgid "Не подтверждай неожиданную операцию только потому, что окно выглядит системным. Сначала убедись, что ты сам начал вход и понимаешь, какой аккаунт открываешь. Не устанавливай программу удалённого доступа по просьбе человека, который предлагает «помочь с ключом». Техническая защита не может компенсировать добровольно переданное управление устройством."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:171
+msgid "Выясни, где хранится запасной путь"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:172
+msgid "Некоторые ключи синхронизируются через провайдера учётных данных, другие привязаны к устройству, например отдельному аппаратному ключу. Возможности переноса и восстановления зависят от выбранного решения. Не предполагай, что любой ключ автоматически появится на новом телефоне. Посмотри настройки конкретного сервиса и провайдера до того, как удалять прежний способ входа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:174
+msgid "Проверь вход со второго доверенного устройства или другого зарегистрированного ключа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:175
+msgid "Сохрани предусмотренные сервисом резервные коды отдельно от единственного телефона."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:176
+msgid "Защити аккаунт провайдера, через которого синхронизируются ключи."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:177
+msgid "Уточни, как отозвать потерянное устройство и завершить его открытые сеансы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:178
+msgid "Запиши порядок восстановления без самих секретов в общедоступных заметках."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:180
+msgid "Пароли остаются частью смешанной схемы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:181
+msgid "Там, где ключи доступа недоступны или пока не подходят твоему сценарию, используй отдельный пароль для каждого сервиса. Менеджер паролей помогает создавать и хранить такие значения без необходимости помнить их все. Основную почту и само хранилище нужно защищать особенно внимательно: через них часто восстанавливаются остальные аккаунты. Доступный дополнительный фактор также стоит настроить."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:182
+msgid "Не оставляй одинаковый пароль в нескольких местах под предлогом скорого перехода на новую технологию. Не сохраняй резервные коды только в той же учётной записи, доступ к которой они должны возвращать. При утечке пароля замени его в затронутом сервисе и везде, где он повторялся; затем проверь способы восстановления и открытые сеансы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:183
+msgid "Нужно ли сразу удалять старый пароль"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:183
+msgid "Не спеши. Сначала проверь новый вход и восстановление на своих устройствах. Затем посмотри, какие методы позволяет отключить конкретный сервис и какие последствия у этого решения. Иногда слабый запасной метод уменьшает пользу сильного основного, но его удаление без рабочего второго пути может просто лишить тебя доступа."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:184
+msgid "Переходи по одному аккаунту"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:185
+msgid "Выбери один сервис, настрой ключ и выполни обычный вход заново, не закрывая единственный действующий сеанс до проверки. После успешного опыта подготовь запасной путь и только тогда расширяй схему. Цель не в максимальном количестве новых ключей за вечер. Цель в том, чтобы постороннему стало сложнее войти, а владельцу оставался понятный способ вернуться."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:186
+msgid "Объяснение ключей доступа от FIDO Alliance"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:193
+msgid "Читаемый интерфейс легче оценивать на конкретной странице, чем по общей красоте макета. Возьмём статью с содержанием, иллюстрацией, формой подписки и обсуждением. Читатель хочет понять тему, найти нужный фрагмент и решить, что делать дальше. Если оформление заставляет сначала разгадывать навигацию, даже хорошая типографика не спасает. Проверим страницу как рабочий маршрут, а не как витрину отдельных декоративных решений."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:194
+msgid "Сначала порядок, затем выразительность"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:195
+msgid "Заголовок должен называть предмет статьи, а вводный абзац объяснять, какую задачу она поможет решить. После них полезнее показать начало материала, чем несколько экранов украшений. На большой странице подзаголовки работают как указатели: по ним можно восстановить ход мысли, даже если человек пока только просматривает текст."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:196
+msgid "Рядом с основным текстом не должно быть нескольких одинаково громких приглашений. Выбери главное действие для каждого участка: читать, отправить комментарий или подтвердить подписку. Остальные команды можно оставить доступными, но спокойными. Иерархия нужна не для запрета выбора, а чтобы человек не тратил внимание на расстановку приоритетов вместо тебя."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:197
+msgid "Проверяй настоящий текст"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:198
+msgid "Короткие заглушки скрывают проблемы. Подставь длинный русский заголовок, адрес электронной почты, ссылку и фрагмент кода. Проверь узкий экран и увеличенный масштаб браузера. Текст должен переноситься, а элементы управления оставаться доступными. Если ради красивой карточки приходится обрезать важное слово, пересмотри её размеры или порядок содержимого."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:199
+msgid "Слишком широкую строку трудно удерживать взглядом, слишком тесную приходится часто переносить. Подбирай ширину на живом материале и отдельно смотри списки, таблицы и подписи. Не пытайся сделать весь текст крупнее ради одного слабого заголовка. Плотность страницы складывается из нескольких решений, и исправлять удобнее конкретную причину."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:200
+msgid "Подпись кнопки должна обещать действие"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:201
+msgid "Расплывчато"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:201
+msgid "Понятнее в своём контексте"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:202
+msgid "Продолжить"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:202
+msgid "Отправить комментарий"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:203
+msgid "Подробнее"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:203
+msgid "Читать о резервных копиях"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:204
+msgid "Готово"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:204
+msgid "Сохранить настройки"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:206
+msgid "Это не универсальный словарь: подпись зависит от результата на конкретном экране. Иконка корзины подходит для знакомой команды удаления, но незнакомый символ без названия заставляет гадать. У кнопок должны быть доступные названия, а у действий с последствиями понятное подтверждение. Человек должен узнавать результат до нажатия, а не после ошибки."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:207
+msgid "Ошибка тоже часть страницы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:208
+msgid "Попробуй отправить форму без обязательного поля и с неверным адресом. Сообщение должно находиться рядом с причиной, объяснять исправление и не стирать уже введённый текст. При успешной отправке нужен столь же заметный результат. Если подтверждение спрятано ниже экрана, человек может нажать кнопку повторно и получить лишнее письмо или комментарий."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:209
+msgid "Во время ожидания важно не только изменить надпись на кнопке. Состояние должно предотвращать случайное повторение действия и оставаться понятным для клавиатуры и вспомогательных технологий. При сбое сети верни возможность повторить запрос. Не показывай успешный результат только потому, что отправка началась: это разные события."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:210
+msgid "Пройди маршрут без мыши"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:212
+msgid "Перемещайся клавишей Tab и следи, виден ли текущий элемент."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:213
+msgid "Открой меню и форму, затем попробуй закрыть их обычным ожидаемым действием."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:214
+msgid "Проверь порядок фокуса: он должен соответствовать смыслу страницы."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:215
+msgid "Убедись, что отличие состояния не передаётся только цветом."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:216
+msgid "Повтори основной сценарий с увеличенным масштабом и на телефоне."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:218
+msgid "Для имперской визуальной подачи достаточно выразительного шрифта заголовков, характерной иллюстрации и аккуратных акцентов. Основной текст не обязан имитировать старую печать или говорить архаизмами. Оформление может создавать атмосферу, пока содержание и управление остаются обычными и понятными. Если убрать украшения, хорошая страница всё ещё позволяет прочитать материал, отправить ответ и понять результат."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:219
+msgid "W3C: простые проверки доступности страницы"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:226
+msgid "Очередь сохранённых статей легко превращается в отдельную работу. В ней соседствуют полезная документация, обсуждения новых инструментов и новости, которые уже ничего не меняют. Информационная гигиена начинается не с запрета читать, а с вопроса: для чего мне этот материал сейчас? Ответ помогает оставить интерес к технологиям и перестать относиться к каждой непрочитанной ссылке как к невыполненному обязательству."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:227
+msgid "Раздели потоки по назначению"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:228
+msgid "У сообщения об изменении сервиса, которым ты пользуешься, и у обзора необычного устройства разная срочность. Первое может требовать действия, второе достаточно приятно прочитать в свободное время. Если оба попадают в одинаковые уведомления, внимание расходуется ещё до чтения. Отдельный канал для действительно важных сообщений уже уменьшает путаницу."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:230
+msgid "Срочное: сообщения о доступе, оплате и работе нужных тебе систем."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:231
+msgid "Рабочее: документация и материалы для текущей задачи."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:232
+msgid "Исследовательское: идеи, которые хочется изучить без обещания внедрения."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:233
+msgid "Развлекательное: чтение ради удовольствия, которому не нужен отчёт о пользе."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:235
+msgid "Не обязательно заводить четыре приложения. Достаточно разных папок, фильтров или понятного расписания. Важно не смешивать любопытство с обязательной реакцией. Тогда отключение лишнего уведомления не выглядит как риск пропустить всё на свете: сообщения, от которых действительно зависит работа, остаются отдельно."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:236
+msgid "Перед сохранением назови будущую задачу"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:237
+msgid "У ссылки должна быть причина остаться. Например: «нужна при переносе сайта» или «проверить способ восстановления базы». Такая короткая подпись полезнее длинного набора тегов. Если причину трудно назвать, можно прочитать материал сейчас или отпустить его. Возможность найти статью повторно часто стоит меньше, чем постоянное обслуживание огромной коллекции."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:238
+msgid "Не сохраняй подряд несколько пересказов одного объявления. Оставь первоисточник и, если требуется, один действительно полезный разбор. Для технического решения особенно важны версия, дата и условия применения. Статья может быть написана аккуратно, но относиться к другой версии программы или к среде, которая не похожа на твою."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:239
+msgid "Отделяй факт от уверенного тона"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:240
+msgid "В новости об инструменте найди исходное объявление или документацию. Проверь, доступна ли описанная возможность, кому именно и с какими ограничениями. Фразы «все переходят» и «это заменит разработчиков» редко помогают выбрать действие. Полезнее выяснить, какую небольшую задачу можно решить сегодня и сколько стоит проверка этого обещания."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:241
+msgid "Если источники расходятся, не нужно немедленно выбирать самый убедительный заголовок. Отметь, что пока неизвестно, и отложи решение, если от него ничего не зависит. Для настройки безопасности, совместимости или удаления данных лучше найти точный контракт, чем полагаться на популярность пересказа. Неопределённость бывает нормальным результатом чтения, а не личной недоработкой."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:242
+msgid "Не каждая интересная возможность должна становиться следующим проектом."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:243
+msgid "Завершай чтение маленьким результатом"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:244
+msgid "После полезной статьи запиши один вывод своими словами. Например: «экспорт этой программы нужно проверять вместе с вложениями». Если материал относится к текущей работе, добавь конкретную проверку в её список задач. Если не относится, не создавай искусственное обязательство. Достаточно понять идею и оставить ссылку там, где её можно найти по причине сохранения."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:245
+msgid "Что делать с давней очередью «прочитать позже»"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:245
+msgid "Просмотри названия и оставь только материалы с понятной текущей причиной. Остальное можно переместить в холодный архив без даты обязательного чтения. Не пытайся компенсировать пропущенные месяцы за один вечер. Очередь должна помогать выбирать, а не доказывать, сколько информации ты ещё не успел обработать."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:246
+msgid "Проверь новый режим на обычной неделе"
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:247
+msgid "Выбери небольшое окно для чтения вместо постоянного переключения между уведомлениями. В конце недели посмотри не на число открытых вкладок, а на последствия: было ли проще закончить работу, находились ли нужные источники, не пропустилось ли действительно важное сообщение. Это проверка устройства потока, а не соревнование в самодисциплине."
+msgstr ""
+
+#: inc/Seed/EditorialCatalog.php:248
+msgid "Подписки и привычки меняются вместе с задачами. То, что помогало изучать новый инструмент, может мешать после завершения проекта. Разреши себе пересматривать источники и оставлять время для чтения без немедленной практической цели. Спокойный телеграф не означает пустую ленту. Он означает, что важное, рабочее и просто интересное больше не требуют одинакового внимания."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:15
+msgid "Демонстрационный комментарий: проверку сохранения удобно выполнять отдельно от проверки внешнего вида. Создать запись, закрыть страницу и снова открыть её - короткий воспроизводимый сценарий."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:16
+msgid "Демонстрационный вопрос: входит ли в проверку восстановления открытие самих документов? Наличие имени файла ещё не показывает, что внутри сохранились нужные данные."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:17
+msgid ""
+"Демонстрационный пример команд для своего каталога лаборатории:\n"
+"\n"
+"```sh\n"
+"docker compose ps\n"
+"docker compose logs web\n"
+"```\n"
+"\n"
+"Команды показывают состояние и журнал; они не очищают чужие проекты."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:18
+msgid ""
+"Демонстрационный список перед запуском:\n"
+"\n"
+"- проверить свободный локальный порт;\n"
+"- подключить только папку примера;\n"
+"- не добавлять личные данные;\n"
+"- записать команду остановки."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:19
+msgid ""
+"Демонстрационный ответ с цитатой:\n"
+"\n"
+"> Пересоздание помогает проверить, где остались файлы.\n"
+"\n"
+"После запуска полезно изменить index.html, пересоздать контейнер и сравнить содержимое страницы. Это проверяет именно подключённую папку."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:27
+msgid "Обнаружены дубли редакционных демокомментариев."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:32
+msgid "Демокомментарий связан с другой статьёй."
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:41
+msgid "Демо-читатель"
+msgstr ""
+
+#: inc/Seed/EditorialComments.php:51
+msgid "Не удалось сохранить редакционный демокомментарий."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:17
+msgid "Запусти обновление через WP-CLI с параметром --user=admin."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:21
+msgid "Корзина отключена. Обновление остановлено, чтобы не удалить старые статьи навсегда."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:25
+msgid "Уже выполняется импорт демонстрационного содержимого."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:45
+msgid "Не удалось сохранить исходную точку восстановления."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:50
+msgid "Точка восстановления повреждена или относится к другой теме."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:65
+msgid "Новый набор статей создан не полностью; старые статьи не перемещались."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:75
+#, php-format
+msgid "Не удалось сохранить настройку %s."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:80
+msgid "Понятные статьи об IT и домашней мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:95
+#, php-format
+msgid "Архивная статья %d отсутствует; проверь резервную копию."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:98
+msgid "Архивная запись не соответствует границам обновления."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:102
+msgid "Статус архивной статьи изменился; автоматическое перемещение остановлено."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:106
+msgid "Не удалось переместить старую статью в корзину."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:114
+msgid "Не удалось защитить архивную статью от автоматической очистки."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:121
+msgid " Изменения оформления и перемещения этой попытки отменены."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:121
+msgid " Откат неполный: "
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:121
+#, php-format
+msgid "Исходная точка восстановления: %s."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:166
+msgid "Не удалось обновить отображаемое имя автора."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:174
+#, php-format
+msgid "Не удалось сохранить параметр %s."
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:188
+#, php-format
+msgid "статья %d"
+msgstr ""
+
+#: inc/Seed/EditorialRefreshService.php:213
+msgid "имя автора"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:28
+msgid "Начать с небольшого проекта"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:29
+msgid "Каталог домашних вещей помогает освоить цифровую мастерскую: поставить задачу, сохранить данные и проверить результат."
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:30
+msgid "Читать о первом проекте мастерской"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:32
+msgid "На связи"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:33
+msgid "Вопросы по статьям и идеи для мастерской можно отправить автору. Новые материалы собраны в еженедельном дайджесте."
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:34
+msgid "Написать через форму контактов"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:36
+msgid "Каналы связи"
+msgstr ""
+
+#: inc/Seed/EditorialWidgets.php:37
+msgid "Вопросы по публикациям и идеи для новых материалов можно отправить автору."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:44
+#, php-format
+msgid "Нет читаемого WebP-изображения: %s"
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:49
+msgid "Обработчик изображений WordPress не поддерживает WebP."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:65
+#, php-format
+msgid "Найдено несколько изображений с ключом %s."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:73
+#, php-format
+msgid "Редакционное изображение %s повреждено или не имеет метаданных."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:82
+msgid "Не удалось прочитать редакционное изображение."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:100
+msgid "Не удалось импортировать редакционное изображение."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:110
+msgid "Не удалось создать размеры редакционного изображения."
+msgstr ""
+
+#: inc/Seed/MediaSeeder.php:117
+msgid "Не удалось сохранить метки редакционного изображения."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:43
+#, php-format
+msgid "Найдено несколько статей с редакционным ключом %s."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:67
+#, php-format
+msgid "Не найдена категория %s."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:73
+#, php-format
+msgid "Не найдена обложка статьи %s."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:77
+msgid "Не удалось вернуть редакционную статью из корзины."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:102
+msgid "Не найден автор для редакционных статей."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:112
+msgid "Не удалось сохранить редакционную статью."
+msgstr ""
+
+#: inc/Seed/PostSeeder.php:118
+msgid "Сохранённая статья не прошла проверку меток, статуса или обложки."
+msgstr ""
+
+#: inc/Seed/SeedCoordinator.php:41
+msgid "Не удалось импортировать демо-контент."
+msgstr ""
+
+#: inc/SEO/Breadcrumbs.php:23
+msgid "Хлебные крошки"
+msgstr ""
+
+#: inc/SEO/Breadcrumbs.php:72
+#: search.php:15
+#, php-format
+msgid "Поиск: %s"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:32
+msgid "Элитная цифровая газета"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:34
+msgid "Персональный блог как имперский архив будущего: технологии, культура, письма редактора и спокойная роскошь дореволюционной типографики."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:35
+msgid "Читать хронику"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:37
+msgid "Связаться"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:40
+msgid ""
+"Петроград будущего передаёт сигнал\n"
+"Латунные протоколы готовы к чтению\n"
+"Архивные машины сортируют новые заметки\n"
+"Газетная полоса оживает в браузере"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:41
+msgid "Лента статей"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:42
+msgid "Новые листы из цифровой типографии"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:43
+msgid "Большие материалы, заметки и письма собраны в плотную, но спокойную редакционную сетку."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:45
+msgid "Имперская хроника"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:46
+msgid "Телеграфная лента последних публикаций"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:48
+msgid "Будущее выглядит убедительнее, когда у него есть бумажная память, ясная сетка и немного золотого света."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:49
+msgid "Из редакционного устава"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:50
+msgid "Скорость страницы — это тоже форма уважения. Красота не должна заставлять ждать."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:51
+msgid "Пометка на полях"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:52
+msgid "А"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:54
+msgid "Блог о коде, культуре и внимании"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:55
+msgid "Здесь личный опыт превращается в аккуратные заметки: без суеты, с практической пользой и визуальным характером."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:61
+msgid "Канцелярия связи"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:62
+msgid "Для писем, предложений и аккуратных сигналов из будущего."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:63
+msgid "Написать в редакцию"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:64
+msgid "Редакционный адрес"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:65
+msgid "Отправить письмо"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:69
+msgid "Письмо из Имперского архива"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:70
+msgid "Сколько будет 2 + 3?"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:72
+msgid "Письмо принято канцелярией. Спасибо, что написали."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:73
+msgid "Письмо не удалось отправить. Проверьте поля и попробуйте ещё раз."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:93
+msgid "Персональный блог о технологиях, культуре и будущем в эстетике Имперского архива."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:105
+msgid "Еженедельный имперский дайджест"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:106
+msgid "Раз в неделю: лучшие статьи, заметки из архива и спокойный редакционный шум без спама."
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:107
+msgid "Подписаться"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:116
+msgid ""
+"интерфейсы\n"
+"архив\n"
+"машины"
+msgstr ""
+
+#: inc/Settings/ThemeOptions.php:129
+msgid "Вы переходите на внешний сайт. Проверьте адрес и продолжайте только если доверяете источнику."
+msgstr ""
+
+#: inc/Share/ShareLinks.php:19
+#: inc/Share/SocialLinks.php:17
+#: inc/Share/SocialLinks.php:30
+msgid "ВК"
+msgstr ""
+
+#: inc/Share/ShareLinks.php:24
+#: inc/Share/SocialLinks.php:18
+#: inc/Share/SocialLinks.php:31
+msgid "ОК"
+msgstr ""
+
+#: inc/Share/ShareLinks.php:29
+#: inc/Share/SocialLinks.php:19
+#: inc/Share/SocialLinks.php:32
+msgid "Телеграм"
+msgstr ""
+
+#: inc/Share/ShareLinks.php:34
+#: inc/Share/SocialLinks.php:20
+#: inc/Share/SocialLinks.php:33
+msgid "МАКС"
+msgstr ""
+
+#: inc/Share/ShareLinks.php:39
+#: inc/Share/SocialLinks.php:21
+msgid "Почта"
+msgstr ""
+
+#: inc/Support/AssetLoader.php:67
+#: inc/Support/FrontendStrings.php:27
+msgid "Не удалось связаться с сервером. Повтори попытку."
+msgstr ""
+
+#: inc/Support/AssetLoader.php:68
+#: parts/site/notices.php:10
+msgid "Закрыть уведомление"
+msgstr ""
+
+#: inc/Support/AssetLoader.php:69
+msgid "В архиве пока нет таких листов."
+msgstr ""
+
+#: inc/Support/AssetLoader.php:70
+msgid "Архивная машина ищет..."
+msgstr ""
+
+#: inc/Support/AssetLoader.php:71
+msgid "Печать принята."
+msgstr ""
+
+#: inc/Support/AssetLoader.php:72
+msgid "Оценка комментария принята."
+msgstr ""
+
+#: inc/Support/AssetLoader.php:73
+#: inc/Support/FrontendStrings.php:54
+msgid "Сохранено"
+msgstr ""
+
+#: inc/Support/AssetLoader.php:74
+#: inc/Support/FrontendStrings.php:55
+#: parts/content/card.php:106
+#: parts/share/actions.php:33
+msgid "Закладка"
+msgstr ""
+
+#: inc/Support/Customizer.php:23
+msgid "Imperial Future: настройки темы"
+msgstr ""
+
+#: inc/Support/Customizer.php:24
+msgid "Премиум-настройки бренда, главной страницы, рекламы, SEO, контактов и интеграций."
+msgstr ""
+
+#: inc/Support/Customizer.php:28
+msgid "Палитра и светлая тема"
+msgstr ""
+
+#: inc/Support/Customizer.php:29
+msgid "Бренд, логотипы и шрифты"
+msgstr ""
+
+#: inc/Support/Customizer.php:30
+msgid "Главная: hero и CTA"
+msgstr ""
+
+#: inc/Support/Customizer.php:31
+msgid "Главная: блоки и цитаты"
+msgstr ""
+
+#: inc/Support/Customizer.php:32
+msgid "Эффекты и анимации"
+msgstr ""
+
+#: inc/Support/Customizer.php:33
+msgid "Контакты и капча"
+msgstr ""
+
+#: inc/Support/Customizer.php:34
+msgid "Социальные сети автора"
+msgstr ""
+
+#: inc/Support/Customizer.php:35
+msgid "Интеграции"
+msgstr ""
+
+#: inc/Support/Customizer.php:36
+msgid "Рекламные блоки"
+msgstr ""
+
+#: inc/Support/Customizer.php:37
+msgid "Счётчики и внешние скрипты"
+msgstr ""
+
+#: inc/Support/Customizer.php:38
+msgid "SEO, OpenGraph и Яндекс"
+msgstr ""
+
+#: inc/Support/Customizer.php:55
+msgid "Тёмная тема: фон"
+msgstr ""
+
+#: inc/Support/Customizer.php:56
+msgid "Тёмная тема: панели"
+msgstr ""
+
+#: inc/Support/Customizer.php:57
+msgid "Тёмная тема: золото"
+msgstr ""
+
+#: inc/Support/Customizer.php:58
+msgid "Тёмная тема: текст-заголовки"
+msgstr ""
+
+#: inc/Support/Customizer.php:59
+msgid "Тёмная тема: бронза"
+msgstr ""
+
+#: inc/Support/Customizer.php:60
+msgid "Тёмная тема: пергамент"
+msgstr ""
+
+#: inc/Support/Customizer.php:61
+msgid "Тёмная тема: акцент бордо"
+msgstr ""
+
+#: inc/Support/Customizer.php:62
+msgid "Светлая тема: фон"
+msgstr ""
+
+#: inc/Support/Customizer.php:63
+msgid "Светлая тема: панели"
+msgstr ""
+
+#: inc/Support/Customizer.php:64
+msgid "Светлая тема: основной текст"
+msgstr ""
+
+#: inc/Support/Customizer.php:65
+msgid "Светлая тема: золото"
+msgstr ""
+
+#: inc/Support/Customizer.php:70
+msgid "Шрифт заголовков"
+msgstr ""
+
+#: inc/Support/Customizer.php:75
+msgid "Шрифт текста"
+msgstr ""
+
+#: inc/Support/Customizer.php:80
+msgid "Логотип для тёмной темы"
+msgstr ""
+
+#: inc/Support/Customizer.php:81
+msgid "Логотип для светлой темы"
+msgstr ""
+
+#: inc/Support/Customizer.php:82
+msgid "Favicon"
+msgstr ""
+
+#: inc/Support/Customizer.php:87
+msgid "Hero: надзаголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:88
+msgid "Hero: заголовок (пусто = название сайта)"
+msgstr ""
+
+#: inc/Support/Customizer.php:89
+msgid "Hero: описание"
+msgstr ""
+
+#: inc/Support/Customizer.php:90
+msgid "Hero: текст первой кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:91
+msgid "Hero: ссылка первой кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:92
+msgid "Hero: текст второй кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:93
+msgid "Hero: ссылка второй кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:94
+msgid "Показывать живую газетную строку"
+msgstr ""
+
+#: inc/Support/Customizer.php:95
+msgid "Строки бегущей ленты, каждая с новой строки"
+msgstr ""
+
+#: inc/Support/Customizer.php:100
+msgid "Лента: надзаголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:101
+msgid "Лента: заголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:102
+msgid "Лента: описание"
+msgstr ""
+
+#: inc/Support/Customizer.php:103
+msgid "Лента: количество карточек"
+msgstr ""
+
+#: inc/Support/Customizer.php:104
+msgid "Телеграф: надзаголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:105
+msgid "Телеграф: заголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:106
+msgid "Телеграф: количество записей"
+msgstr ""
+
+#: inc/Support/Customizer.php:107
+msgid "Цитата 1: текст"
+msgstr ""
+
+#: inc/Support/Customizer.php:108
+msgid "Цитата 1: подпись"
+msgstr ""
+
+#: inc/Support/Customizer.php:109
+msgid "Цитата 2: текст"
+msgstr ""
+
+#: inc/Support/Customizer.php:110
+msgid "Цитата 2: подпись"
+msgstr ""
+
+#: inc/Support/Customizer.php:111
+msgid "Автор: символ печати"
+msgstr ""
+
+#: inc/Support/Customizer.php:112
+msgid "Автор: надзаголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:113
+msgid "Автор: заголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:114
+msgid "Автор: описание"
+msgstr ""
+
+#: inc/Support/Customizer.php:115
+msgid "Автор: текст кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:116
+msgid "Автор: ссылка кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:121
+msgid "Показывать кинематографичный preload"
+msgstr ""
+
+#: inc/Support/Customizer.php:122
+msgid "Показывать шум плёнки"
+msgstr ""
+
+#: inc/Support/Customizer.php:123
+msgid "Показывать пыль в воздухе"
+msgstr ""
+
+#: inc/Support/Customizer.php:128
+msgid "Контакты: надзаголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:129
+msgid "Контакты: описание"
+msgstr ""
+
+#: inc/Support/Customizer.php:130
+msgid "Форма: заголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:131
+msgid "Боковой блок: заголовок"
+msgstr ""
+
+#: inc/Support/Customizer.php:132
+msgid "Форма: текст кнопки"
+msgstr ""
+
+#: inc/Support/Customizer.php:133
+msgid "Форма: email получателя"
+msgstr ""
+
+#: inc/Support/Customizer.php:134
+msgid "Форма: префикс темы письма"
+msgstr ""
+
+#: inc/Support/Customizer.php:135
+msgid "Включить имперскую капчу-картинку"
+msgstr ""
+
+#: inc/Support/Customizer.php:136
+msgid "Сообщение после отправки"
+msgstr ""
+
+#: inc/Support/Customizer.php:137
+msgid "Сообщение при ошибке"
+msgstr ""
+
+#: inc/Support/Customizer.php:142
+msgid "Автор: ссылка ВК"
+msgstr ""
+
+#: inc/Support/Customizer.php:143
+msgid "Автор: ссылка ОК"
+msgstr ""
+
+#: inc/Support/Customizer.php:144
+msgid "Автор: ссылка Telegram"
+msgstr ""
+
+#: inc/Support/Customizer.php:145
+msgid "Автор: ссылка МАКС"
+msgstr ""
+
+#: inc/Support/Customizer.php:146
+msgid "Автор: email"
+msgstr ""
+
+#: inc/Support/Customizer.php:151
+msgid "ID Яндекс.Метрики"
+msgstr ""
+
+#: inc/Support/Customizer.php:152
+msgid "Ссылка VK для блока контактов"
+msgstr ""
+
+#: inc/Support/Customizer.php:153
+msgid "Ссылка Telegram для блока контактов"
+msgstr ""
+
+#: inc/Support/Customizer.php:154
+msgid "Ссылка ОК для блока контактов"
+msgstr ""
+
+#: inc/Support/Customizer.php:155
+msgid "Ссылка МАКС для блока контактов"
+msgstr ""
+
+#: inc/Support/Customizer.php:156
+msgid "Показывать страницу предупреждения для внешних ссылок"
+msgstr ""
+
+#: inc/Support/Customizer.php:157
+msgid "Внешние ссылки: задержка перехода в секундах"
+msgstr ""
+
+#: inc/Support/Customizer.php:158
+msgid "Внешние ссылки: домены без предупреждения, каждый с новой строки, можно *.site.ru"
+msgstr ""
+
+#: inc/Support/Customizer.php:159
+msgid "Внешние ссылки: текст предупреждения"
+msgstr ""
+
+#: inc/Support/Customizer.php:165
+#, php-format
+msgid "Реклама: включить позицию «%s»"
+msgstr ""
+
+#: inc/Support/Customizer.php:166
+#, php-format
+msgid "Реклама: код позиции «%s»"
+msgstr ""
+
+#: inc/Support/Customizer.php:172
+msgid "Код счётчиков перед </head>"
+msgstr ""
+
+#: inc/Support/Customizer.php:173
+msgid "Код счётчиков сразу после <body>"
+msgstr ""
+
+#: inc/Support/Customizer.php:178
+msgid "Включить встроенный SEO-вывод темы"
+msgstr ""
+
+#: inc/Support/Customizer.php:179
+msgid "SEO: описание по умолчанию"
+msgstr ""
+
+#: inc/Support/Customizer.php:180
+msgid "SEO: суффикс title"
+msgstr ""
+
+#: inc/Support/Customizer.php:181
+msgid "OpenGraph: изображение по умолчанию"
+msgstr ""
+
+#: inc/Support/Customizer.php:182
+msgid "Яндекс.Вебмастер: verification meta content"
+msgstr ""
+
+#: inc/Support/Customizer.php:183
+msgid "Noindex для страницы поиска"
+msgstr ""
+
+#: inc/Support/Customizer.php:184
+msgid "Noindex для архивов"
+msgstr ""
+
+#: inc/Support/Customizer.php:318
+msgid "после hero"
+msgstr ""
+
+#: inc/Support/Customizer.php:319
+msgid "перед контентом"
+msgstr ""
+
+#: inc/Support/Customizer.php:320
+msgid "после контента"
+msgstr ""
+
+#: inc/Support/Customizer.php:321
+msgid "сайдбар статьи"
+msgstr ""
+
+#: inc/Support/Customizer.php:322
+msgid "подвал сайта"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:23
+msgid "Функции публикаций"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:29
+msgid "Кабинет, вход и поиск"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:34
+msgid "Автоматически создавать обложку, если у статьи нет изображения"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:35
+msgid "Показывать блок еженедельного дайджеста"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:36
+msgid "Дайджест: заголовок"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:37
+msgid "Дайджест: описание"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:38
+msgid "Дайджест: текст кнопки"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:40
+msgid "Включить оценки материалов"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:41
+msgid "Тип оценки статьи"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:42
+msgid "Звёзды"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:43
+msgid "Палец вверх / вниз"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:44
+msgid "Эмодзи"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:46
+msgid "Эмодзи через запятую"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:48
+msgid "Hero: режим первого экрана"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:49
+msgid "Статичный редакционный блок"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:50
+msgid "Слайдер избранных статей"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:52
+msgid "Hero: количество статей в слайдере"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:53
+msgid "Hero-слайдер: источник фона"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:54
+msgid "Готовый пресет"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:55
+msgid "Своя картинка"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:56
+msgid "CSS background"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:58
+msgid "Hero-слайдер: пресет фона"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:59
+msgid "Латунный архив"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:60
+msgid "Бордовая канцелярия"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:61
+msgid "Северное сияние"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:62
+msgid "Графит и золото"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:64
+msgid "Hero-слайдер: своя фоновая картинка"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:65
+msgid "Hero-слайдер: CSS background"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:67
+msgid "Почта: From email отправителя"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:68
+msgid "Почта: имя отправителя"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:70
+msgid "Включить всплывающий живой поиск"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:71
+msgid "Поиск: примеры запросов, каждый с новой строки"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:72
+msgid "Включить мини-кабинет и всплывающую форму входа"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:74
+msgid "Вход через VK"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:75
+msgid "VK OAuth Client ID"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:76
+msgid "VK OAuth Secret"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:77
+msgid "Вход через Яндекс"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:78
+msgid "Яндекс OAuth Client ID"
+msgstr ""
+
+#: inc/Support/FeatureCustomizer.php:79
+msgid "Яндекс OAuth Secret"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:13
+#, php-format
+msgid "Сила пароля: %s"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:14
+#: parts/rating/panel.php:36
+#, php-format
+msgid "%s из 5"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:15
+#: parts/rating/panel.php:118
+#, php-format
+msgid "Профиль: %s"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:16
+msgid "Закладка удалена"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:17
+#: parts/content/card.php:103
+#: parts/share/actions.php:30
+msgid "Добавить в закладки"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:18
+#: parts/content/card.php:103
+#: parts/share/actions.php:30
+msgid "Удалить из закладок"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:19
+msgid "Избранные публикации"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:20
+msgid "Перейти к слайду {{index}}"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:21
+msgid "Не удалось выполнить действие. Попробуй ещё раз."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:22
+msgid "Закрыть изображение"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:23
+msgid "Предыдущее изображение"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:24
+msgid "Следующее изображение"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:25
+msgid "Положение выбрано. Печать проверится при отправке."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:26
+msgid "Поиск..."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:28
+msgid "не указана"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:29
+msgid "слабая"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:30
+msgid "надёжная"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:31
+msgid "крепкая"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:32
+msgid "императорская"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:33
+#: parts/rating/panel.php:111
+msgid "Кто оценил"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:34
+#: inc/Support/RussianPluralizer.php:66
+msgid "голосов"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:35
+#: inc/Support/RussianPluralizer.php:64
+msgid "голос"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:36
+#: inc/Support/RussianPluralizer.php:65
+msgid "голоса"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:37
+msgid "Напишите комментарий. Markdown поддерживается."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:38
+msgid "Подготовка предпросмотра..."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:40
+msgid "Жирный текст"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:42
+msgid "Курсив"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:43
+msgid "Ц"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:45
+msgid "Блок кода"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:48
+#: parts/share/actions.php:48
+msgid "Ссылка"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:49
+msgid "Вид"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:50
+msgid "Предпросмотр"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:51
+msgid "EasyMDE не загрузился, оставлен обычный textarea."
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:52
+msgid "Скопировано"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:53
+msgid "Скопируйте ссылку"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:56
+msgid "Копировать"
+msgstr ""
+
+#: inc/Support/FrontendStrings.php:57
+msgid "Скопируйте код"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:46
+msgid "комментарий"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:47
+msgid "комментария"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:48
+msgid "комментариев"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:55
+msgid "ответ"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:56
+msgid "ответа"
+msgstr ""
+
+#: inc/Support/RussianPluralizer.php:57
+msgid "ответов"
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:20
+msgid "Боковая колонка статьи"
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:22
+msgid "Виджеты для sticky-колонки внутри публикаций и архивов."
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:30
+msgid "Нижний архивный пояс"
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:32
+msgid "Короткие редакционные блоки в футере."
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:40
+msgid "Домашняя витрина виджетов"
+msgstr ""
+
+#: inc/Support/SidebarRegistrar.php:42
+msgid "Промо, подборки и редакционные виджеты между лентой и телеграфной хроникой."
+msgstr ""
+
+#: inc/Support/ThemeSetup.php:44
+#: parts/site/nav.php:10
+msgid "Главная навигация"
+msgstr ""
+
+#: inc/Support/UserNotice.php:20
+msgid "Не удалось войти. Проверь логин и пароль."
+msgstr ""
+
+#: inc/Support/UserNotice.php:21
+msgid "Ты вошёл в личный кабинет."
+msgstr ""
+
+#: inc/Support/UserNotice.php:22
+msgid "Аккаунт создан. Добро пожаловать!"
+msgstr ""
+
+#: inc/Support/UserNotice.php:23
+msgid "Не удалось зарегистрироваться. Проверь данные и доступность регистрации."
+msgstr ""
+
+#: inc/Support/UserNotice.php:24
+msgid "Для этого действия нужно войти."
+msgstr ""
+
+#: inc/Support/UserNotice.php:25
+msgid "Если такой аккаунт существует, письмо для восстановления отправлено на его почту."
+msgstr ""
+
+#: inc/Support/UserNotice.php:26
+msgid "Вход через соцсеть не завершён. Попробуй ещё раз или войди с паролем."
+msgstr ""
+
+#: inc/Support/UserNotice.php:27
+msgid "Вход через соцсеть пока не настроен."
+msgstr ""
+
+#: inc/Support/UserNotice.php:28
+msgid "Социальный аккаунт привязан."
+msgstr ""
+
+#: inc/Support/UserNotice.php:32
+msgid "Перемести печать на отмеченное место и отправь письмо ещё раз."
+msgstr ""
+
+#: inc/Support/UserNotice.php:34
+msgid "Письмо не отправлено. Попробуй позже или свяжись с автором другим способом."
+msgstr ""
+
+#: inc/Support/UserNotice.php:37
+msgid "Подписка оформлена."
+msgstr ""
+
+#: inc/Support/UserNotice.php:38
+msgid "Проверь почту и подтверди подписку."
+msgstr ""
+
+#: inc/Support/UserNotice.php:39
+msgid "Ты отписался от дайджеста."
+msgstr ""
+
+#: inc/Support/UserNotice.php:40
+msgid "Не удалось оформить подписку. Проверь адрес и попробуй позже."
+msgstr ""
+
+#: inc/Support/UserNotice.php:41
+msgid "Слишком много попыток. Попробуй позже."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:29
+msgid "Профиль обновлён. Архивная карточка приведена в порядок."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:30
+msgid "Не удалось сохранить профиль. Проверь имя и адрес почты."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:31
+msgid "Аватар обновлён и аккуратно вписан в печать."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:32
+msgid "Пароль изменён. Сеанс защищён новым ключом."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:33
+msgid "Текущий пароль указан неверно."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:34
+msgid "Новый пароль должен совпадать в обоих полях и быть не короче 12 символов."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:35
+msgid "Не удалось обновить аватар. Проверьте формат PNG, JPG или WebP."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:36
+msgid "Сессия устарела. Обновите страницу и повторите действие."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:37
+msgid "Слишком много попыток. Подождите немного перед следующим действием."
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:66
+#: page-account.php:77
+#: page-account.php:238
+msgid "Закладки"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:68
+msgid "сохранено"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:71
+#: page-account.php:78
+msgid "Комментарии"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:73
+msgid "опубликовано"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:76
+msgid "Подписки"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:78
+msgid "активно"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:104
+msgid "Дата вступления уточняется"
+msgstr ""
+
+#: inc/Template/AccountViewModel.php:107
+#, php-format
+msgid "В архиве с %s"
+msgstr ""
+
+#: inc/Template/TemplateTags.php:21
+#, php-format
+msgid "%1$s · %2$d мин. чтения"
+msgstr ""
+
+#: inc/Template/TemplateTags.php:32
+msgid "Архив"
+msgstr ""
+
+#: inc/Template/TemplateTags.php:115
+msgid "Подборка материалов из имперского цифрового архива."
+msgstr ""
+
+#: inc/Template/TemplateTags.php:119
+msgid "Все публикации автора, собранные в единую редакционную ленту."
+msgstr ""
+
+#: inc/Template/TemplateTags.php:123
+#, php-format
+msgid "Результаты поиска по запросу «%s»."
+msgstr ""
+
+#: inc/Template/TemplateTags.php:126
+msgid "Свежие записи, хроники и заметки из будущего архива."
+msgstr ""
+
+#: index.php:12
+msgid "Архивная лента"
+msgstr ""
+
+#: index.php:13
+#: parts/layout/archive-header.php:19
+msgid "Все публикации"
+msgstr ""
+
+#: index.php:14
+msgid "Полная полоса заметок, хроник и писем редактора."
+msgstr ""
+
+#: index.php:27
+msgid "Пока архив молчит."
+msgstr ""
+
+#: page-account.php:21
+#: parts/auth/modal.php:19
+msgid "Кабинет читателя"
+msgstr ""
+
+#: page-account.php:22
+msgid "Личный кабинет"
+msgstr ""
+
+#: page-account.php:29
+msgid "Доступ закрыт"
+msgstr ""
+
+#: page-account.php:30
+msgid "Войдите в архив"
+msgstr ""
+
+#: page-account.php:31
+msgid "Кабинет доступен после входа или регистрации. Внутри будут профиль, закладки, подписки и безопасная смена пароля."
+msgstr ""
+
+#: page-account.php:32
+msgid "Открыть вход"
+msgstr ""
+
+#: page-account.php:43
+msgid "Сводка личного кабинета"
+msgstr ""
+
+#: page-account.php:47
+msgid "Паспорт архива"
+msgstr ""
+
+#: page-account.php:66
+msgid "Новая публикация"
+msgstr ""
+
+#: page-account.php:67
+msgid "Мои публикации"
+msgstr ""
+
+#: page-account.php:69
+msgid "Выйти"
+msgstr ""
+
+#: page-account.php:74
+msgid "Разделы кабинета"
+msgstr ""
+
+#: page-account.php:75
+msgid "Профиль и подписки"
+msgstr ""
+
+#: page-account.php:84
+msgid "Профиль"
+msgstr ""
+
+#: page-account.php:85
+msgid "Данные читателя"
+msgstr ""
+
+#: page-account.php:86
+msgid "Имя и email используются в комментариях, уведомлениях и дайджесте."
+msgstr ""
+
+#: page-account.php:94
+msgid "Публичное имя"
+msgstr ""
+
+#: page-account.php:105
+msgid "Подписки и уведомления"
+msgstr ""
+
+#: page-account.php:106
+msgid "Выберите только те сигналы, которые действительно полезны."
+msgstr ""
+
+#: page-account.php:112
+msgid "Еженедельный дайджест"
+msgstr ""
+
+#: page-account.php:113
+msgid "Лучшие публикации недели одним письмом."
+msgstr ""
+
+#: page-account.php:120
+msgid "Новые комментарии к публикациям"
+msgstr ""
+
+#: page-account.php:121
+msgid "Уведомления о новых обсуждениях под материалами."
+msgstr ""
+
+#: page-account.php:128
+msgid "Ответы на мои комментарии"
+msgstr ""
+
+#: page-account.php:129
+msgid "Только прямые ответы, без лишнего шума."
+msgstr ""
+
+#: page-account.php:136
+msgid "Сохранить изменения"
+msgstr ""
+
+#: page-account.php:143
+msgid "Сменить пароль"
+msgstr ""
+
+#: page-account.php:144
+msgid "После смены пароля текущий сеанс останется активным."
+msgstr ""
+
+#: page-account.php:149
+msgid "Текущий пароль"
+msgstr ""
+
+#: page-account.php:150
+msgid "Новый пароль"
+msgstr ""
+
+#: page-account.php:153
+#: parts/auth/modal.php:64
+msgid "Сила пароля: не указана"
+msgstr ""
+
+#: page-account.php:155
+msgid "Повторите пароль"
+msgstr ""
+
+#: page-account.php:157
+msgid "Обновить пароль"
+msgstr ""
+
+#: page-account.php:163
+msgid "Печать"
+msgstr ""
+
+#: page-account.php:164
+msgid "Аватар"
+msgstr ""
+
+#: page-account.php:165
+msgid "Изображение будет обрезано в квадрат и сохранено как личная печать."
+msgstr ""
+
+#: page-account.php:172
+msgid "PNG, JPG или WebP"
+msgstr ""
+
+#: page-account.php:174
+msgid "Выбрать изображение"
+msgstr ""
+
+#: page-account.php:175
+msgid "Файл не выбран"
+msgstr ""
+
+#: page-account.php:178
+msgid "Обновить аватар"
+msgstr ""
+
+#: page-account.php:184
+msgid "Ключи"
+msgstr ""
+
+#: page-account.php:185
+msgid "Социальный вход"
+msgstr ""
+
+#: page-account.php:186
+msgid "Привяжите быстрый вход, чтобы не вспоминать пароль на каждом устройстве."
+msgstr ""
+
+#: page-account.php:193
+#: page-account.php:203
+msgid "Привязан"
+msgstr ""
+
+#: page-account.php:195
+msgid "Привязать VK"
+msgstr ""
+
+#: page-account.php:197
+#: page-account.php:207
+msgid "Отключён"
+msgstr ""
+
+#: page-account.php:201
+msgid "Яндекс"
+msgstr ""
+
+#: page-account.php:205
+msgid "Привязать Яндекс"
+msgstr ""
+
+#: page-account.php:215
+msgid "Активность"
+msgstr ""
+
+#: page-account.php:216
+msgid "Мои реплики"
+msgstr ""
+
+#: page-account.php:217
+msgid "Последние одобренные комментарии из архива."
+msgstr ""
+
+#: page-account.php:221
+msgid "Пока нет опубликованных комментариев. Самое время оставить первую архивную пометку."
+msgstr ""
+
+#: page-account.php:239
+msgid "Сохранённые публикации"
+msgstr ""
+
+#: page-account.php:241
+msgid "Личный список материалов, к которым удобно вернуться позже."
+msgstr ""
+
+#: page-account.php:245
+msgid "Здесь появятся материалы, которые вы отметите звездой под публикацией."
+msgstr ""
+
+#: page-contacts.php:19
+msgid "Печать не совпала с латунной меткой. Перетащите её на отмеченное место и отправьте письмо ещё раз."
+msgstr ""
+
+#: page-contacts.php:20
+msgid "WordPress принял форму, но почтовый транспорт сервера не отправил письмо."
+msgstr ""
+
+#: page-contacts.php:50
+msgid "Ваше имя"
+msgstr ""
+
+#: page-contacts.php:54
+msgid "Email для ответа"
+msgstr ""
+
+#: page-contacts.php:58
+msgid "Тема письма"
+msgstr ""
+
+#: page-contacts.php:62
+msgid "Сообщение"
+msgstr ""
+
+#: page-contacts.php:67
+msgid "Перетащи печать в круг"
+msgstr ""
+
+#: page-contacts.php:72
+msgid "Круглая метка для печати"
+msgstr ""
+
+#: page-contacts.php:75
+msgid "Совмести центры печати и круга. Можно двигать пальцем или стрелками на клавиатуре."
+msgstr ""
+
+#: page-contacts.php:76
+msgid "Печать ещё не перемещена."
+msgstr ""
+
+#: page-contacts.php:81
+msgid "Не заполняйте это поле"
+msgstr ""
+
+#: page.php:17
+msgid "Страница архива"
+msgstr ""
+
+#: page.php:25
+#: single.php:94
+msgid "Страницы публикации"
+msgstr ""
+
+#: parts/admin/demo-import.php:10
+msgid "Демо-контент добавлен. Существующие материалы, меню и виджеты сохранены."
+msgstr ""
+
+#: parts/admin/demo-import.php:12
+msgid "Импорт не завершён. Проверь доступ к папке загрузок и повтори попытку."
+msgstr ""
+
+#: parts/admin/demo-import.php:14
+msgid "Добавить статьи, изображения, рубрики, страницы контактов и кабинета, примеры комментариев? Меню и виджеты заполняются только в свободных областях."
+msgstr ""
+
+#: parts/admin/demo-import.php:18
+msgid "Добавить демо-контент"
+msgstr ""
+
+#: parts/auth/modal.php:16
+msgid "Вход в кабинет"
+msgstr ""
+
+#: parts/auth/modal.php:17
+msgid "Закрыть"
+msgstr ""
+
+#: parts/auth/modal.php:18
+msgid "Личный архив"
+msgstr ""
+
+#: parts/auth/modal.php:26
+msgid "Войти через VK"
+msgstr ""
+
+#: parts/auth/modal.php:32
+msgid "Войти через Яндекс"
+msgstr ""
+
+#: parts/auth/modal.php:39
+msgid "Вход"
+msgstr ""
+
+#: parts/auth/modal.php:41
+msgid "Регистрация"
+msgstr ""
+
+#: parts/auth/modal.php:43
+#: parts/auth/modal.php:50
+msgid "Пароль"
+msgstr ""
+
+#: parts/auth/modal.php:49
+#: parts/auth/modal.php:73
+msgid "Логин или email"
+msgstr ""
+
+#: parts/auth/modal.php:51
+msgid "Запомнить меня"
+msgstr ""
+
+#: parts/auth/modal.php:52
+msgid "Войти"
+msgstr ""
+
+#: parts/auth/modal.php:59
+msgid "Логин"
+msgstr ""
+
+#: parts/auth/modal.php:61
+msgid "Пароль от 12 символов"
+msgstr ""
+
+#: parts/auth/modal.php:66
+msgid "Зарегистрироваться"
+msgstr ""
+
+#: parts/auth/modal.php:74
+msgid "Восстановить пароль"
+msgstr ""
+
+#: parts/content/card.php:43
+msgid "Открыть публикацию"
+msgstr ""
+
+#: parts/content/card.php:50
+#: single.php:46
+msgid "Метки публикации"
+msgstr ""
+
+#: parts/content/card.php:69
+msgid "Показать полностью"
+msgstr ""
+
+#: parts/content/card.php:75
+msgid "Реакции"
+msgstr ""
+
+#: parts/content/card.php:106
+#: parts/share/actions.php:33
+msgid "В закладках"
+msgstr ""
+
+#: parts/content/card.php:110
+#: parts/share/actions.php:38
+#: parts/share/actions.php:40
+msgid "Поделиться"
+msgstr ""
+
+#: parts/content/related.php:23
+msgid "Ещё почитать"
+msgstr ""
+
+#: parts/content/related.php:24
+msgid "Материалы из соседних папок архива"
+msgstr ""
+
+#: parts/content/tags.php:14
+msgid "Теги материала"
+msgstr ""
+
+#: parts/content/tags.php:15
+msgid "Бирки архива"
+msgstr ""
+
+#: parts/layout/archive-header.php:18
+msgid "Архивная полоса"
+msgstr ""
+
+#: parts/newsletter/form.php:14
+msgid "Подписка"
+msgstr ""
+
+#: parts/newsletter/form.php:22
+msgid "Email для дайджеста"
+msgstr ""
+
+#: parts/newsletter/form.php:23
+msgid "Ваш email"
+msgstr ""
+
+#: parts/rating/panel.php:35
+msgid "Оценка публикации"
+msgstr ""
+
+#: parts/rating/panel.php:39
+msgid "Поставить оценку"
+msgstr ""
+
+#: parts/rating/panel.php:50
+#, php-format
+msgid "Оценить на %s из 5"
+msgstr ""
+
+#: parts/rating/panel.php:59
+msgid "Оценить публикацию"
+msgstr ""
+
+#: parts/rating/panel.php:82
+msgid "Поставить реакцию"
+msgstr ""
+
+#: parts/rating/panel.php:128
+msgid "Войдите, чтобы оценить"
+msgstr ""
+
+#: parts/search/modal.php:14
+#: searchform.php:10
+msgid "Поиск по архиву"
+msgstr ""
+
+#: parts/search/modal.php:15
+msgid "Закрыть поиск"
+msgstr ""
+
+#: parts/search/modal.php:16
+msgid "Архивный поиск"
+msgstr ""
+
+#: parts/search/modal.php:17
+msgid "Найдём нужный лист"
+msgstr ""
+
+#: parts/search/modal.php:20
+msgid "Введите поисковый запрос"
+msgstr ""
+
+#: parts/search/modal.php:21
+msgid "Начните с трёх символов..."
+msgstr ""
+
+#: parts/search/modal.php:23
+#: searchform.php:11
+msgid "Найти"
+msgstr ""
+
+#: parts/search/modal.php:26
+msgid "Примеры запросов"
+msgstr ""
+
+#: parts/share/actions.php:18
+msgid "Действия публикации"
+msgstr ""
+
+#: parts/share/actions.php:46
+msgid "Скопировать ссылку"
+msgstr ""
+
+#: parts/site/nav.php:14
+msgid "Меню"
+msgstr ""
+
+#: parts/site/notices.php:6
+msgid "Уведомления"
+msgstr ""
+
+#: search.php:14
+msgid "Поисковый телеграф"
+msgstr ""
+
+#: search.php:30
+msgid "Архив не нашёл подходящих записей. Попробуйте другой запрос."
+msgstr ""
+
+#: searchform.php:9
+msgid "Найти в архиве"
+msgstr ""
+
+#: single.php:77
+msgid "В этой статье"
+msgstr ""
+
+#: single.php:77
+msgid "пункт"
+msgstr ""
+
+#: single.php:77
+msgid "пункта"
+msgstr ""
+
+#: single.php:77
+msgid "пунктов"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Имперская ночь"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Архивная панель"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Латунное золото"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Старая бумага"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Бронза"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Бордовая печать"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Imperial Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Imperial Body"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Малый"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Обычный"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Крупный"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Газетный"
+msgstr ""

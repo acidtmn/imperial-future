@@ -1,0 +1,22 @@
+{
+    "name": "imperial-future/theme",
+    "description": "Imperial Future WordPress theme",
+    "homepage": "https://kodalexandrova.ru/",
+    "authors": [
+        { "name": "Кирилл Александров", "homepage": "https://kodalexandrova.ru/" }
+    ],
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": { "ImperialFuture\\": "inc/" }
+    },
+    "require": {
+        "php": ">=8.3",
+        "league/commonmark": "^2.7",
+        "league/html-to-markdown": "^5.1"
+    },
+    "config": {
+        "platform": { "php": "8.3.0" },
+        "sort-packages": true
+    }
+}

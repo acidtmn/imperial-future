@@ -1,0 +1,15 @@
+import '@fontsource-variable/inter/index.css';
+import '@fontsource/oranienbaum/cyrillic-400.css';
+import '@fontsource/oranienbaum/latin-400.css';
+import '@fontsource/forum/cyrillic-400.css';
+import '@fontsource/forum/latin-400.css';
+import '@fontsource/prata/cyrillic-400.css';
+import '@fontsource/prata/latin-400.css';
+import '@fontsource/pt-sans/cyrillic-400.css';
+import '@fontsource/pt-sans/latin-400.css';
+import '@fontsource/pt-sans/cyrillic-700.css';
+import '@fontsource/pt-sans/latin-700.css';
+import '@fontsource/ibm-plex-sans/cyrillic-400.css';
+import '@fontsource/ibm-plex-sans/latin-400.css';
+import '@fontsource/ibm-plex-sans/cyrillic-700.css';
+import '@fontsource/ibm-plex-sans/latin-700.css';

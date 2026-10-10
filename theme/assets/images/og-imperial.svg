@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Imperial Future">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1b1b22"/>
+      <stop offset="55%" stop-color="#0f0f12"/>
+      <stop offset="100%" stop-color="#2a1618"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="54%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity=".38"/>
+      <stop offset="72%" stop-color="#d4af37" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 14h28M14 0v28" stroke="#efe3c2" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="56" y="54" width="1088" height="522" fill="none" stroke="#d4af37" stroke-width="4"/>
+  <rect x="84" y="82" width="1032" height="466" fill="none" stroke="#f4e7c5" stroke-opacity=".36"/>
+  <circle cx="600" cy="315" r="142" fill="none" stroke="#d4af37" stroke-width="2" opacity=".55"/>
+  <path d="M214 415c142-88 248-96 368-35 142 73 256 46 407-58" fill="none" stroke="#d4af37" stroke-width="4" opacity=".78"/>
+  <text x="600" y="270" text-anchor="middle" fill="#f4e7c5" font-family="Georgia, serif" font-size="66" letter-spacing="2">Imperial Future</text>
+  <text x="600" y="330" text-anchor="middle" fill="#d4af37" font-family="Georgia, serif" font-size="26" letter-spacing="7">ЦИФРОВОЙ АРХИВ</text>
+  <text x="600" y="390" text-anchor="middle" fill="#efe3c2" font-family="Arial, sans-serif" font-size="24">персональный блог в стиле ретро-футуризма</text>
+</svg>

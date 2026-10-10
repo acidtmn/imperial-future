@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Imperial avatar">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="25%" r="72%">
+      <stop offset="0" stop-color="#f4e7c5"/>
+      <stop offset=".55" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#7a5c2e"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" rx="120" fill="#0f0f12"/>
+  <circle cx="120" cy="120" r="104" fill="url(#g)" opacity=".92"/>
+  <circle cx="120" cy="120" r="86" fill="#1b1b22" opacity=".92"/>
+  <circle cx="120" cy="120" r="66" fill="none" stroke="#d4af37" stroke-width="4"/>
+  <text x="120" y="143" text-anchor="middle" fill="#f4e7c5" font-family="Georgia,serif" font-size="78">И</text>
+  <path d="M62 118h116M120 62v116" stroke="#d4af37" stroke-width="2" opacity=".42"/>
+</svg>

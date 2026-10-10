@@ -1,0 +1,21 @@
+/*
+Theme Name: Imperial Future
+Theme URI: https://kodalexandrova.ru/
+Author: Кирилл Александров
+Author URI: https://kodalexandrova.ru/
+Description: Кастомная тема персонального блога в эстетике цифрового архива Российской Империи будущего.
+Version: 1.1.1
+Requires at least: 6.6
+Tested up to: 7.0
+Requires PHP: 8.3
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Copyright: 2026 Кирилл Александров
+Text Domain: imperial-future
+Domain Path: /languages
+Tags: blog, custom-colors, custom-logo, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+*/
+
+body {
+  margin: 0;
+}

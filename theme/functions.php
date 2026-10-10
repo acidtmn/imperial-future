@@ -1,0 +1,87 @@
+<?php
+declare(strict_types=1);
+
+use ImperialFuture\SEO\MetaRenderer;
+use ImperialFuture\SEO\SchemaRenderer;
+use ImperialFuture\Seed\SeedCoordinator;
+use ImperialFuture\Auth\AccountPageRegistrar;
+use ImperialFuture\Auth\AdminAccessGuard;
+use ImperialFuture\Auth\AuthHandler;
+use ImperialFuture\Auth\AvatarService;
+use ImperialFuture\Auth\SocialAuthHandler;
+use ImperialFuture\Bookmark\BookmarkAjaxController;
+use ImperialFuture\Comments\AdminMarkdownCommentEditor;
+use ImperialFuture\Comments\CommentVoteAjaxController;
+use ImperialFuture\Comments\CommentSupport;
+use ImperialFuture\Contact\CaptchaImageController;
+use ImperialFuture\Contact\ContactFormHandler;
+use ImperialFuture\Content\FileBlockEnhancer;
+use ImperialFuture\Embed\RichEmbedSupport;
+use ImperialFuture\External\ExternalExitController;
+use ImperialFuture\External\ExternalLinkContentFilter;
+use ImperialFuture\Media\DefaultAvatar;
+use ImperialFuture\Media\GeneratedFeaturedImageHooks;
+use ImperialFuture\Comments\MarkdownCommentRenderer;
+use ImperialFuture\Newsletter\CommentNotificationService;
+use ImperialFuture\Newsletter\NewsletterHandler;
+use ImperialFuture\Rating\RatingAjaxController;
+use ImperialFuture\Security\SecurityHeaders;
+use ImperialFuture\Search\LiveSearchController;
+use ImperialFuture\Slug\SlugTransliterationHooks;
+use ImperialFuture\Support\AssetLoader;
+use ImperialFuture\Support\CounterRenderer;
+use ImperialFuture\Support\Customizer;
+use ImperialFuture\Support\DynamicStyles;
+use ImperialFuture\Support\FeatureCustomizer;
+use ImperialFuture\Support\FaviconRenderer;
+use ImperialFuture\Support\PerformanceTweaks;
+use ImperialFuture\Support\SidebarRegistrar;
+use ImperialFuture\Support\SvgUploadSupport;
+use ImperialFuture\Support\ThemeSetup;
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+ThemeSetup::registerHooks();
+AssetLoader::registerHooks();
+CommentSupport::registerHooks();
+AdminMarkdownCommentEditor::registerHooks();
+CommentVoteAjaxController::registerHooks();
+MarkdownCommentRenderer::registerHooks();
+\ImperialFuture\Comments\MarkdownPreviewController::registerHooks();
+CaptchaImageController::registerHooks();
+ContactFormHandler::registerHooks();
+FileBlockEnhancer::registerHooks();
+RichEmbedSupport::registerHooks();
+ExternalExitController::registerHooks();
+ExternalLinkContentFilter::registerHooks();
+NewsletterHandler::registerHooks();
+\ImperialFuture\Newsletter\DigestScheduler::registerHooks();
+CommentNotificationService::registerHooks();
+AccountPageRegistrar::registerHooks();
+AdminAccessGuard::registerHooks();
+AuthHandler::registerHooks();
+AvatarService::registerHooks();
+SocialAuthHandler::registerHooks();
+BookmarkAjaxController::registerHooks();
+DefaultAvatar::registerHooks();
+GeneratedFeaturedImageHooks::registerHooks();
+LiveSearchController::registerHooks();
+SlugTransliterationHooks::registerHooks();
+RatingAjaxController::registerHooks();
+SecurityHeaders::registerHooks();
+CounterRenderer::registerHooks();
+SidebarRegistrar::registerHooks();
+SvgUploadSupport::registerHooks();
+Customizer::registerHooks();
+FeatureCustomizer::registerHooks();
+DynamicStyles::registerHooks();
+FaviconRenderer::registerHooks();
+PerformanceTweaks::registerHooks();
+MetaRenderer::registerHooks();
+SchemaRenderer::registerHooks();
+SeedCoordinator::registerHooks();
+\ImperialFuture\Seed\DemoImportController::registerHooks();

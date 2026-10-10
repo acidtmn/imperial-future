@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1140px"
+    },
+    "color": {
+      "custom": true,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "void", "name": "Имперская ночь", "color": "#0f0f12" },
+        { "slug": "panel", "name": "Архивная панель", "color": "#1b1b22" },
+        { "slug": "gold", "name": "Латунное золото", "color": "#d4af37" },
+        { "slug": "paper", "name": "Старая бумага", "color": "#f4e7c5" },
+        { "slug": "bronze", "name": "Бронза", "color": "#7a5c2e" },
+        { "slug": "red", "name": "Бордовая печать", "color": "#6f2024" }
+      ]
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true,
+      "units": ["px", "rem", "em", "%", "vh", "vw"]
+    },
+    "typography": {
+      "customFontSize": true,
+      "fluid": false,
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "slug": "imperial-heading",
+          "name": "Imperial Heading",
+          "fontFamily": "\"Oranienbaum\", \"Forum\", \"Prata\", Georgia, serif"
+        },
+        {
+          "slug": "imperial-body",
+          "name": "Imperial Body",
+          "fontFamily": "\"Inter\", \"IBM Plex Sans\", \"PT Sans\", Arial, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "name": "Малый", "size": "0.92rem" },
+        { "slug": "normal", "name": "Обычный", "size": "1.12rem" },
+        { "slug": "large", "name": "Крупный", "size": "1.35rem" },
+        { "slug": "huge", "name": "Газетный", "size": "2.4rem" }
+      ]
+    },
+    "blocks": {
+      "core/image": {
+        "lightbox": {
+          "enabled": true,
+          "allowEditing": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#0f0f12",
+      "text": "#f4e7c5"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|imperial-body",
+      "lineHeight": "1.65"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|imperial-heading",
+          "fontWeight": "400",
+          "lineHeight": "1.03"
+        },
+        "color": {
+          "text": "#f4e7c5"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#d4af37"
+        }
+      }
+    }
+  }
+}

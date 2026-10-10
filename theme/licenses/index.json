@@ -1,0 +1,835 @@
+{
+  "schemaVersion": 1,
+  "packageLockSha256": "a53d3a886b2fc33ac1d37f6a80d5ff415e149628aac2163788b7bd3c42c835b2",
+  "composerLockSha256": "1dea365a5a0cbea9527361ba3151293e456104e1a9992e95b412c9cc3602ff9c",
+  "npm": [
+    {
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.2",
+      "installedPath": "node_modules/@esbuild/linux-x64",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/evanw/esbuild.git",
+      "notices": [
+        {
+          "path": "licenses/npm/esbuild/LICENSE.md",
+          "source": "node_modules/esbuild/LICENSE.md",
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource-variable/inter",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource-variable/inter",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource-variable/inter/LICENSE",
+          "source": "node_modules/@fontsource-variable/inter/LICENSE",
+          "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/forum",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource/forum",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource/forum/LICENSE",
+          "source": "node_modules/@fontsource/forum/LICENSE",
+          "sha256": "6fb50d8719d64601e311e535f6bae46f842fbc0d231c0db1827e65015d2ad137"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource/ibm-plex-sans",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource/ibm-plex-sans/LICENSE",
+          "source": "node_modules/@fontsource/ibm-plex-sans/LICENSE",
+          "sha256": "d0283623ef57e722fd0eb688a8041589670c608ab780cd3612d06ba6f153d3fd"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/oranienbaum",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource/oranienbaum",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource/oranienbaum/LICENSE",
+          "source": "node_modules/@fontsource/oranienbaum/LICENSE",
+          "sha256": "efe8bdd0a7edbc0a25894714784d3df357eb2c5fda47b939878f5ac6b96eab79"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/prata",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource/prata",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource/prata/LICENSE",
+          "source": "node_modules/@fontsource/prata/LICENSE",
+          "sha256": "e64944abf1756debf967a589d31f3b7d5ad933bc7c55a053fb742b3b02b1723e"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/pt-sans",
+      "version": "5.3.0",
+      "installedPath": "node_modules/@fontsource/pt-sans",
+      "license": "OFL-1.1",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/fontsource/font-files.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@fontsource/pt-sans/LICENSE",
+          "source": "node_modules/@fontsource/pt-sans/LICENSE",
+          "sha256": "7891a86f2a41025e4ee327e3542e2499d9ac71f9adaf3411731480c03ef8ed58"
+        }
+      ]
+    },
+    {
+      "name": "@parcel/watcher",
+      "version": "2.5.6",
+      "installedPath": "node_modules/@parcel/watcher",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "https://github.com/parcel-bundler/watcher.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@parcel/watcher/LICENSE",
+          "source": "node_modules/@parcel/watcher/LICENSE",
+          "sha256": "5cfba9d5711264d45a2431a53c79f597cef12720cc7c764db2602daa92d0bd2a"
+        }
+      ]
+    },
+    {
+      "name": "@parcel/watcher-linux-x64-glibc",
+      "version": "2.5.6",
+      "installedPath": "node_modules/@parcel/watcher-linux-x64-glibc",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "https://github.com/parcel-bundler/watcher.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@parcel/watcher-linux-x64-glibc/LICENSE",
+          "source": "node_modules/@parcel/watcher-linux-x64-glibc/LICENSE",
+          "sha256": "5cfba9d5711264d45a2431a53c79f597cef12720cc7c764db2602daa92d0bd2a"
+        }
+      ]
+    },
+    {
+      "name": "@parcel/watcher-linux-x64-musl",
+      "version": "2.5.6",
+      "installedPath": "node_modules/@parcel/watcher-linux-x64-musl",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "https://github.com/parcel-bundler/watcher.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@parcel/watcher-linux-x64-musl/LICENSE",
+          "source": "node_modules/@parcel/watcher-linux-x64-musl/LICENSE",
+          "sha256": "5cfba9d5711264d45a2431a53c79f597cef12720cc7c764db2602daa92d0bd2a"
+        }
+      ]
+    },
+    {
+      "name": "@rollup/rollup-linux-x64-gnu",
+      "version": "4.60.3",
+      "installedPath": "node_modules/@rollup/rollup-linux-x64-gnu",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/rollup/rollup.git",
+      "notices": [
+        {
+          "path": "licenses/npm/rollup/LICENSE.md",
+          "source": "node_modules/rollup/LICENSE.md",
+          "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+        }
+      ]
+    },
+    {
+      "name": "@rollup/rollup-linux-x64-musl",
+      "version": "4.60.3",
+      "installedPath": "node_modules/@rollup/rollup-linux-x64-musl",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/rollup/rollup.git",
+      "notices": [
+        {
+          "path": "licenses/npm/rollup/LICENSE.md",
+          "source": "node_modules/rollup/LICENSE.md",
+          "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+        }
+      ]
+    },
+    {
+      "name": "@types/codemirror",
+      "version": "5.60.17",
+      "installedPath": "node_modules/@types/codemirror",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@types/codemirror/LICENSE",
+          "source": "node_modules/@types/codemirror/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.8",
+      "installedPath": "node_modules/@types/estree",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@types/estree/LICENSE",
+          "source": "node_modules/@types/estree/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/marked",
+      "version": "4.3.2",
+      "installedPath": "node_modules/@types/marked",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@types/marked/LICENSE",
+          "source": "node_modules/@types/marked/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/tern",
+      "version": "0.23.9",
+      "installedPath": "node_modules/@types/tern",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "notices": [
+        {
+          "path": "licenses/npm/@types/tern/LICENSE",
+          "source": "node_modules/@types/tern/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "chokidar",
+      "version": "4.0.3",
+      "installedPath": "node_modules/chokidar",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/paulmillr/chokidar.git",
+      "notices": [
+        {
+          "path": "licenses/npm/chokidar/LICENSE",
+          "source": "node_modules/chokidar/LICENSE",
+          "sha256": "bdfd5e0edb6089e6586c8f15e6a86fab83ffbeeda3b3b7b33734ccb8c5906965"
+        }
+      ]
+    },
+    {
+      "name": "codemirror",
+      "version": "5.65.21",
+      "installedPath": "node_modules/codemirror",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/codemirror/CodeMirror.git",
+      "notices": [
+        {
+          "path": "licenses/npm/codemirror/LICENSE",
+          "source": "node_modules/codemirror/LICENSE",
+          "sha256": "168a4becc968f5001e2ee2e0291b6e4daabafc1894a11ade1e11d56e96096e07"
+        }
+      ]
+    },
+    {
+      "name": "codemirror-spell-checker",
+      "version": "1.1.2",
+      "installedPath": "node_modules/codemirror-spell-checker",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/NextStepWebs/codemirror-spell-checker",
+      "notices": [
+        {
+          "path": "licenses/npm/codemirror-spell-checker/LICENSE",
+          "source": "node_modules/codemirror-spell-checker/LICENSE",
+          "sha256": "b7b60ddfca29ae67375a83d15dd5795ed17888a952ffe133dc97e0216d843004"
+        }
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "installedPath": "node_modules/detect-libc",
+      "license": "Apache-2.0",
+      "role": "Инструмент сборки",
+      "repository": "git://github.com/lovell/detect-libc.git",
+      "notices": [
+        {
+          "path": "licenses/npm/detect-libc/LICENSE",
+          "source": "node_modules/detect-libc/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ]
+    },
+    {
+      "name": "easymde",
+      "version": "2.21.0",
+      "installedPath": "node_modules/easymde",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/Ionaru/easy-markdown-editor.git",
+      "notices": [
+        {
+          "path": "licenses/npm/easymde/LICENSE",
+          "source": "node_modules/easymde/LICENSE",
+          "sha256": "98eee44a1cdad5ad0bb0ea976791ab57b5eef7ac4cafeb162f30e3808564a564"
+        }
+      ]
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "installedPath": "node_modules/esbuild",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/evanw/esbuild.git",
+      "notices": [
+        {
+          "path": "licenses/npm/esbuild/LICENSE.md",
+          "source": "node_modules/esbuild/LICENSE.md",
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+        }
+      ]
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "installedPath": "node_modules/fdir",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/thecodrr/fdir.git",
+      "notices": [
+        {
+          "path": "licenses/npm/fdir/LICENSE",
+          "source": "node_modules/fdir/LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ]
+    },
+    {
+      "name": "gsap",
+      "version": "3.15.0",
+      "installedPath": "node_modules/gsap",
+      "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "role": "Зависимость интерфейса",
+      "repository": "git+https://github.com/greensock/GSAP.git",
+      "notices": [
+        {
+          "path": "licenses/supplemental/gsap-3.15.0-Standard-License.txt",
+          "source": "https://gsap.com/community/standard-license/",
+          "sha256": "2167fc3c260b5e5a5ddc22ae72e29ca9989dc63a96ef102ce461dd11755a4995"
+        }
+      ]
+    },
+    {
+      "name": "immutable",
+      "version": "5.1.9",
+      "installedPath": "node_modules/immutable",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git://github.com/immutable-js/immutable-js.git",
+      "notices": [
+        {
+          "path": "licenses/npm/immutable/LICENSE",
+          "source": "node_modules/immutable/LICENSE",
+          "sha256": "784fd7232e106901065a329b285ff9ba9ad98ff08ac1932b45b53a0b954974c5"
+        }
+      ]
+    },
+    {
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "installedPath": "node_modules/is-extglob",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "jonschlinkert/is-extglob",
+      "notices": [
+        {
+          "path": "licenses/npm/is-extglob/LICENSE",
+          "source": "node_modules/is-extglob/LICENSE",
+          "sha256": "73b5283588baa142c5baaef5f56d3e8fdea7a30b214e8c5737e87640f882453a"
+        }
+      ]
+    },
+    {
+      "name": "is-glob",
+      "version": "4.0.3",
+      "installedPath": "node_modules/is-glob",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "micromatch/is-glob",
+      "notices": [
+        {
+          "path": "licenses/npm/is-glob/LICENSE",
+          "source": "node_modules/is-glob/LICENSE",
+          "sha256": "4cd903859549d4b20b571041f96dfae1136ed079c476126268f9d7cc1b611150"
+        }
+      ]
+    },
+    {
+      "name": "lucide-static",
+      "version": "1.54.0",
+      "installedPath": "node_modules/lucide-static",
+      "license": "ISC",
+      "role": "Значки в сборке",
+      "repository": "https://github.com/lucide-icons/lucide.git",
+      "notices": [
+        {
+          "path": "licenses/npm/lucide-static/LICENSE",
+          "source": "node_modules/lucide-static/LICENSE",
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+        }
+      ]
+    },
+    {
+      "name": "marked",
+      "version": "4.3.0",
+      "installedPath": "node_modules/marked",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "git://github.com/markedjs/marked.git",
+      "notices": [
+        {
+          "path": "licenses/npm/marked/LICENSE.md",
+          "source": "node_modules/marked/LICENSE.md",
+          "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "installedPath": "node_modules/nanoid",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "ai/nanoid",
+      "notices": [
+        {
+          "path": "licenses/npm/nanoid/LICENSE",
+          "source": "node_modules/nanoid/LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ]
+    },
+    {
+      "name": "node-addon-api",
+      "version": "7.1.1",
+      "installedPath": "node_modules/node-addon-api",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git://github.com/nodejs/node-addon-api.git",
+      "notices": [
+        {
+          "path": "licenses/npm/node-addon-api/LICENSE.md",
+          "source": "node_modules/node-addon-api/LICENSE.md",
+          "sha256": "89024017b88a9f2b763f79b941a4f2db3b4428edfcacdc0b23866b2da633ad0c"
+        }
+      ]
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "installedPath": "node_modules/picocolors",
+      "license": "ISC",
+      "role": "Инструмент сборки",
+      "repository": "alexeyraspopov/picocolors",
+      "notices": [
+        {
+          "path": "licenses/npm/picocolors/LICENSE",
+          "source": "node_modules/picocolors/LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.4",
+      "installedPath": "node_modules/picomatch",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "micromatch/picomatch",
+      "notices": [
+        {
+          "path": "licenses/npm/picomatch/LICENSE",
+          "source": "node_modules/picomatch/LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.29",
+      "installedPath": "node_modules/postcss",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "postcss/postcss",
+      "notices": [
+        {
+          "path": "licenses/npm/postcss/LICENSE",
+          "source": "node_modules/postcss/LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "name": "readdirp",
+      "version": "4.1.2",
+      "installedPath": "node_modules/readdirp",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git://github.com/paulmillr/readdirp.git",
+      "notices": [
+        {
+          "path": "licenses/npm/readdirp/LICENSE",
+          "source": "node_modules/readdirp/LICENSE",
+          "sha256": "dffec71d93f273d2af7b54c6c7e7e70b3289c632ec0d7253210ec21ac336d5ac"
+        }
+      ]
+    },
+    {
+      "name": "rollup",
+      "version": "4.60.3",
+      "installedPath": "node_modules/rollup",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/rollup/rollup.git",
+      "notices": [
+        {
+          "path": "licenses/npm/rollup/LICENSE.md",
+          "source": "node_modules/rollup/LICENSE.md",
+          "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+        }
+      ]
+    },
+    {
+      "name": "sass",
+      "version": "1.99.0",
+      "installedPath": "node_modules/sass",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "https://github.com/sass/dart-sass",
+      "notices": [
+        {
+          "path": "licenses/npm/sass/LICENSE",
+          "source": "node_modules/sass/LICENSE",
+          "sha256": "02b41feb22cab720a1a0bfa2bdd2bbe3960ab7280d83625ac55334aa8d7d8ef0"
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "installedPath": "node_modules/source-map-js",
+      "license": "BSD-3-Clause",
+      "role": "Инструмент сборки",
+      "repository": "7rulnik/source-map-js",
+      "notices": [
+        {
+          "path": "licenses/npm/source-map-js/LICENSE",
+          "source": "node_modules/source-map-js/LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ]
+    },
+    {
+      "name": "swiper",
+      "version": "12.1.4",
+      "installedPath": "node_modules/swiper",
+      "license": "MIT",
+      "role": "Зависимость интерфейса",
+      "repository": "https://github.com/nolimits4web/Swiper.git",
+      "notices": [
+        {
+          "path": "licenses/npm/swiper/LICENSE",
+          "source": "node_modules/swiper/LICENSE",
+          "sha256": "99f08e3e3ee0799fe1488fcbcb41dc933b14873e9556693209daf9e1007601d6"
+        }
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.16",
+      "installedPath": "node_modules/tinyglobby",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/SuperchupuDev/tinyglobby.git",
+      "notices": [
+        {
+          "path": "licenses/npm/tinyglobby/LICENSE",
+          "source": "node_modules/tinyglobby/LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ]
+    },
+    {
+      "name": "typo-js",
+      "version": "1.3.2",
+      "installedPath": "node_modules/typo-js",
+      "license": "BSD-3-Clause",
+      "role": "Зависимость интерфейса",
+      "repository": "git://github.com/cfinke/Typo.js.git",
+      "notices": [
+        {
+          "path": "licenses/supplemental/typo-js-1.3.2-license.txt",
+          "source": "https://raw.githubusercontent.com/cfinke/Typo.js/a08c1583d03a9e065d8240b7018beaaadc6f4ab7/license.txt",
+          "sha256": "6cda7fe38bf5451c2b880a95ebda074105010e08357837ecd71ce21b3695a814"
+        }
+      ]
+    },
+    {
+      "name": "vite",
+      "version": "7.3.7",
+      "installedPath": "node_modules/vite",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "git+https://github.com/vitejs/vite.git",
+      "notices": [
+        {
+          "path": "licenses/npm/vite/LICENSE.md",
+          "source": "node_modules/vite/LICENSE.md",
+          "sha256": "a77a1c089806b39ad339535bdf3677f636c91d96693e8ad7b11fe733f650ea64"
+        }
+      ]
+    }
+  ],
+  "missingOptional": [
+    "node_modules/@esbuild/aix-ppc64",
+    "node_modules/@esbuild/android-arm",
+    "node_modules/@esbuild/android-arm64",
+    "node_modules/@esbuild/android-x64",
+    "node_modules/@esbuild/darwin-arm64",
+    "node_modules/@esbuild/darwin-x64",
+    "node_modules/@esbuild/freebsd-arm64",
+    "node_modules/@esbuild/freebsd-x64",
+    "node_modules/@esbuild/linux-arm",
+    "node_modules/@esbuild/linux-arm64",
+    "node_modules/@esbuild/linux-ia32",
+    "node_modules/@esbuild/linux-loong64",
+    "node_modules/@esbuild/linux-mips64el",
+    "node_modules/@esbuild/linux-ppc64",
+    "node_modules/@esbuild/linux-riscv64",
+    "node_modules/@esbuild/linux-s390x",
+    "node_modules/@esbuild/netbsd-arm64",
+    "node_modules/@esbuild/netbsd-x64",
+    "node_modules/@esbuild/openbsd-arm64",
+    "node_modules/@esbuild/openbsd-x64",
+    "node_modules/@esbuild/openharmony-arm64",
+    "node_modules/@esbuild/sunos-x64",
+    "node_modules/@esbuild/win32-arm64",
+    "node_modules/@esbuild/win32-ia32",
+    "node_modules/@esbuild/win32-x64",
+    "node_modules/@parcel/watcher-android-arm64",
+    "node_modules/@parcel/watcher-darwin-arm64",
+    "node_modules/@parcel/watcher-darwin-x64",
+    "node_modules/@parcel/watcher-freebsd-x64",
+    "node_modules/@parcel/watcher-linux-arm-glibc",
+    "node_modules/@parcel/watcher-linux-arm-musl",
+    "node_modules/@parcel/watcher-linux-arm64-glibc",
+    "node_modules/@parcel/watcher-linux-arm64-musl",
+    "node_modules/@parcel/watcher-win32-arm64",
+    "node_modules/@parcel/watcher-win32-ia32",
+    "node_modules/@parcel/watcher-win32-x64",
+    "node_modules/@rollup/rollup-android-arm-eabi",
+    "node_modules/@rollup/rollup-android-arm64",
+    "node_modules/@rollup/rollup-darwin-arm64",
+    "node_modules/@rollup/rollup-darwin-x64",
+    "node_modules/@rollup/rollup-freebsd-arm64",
+    "node_modules/@rollup/rollup-freebsd-x64",
+    "node_modules/@rollup/rollup-linux-arm-gnueabihf",
+    "node_modules/@rollup/rollup-linux-arm-musleabihf",
+    "node_modules/@rollup/rollup-linux-arm64-gnu",
+    "node_modules/@rollup/rollup-linux-arm64-musl",
+    "node_modules/@rollup/rollup-linux-loong64-gnu",
+    "node_modules/@rollup/rollup-linux-loong64-musl",
+    "node_modules/@rollup/rollup-linux-ppc64-gnu",
+    "node_modules/@rollup/rollup-linux-ppc64-musl",
+    "node_modules/@rollup/rollup-linux-riscv64-gnu",
+    "node_modules/@rollup/rollup-linux-riscv64-musl",
+    "node_modules/@rollup/rollup-linux-s390x-gnu",
+    "node_modules/@rollup/rollup-openbsd-x64",
+    "node_modules/@rollup/rollup-openharmony-arm64",
+    "node_modules/@rollup/rollup-win32-arm64-msvc",
+    "node_modules/@rollup/rollup-win32-ia32-msvc",
+    "node_modules/@rollup/rollup-win32-x64-gnu",
+    "node_modules/@rollup/rollup-win32-x64-msvc",
+    "node_modules/fsevents"
+  ],
+  "composer": [
+    {
+      "name": "dflydev/dot-access-data",
+      "version": "v3.0.3",
+      "license": [
+        "MIT"
+      ],
+      "notices": [
+        {
+          "path": "vendor/dflydev/dot-access-data/LICENSE",
+          "source": "vendor/dflydev/dot-access-data/LICENSE",
+          "sha256": "a51874d3253d042002b8971c778102223ca89048c5b71c46e58f7bb5bc728941"
+        }
+      ]
+    },
+    {
+      "name": "league/commonmark",
+      "version": "2.10.3",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "notices": [
+        {
+          "path": "vendor/league/commonmark/LICENSE",
+          "source": "vendor/league/commonmark/LICENSE",
+          "sha256": "80043e4e2ba13ff485810363631657baae7e2a2a02ef62b463bf1661134ac56c"
+        }
+      ]
+    },
+    {
+      "name": "league/config",
+      "version": "v1.2.0",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "notices": [
+        {
+          "path": "vendor/league/config/LICENSE.md",
+          "source": "vendor/league/config/LICENSE.md",
+          "sha256": "606d0cd2fa9148dceaad6a1f6ccf83dbec4ee375dadc960ab6ad5a18adb6db84"
+        }
+      ]
+    },
+    {
+      "name": "league/html-to-markdown",
+      "version": "5.1.3",
+      "license": [
+        "MIT"
+      ],
+      "notices": [
+        {
+          "path": "vendor/league/html-to-markdown/LICENSE",
+          "source": "vendor/league/html-to-markdown/LICENSE",
+          "sha256": "677f383628fbdb54818bfe58b4cfe7a424171d8852507183df907240036a4b61"
+        }
+      ]
+    },
+    {
+      "name": "nette/schema",
+      "version": "v1.3.6",
+      "license": [
+        "BSD-3-Clause",
+        "GPL-2.0-only",
+        "GPL-3.0-only"
+      ],
+      "notices": [
+        {
+          "path": "vendor/nette/schema/license.md",
+          "source": "vendor/nette/schema/license.md",
+          "sha256": "b3bc3d38b9ec29d98bc83bd5fa44e583e8303cd97b62d203a9e5e21935126de9"
+        }
+      ]
+    },
+    {
+      "name": "nette/utils",
+      "version": "v4.1.5",
+      "license": [
+        "BSD-3-Clause",
+        "GPL-2.0-only",
+        "GPL-3.0-only"
+      ],
+      "notices": [
+        {
+          "path": "vendor/nette/utils/license.md",
+          "source": "vendor/nette/utils/license.md",
+          "sha256": "b3bc3d38b9ec29d98bc83bd5fa44e583e8303cd97b62d203a9e5e21935126de9"
+        }
+      ]
+    },
+    {
+      "name": "psr/event-dispatcher",
+      "version": "1.0.0",
+      "license": [
+        "MIT"
+      ],
+      "notices": [
+        {
+          "path": "vendor/psr/event-dispatcher/LICENSE",
+          "source": "vendor/psr/event-dispatcher/LICENSE",
+          "sha256": "d2e70341a9667b93ad542e4842b0b7022d302aa7c2d2a909b156b8f1e3c4cca8"
+        }
+      ]
+    },
+    {
+      "name": "symfony/deprecation-contracts",
+      "version": "v3.7.1",
+      "license": [
+        "MIT"
+      ],
+      "notices": [
+        {
+          "path": "vendor/symfony/deprecation-contracts/LICENSE",
+          "source": "vendor/symfony/deprecation-contracts/LICENSE",
+          "sha256": "b92809182501f0fa422167ea44484b41877e1736e8283d0377fdc9664bb9a02d"
+        }
+      ]
+    },
+    {
+      "name": "symfony/polyfill-php80",
+      "version": "v1.43.0",
+      "license": [
+        "MIT"
+      ],
+      "notices": [
+        {
+          "path": "vendor/symfony/polyfill-php80/LICENSE",
+          "source": "vendor/symfony/polyfill-php80/LICENSE",
+          "sha256": "b92809182501f0fa422167ea44484b41877e1736e8283d0377fdc9664bb9a02d"
+        }
+      ]
+    }
+  ],
+  "composerAutoloader": {
+    "path": "vendor/composer/LICENSE",
+    "sha256": "c8cce4b6b9729f264ffdf9296d505d63432497feeed1f586d1902b942197e024"
+  }
+}

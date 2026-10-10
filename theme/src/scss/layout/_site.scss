@@ -1,0 +1,152 @@
+.site-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-main {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+.content-width {
+  width: var(--content);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section--compact {
+  padding: 2.5rem 0;
+}
+
+.section--paper {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(244, 231, 197, .06), rgba(244, 231, 197, .025)),
+    rgba(15, 15, 18, .28);
+  border-block: 1px solid rgba(212, 175, 55, .16);
+}
+
+.archive-grid,
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.archive-layout,
+.single-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.site-footer {
+  position: relative;
+  padding: 3.5rem 0 2rem;
+  border-top: 1px solid var(--color-border);
+  background: rgba(9, 9, 12, .76);
+  --color-gold: #d4af37;
+  --color-paper: #f4e7c5;
+  --color-muted: rgba(248, 239, 216, .68);
+  --color-border: rgba(212, 175, 55, .34);
+}
+
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.site-footer__brand {
+  max-width: 560px;
+}
+
+.site-footer__nav {
+  min-width: 0;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-footer__nav a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.footer-widget {
+  color: var(--color-muted);
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+.not-found {
+  min-height: 68vh;
+  display: grid;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.home-widget-band {
+  padding-top: 0;
+}
+
+.home-widget-band__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .section {
+    padding: 6rem 0;
+  }
+
+  .archive-grid,
+  .post-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  }
+
+  .home-widget-band__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  .post-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .archive-layout,
+  .single-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+
+  .sticky-panel {
+    position: sticky;
+    top: 7rem;
+  }
+}

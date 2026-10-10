@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  --font-heading: 'Oranienbaum', 'Forum', 'Prata', Georgia, serif;
+  --font-body: 'Inter Variable', 'IBM Plex Sans', 'PT Sans', Arial, sans-serif;
+  --color-void: #0f0f12;
+  --color-panel: #1b1b22;
+  --color-panel-soft: rgba(27, 27, 34, .76);
+  --color-gold: #d4af37;
+  --color-paper: #f4e7c5;
+  --color-bronze: #7a5c2e;
+  --color-parchment: #efe3c2;
+  --color-red: #6f2024;
+  --color-blue: #89b6c9;
+  --color-text: #f8efd8;
+  --color-muted: rgba(248, 239, 216, .68);
+  --color-border: rgba(212, 175, 55, .34);
+  --color-glass: rgba(244, 231, 197, .08);
+  --shadow-soft: 0 24px 80px rgba(0, 0, 0, .42);
+  --shadow-glow: 0 0 44px rgba(212, 175, 55, .2);
+  --radius-small: 8px;
+  --radius-round: 999px;
+  --container: min(1140px, calc(100% - 32px));
+  --content: min(760px, calc(100% - 32px));
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-void: #efe3c2;
+  --color-panel: #f7edcf;
+  --color-panel-soft: rgba(247, 237, 207, .82);
+  --color-gold: #8a6416;
+  --color-paper: #241a12;
+  --color-bronze: #5f421a;
+  --color-parchment: #3a2d1e;
+  --color-red: #84272b;
+  --color-blue: #315f76;
+  --color-text: #201813;
+  --color-muted: rgba(32, 24, 19, .66);
+  --color-border: rgba(122, 92, 46, .42);
+  --color-glass: rgba(255, 255, 255, .46);
+  --shadow-soft: 0 22px 64px rgba(74, 50, 24, .16);
+  --shadow-glow: 0 0 40px rgba(212, 175, 55, .24);
+}
