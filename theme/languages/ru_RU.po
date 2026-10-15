@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Imperial Future 1.1.1\n"
+"Project-Id-Version: Imperial Future 1.1.2\n"
 "Report-Msgid-Bugs-To: https://github.com/acidtmn/imperial-future/issues\n"
 "Last-Translator: Кирилл Александров\n"
 "Language-Team: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-10T03:19:00+00:00\n"
-"PO-Revision-Date: 2026-10-10 06:47+0000\n"
+"POT-Creation-Date: 2026-10-15T09:50:47+00:00\n"
+"PO-Revision-Date: 2026-10-15 09:51+0000\n"
 "X-Generator: WordPress POMO\n"
 "X-Domain: imperial-future\n"
 "Language: ru_RU\n"
@@ -81,7 +81,7 @@ msgstr "Канцелярия закрыла обсуждение этой пуб
 msgid "Архив будущего"
 msgstr "Архив будущего"
 
-#: footer.php:24 inc/Support/ThemeSetup.php:45
+#: footer.php:24 inc/Support/ThemeSetup.php:46
 msgid "Нижняя навигация"
 msgstr "Нижняя навигация"
 
@@ -105,6 +105,10 @@ msgstr "Открыть вход в кабинет"
 msgid "Переключить тему"
 msgstr "Переключить тему"
 
+#: header.php:79 inc/Support/FrontendStrings.php:13
+msgid "Приостановить анимацию"
+msgstr "Приостановить анимацию"
+
 #: inc/Ads/AdRenderer.php:29
 msgid "Рекламный блок"
 msgstr "Рекламный блок"
@@ -123,7 +127,7 @@ msgid "Материал не найден."
 msgstr "Материал не найден."
 
 #: inc/Comments/AdminMarkdownCommentEditor.php:34
-#: inc/Support/FrontendStrings.php:39
+#: inc/Support/FrontendStrings.php:42
 msgid "Ж"
 msgstr "Ж"
 
@@ -132,7 +136,7 @@ msgid "Жирный: **текст**"
 msgstr "Жирный: **текст**"
 
 #: inc/Comments/AdminMarkdownCommentEditor.php:36
-#: inc/Seed/EditorialCatalog.php:62 inc/Support/FrontendStrings.php:41
+#: inc/Seed/EditorialCatalog.php:62 inc/Support/FrontendStrings.php:44
 msgid "К"
 msgstr "К"
 
@@ -145,7 +149,7 @@ msgid "Ссылка: [текст](url)"
 msgstr "Ссылка: [текст](url)"
 
 #: inc/Comments/AdminMarkdownCommentEditor.php:39
-#: inc/Support/FrontendStrings.php:44
+#: inc/Support/FrontendStrings.php:47
 msgid "Цитата"
 msgstr "Цитата"
 
@@ -158,7 +162,7 @@ msgid "• список"
 msgstr "• список"
 
 #: inc/Comments/AdminMarkdownCommentEditor.php:42
-#: inc/Support/FrontendStrings.php:46
+#: inc/Support/FrontendStrings.php:49
 msgid "Маркированный список"
 msgstr "Маркированный список"
 
@@ -167,7 +171,7 @@ msgid "1. список"
 msgstr "1. список"
 
 #: inc/Comments/AdminMarkdownCommentEditor.php:44
-#: inc/Support/FrontendStrings.php:47
+#: inc/Support/FrontendStrings.php:50
 msgid "Нумерованный список"
 msgstr "Нумерованный список"
 
@@ -1618,7 +1622,7 @@ msgstr ""
 "архив\n"
 "машины"
 
-#: inc/Settings/ThemeOptions.php:129
+#: inc/Settings/ThemeOptions.php:130
 msgid "Вы переходите на внешний сайт. Проверьте адрес и продолжайте только если доверяете источнику."
 msgstr "Вы переходите на внешний сайт. Проверьте адрес и продолжайте только если доверяете источнику."
 
@@ -1646,35 +1650,35 @@ msgstr "МАКС"
 msgid "Почта"
 msgstr "Почта"
 
-#: inc/Support/AssetLoader.php:67 inc/Support/FrontendStrings.php:27
+#: inc/Support/AssetLoader.php:83 inc/Support/FrontendStrings.php:30
 msgid "Не удалось связаться с сервером. Повтори попытку."
 msgstr "Не удалось связаться с сервером. Повтори попытку."
 
-#: inc/Support/AssetLoader.php:68 parts/site/notices.php:10
+#: inc/Support/AssetLoader.php:84 parts/site/notices.php:10
 msgid "Закрыть уведомление"
 msgstr "Закрыть уведомление"
 
-#: inc/Support/AssetLoader.php:69
+#: inc/Support/AssetLoader.php:85
 msgid "В архиве пока нет таких листов."
 msgstr "В архиве пока нет таких листов."
 
-#: inc/Support/AssetLoader.php:70
+#: inc/Support/AssetLoader.php:86
 msgid "Архивная машина ищет..."
 msgstr "Архивная машина ищет..."
 
-#: inc/Support/AssetLoader.php:71
+#: inc/Support/AssetLoader.php:87
 msgid "Печать принята."
 msgstr "Печать принята."
 
-#: inc/Support/AssetLoader.php:72
+#: inc/Support/AssetLoader.php:88
 msgid "Оценка комментария принята."
 msgstr "Оценка комментария принята."
 
-#: inc/Support/AssetLoader.php:73 inc/Support/FrontendStrings.php:54
+#: inc/Support/AssetLoader.php:89 inc/Support/FrontendStrings.php:57
 msgid "Сохранено"
 msgstr "Сохранено"
 
-#: inc/Support/AssetLoader.php:74 inc/Support/FrontendStrings.php:55
+#: inc/Support/AssetLoader.php:90 inc/Support/FrontendStrings.php:58
 #: parts/content/card.php:106 parts/share/actions.php:33
 msgid "Закладка"
 msgstr "Закладка"
@@ -2142,243 +2146,255 @@ msgid "Hero: количество статей в слайдере"
 msgstr "Hero: количество статей в слайдере"
 
 #: inc/Support/FeatureCustomizer.php:53
+msgid "Hero: минимальный интервал смены слайдов, секунд"
+msgstr "Hero: минимальный интервал смены слайдов, секунд"
+
+#: inc/Support/FeatureCustomizer.php:54
 msgid "Hero-слайдер: источник фона"
 msgstr "Hero-слайдер: источник фона"
 
-#: inc/Support/FeatureCustomizer.php:54
+#: inc/Support/FeatureCustomizer.php:55
 msgid "Готовый пресет"
 msgstr "Готовый пресет"
 
-#: inc/Support/FeatureCustomizer.php:55
+#: inc/Support/FeatureCustomizer.php:56
 msgid "Своя картинка"
 msgstr "Своя картинка"
 
-#: inc/Support/FeatureCustomizer.php:56
+#: inc/Support/FeatureCustomizer.php:57
 msgid "CSS background"
 msgstr "CSS background"
 
-#: inc/Support/FeatureCustomizer.php:58
+#: inc/Support/FeatureCustomizer.php:59
 msgid "Hero-слайдер: пресет фона"
 msgstr "Hero-слайдер: пресет фона"
 
-#: inc/Support/FeatureCustomizer.php:59
+#: inc/Support/FeatureCustomizer.php:60
 msgid "Латунный архив"
 msgstr "Латунный архив"
 
-#: inc/Support/FeatureCustomizer.php:60
+#: inc/Support/FeatureCustomizer.php:61
 msgid "Бордовая канцелярия"
 msgstr "Бордовая канцелярия"
 
-#: inc/Support/FeatureCustomizer.php:61
+#: inc/Support/FeatureCustomizer.php:62
 msgid "Северное сияние"
 msgstr "Северное сияние"
 
-#: inc/Support/FeatureCustomizer.php:62
+#: inc/Support/FeatureCustomizer.php:63
 msgid "Графит и золото"
 msgstr "Графит и золото"
 
-#: inc/Support/FeatureCustomizer.php:64
+#: inc/Support/FeatureCustomizer.php:65
 msgid "Hero-слайдер: своя фоновая картинка"
 msgstr "Hero-слайдер: своя фоновая картинка"
 
-#: inc/Support/FeatureCustomizer.php:65
+#: inc/Support/FeatureCustomizer.php:66
 msgid "Hero-слайдер: CSS background"
 msgstr "Hero-слайдер: CSS background"
 
-#: inc/Support/FeatureCustomizer.php:67
+#: inc/Support/FeatureCustomizer.php:68
 msgid "Почта: From email отправителя"
 msgstr "Почта: From email отправителя"
 
-#: inc/Support/FeatureCustomizer.php:68
+#: inc/Support/FeatureCustomizer.php:69
 msgid "Почта: имя отправителя"
 msgstr "Почта: имя отправителя"
 
-#: inc/Support/FeatureCustomizer.php:70
+#: inc/Support/FeatureCustomizer.php:71
 msgid "Включить всплывающий живой поиск"
 msgstr "Включить всплывающий живой поиск"
 
-#: inc/Support/FeatureCustomizer.php:71
+#: inc/Support/FeatureCustomizer.php:72
 msgid "Поиск: примеры запросов, каждый с новой строки"
 msgstr "Поиск: примеры запросов, каждый с новой строки"
 
-#: inc/Support/FeatureCustomizer.php:72
+#: inc/Support/FeatureCustomizer.php:73
 msgid "Включить мини-кабинет и всплывающую форму входа"
 msgstr "Включить мини-кабинет и всплывающую форму входа"
 
-#: inc/Support/FeatureCustomizer.php:74
+#: inc/Support/FeatureCustomizer.php:75
 msgid "Вход через VK"
 msgstr "Вход через VK"
 
-#: inc/Support/FeatureCustomizer.php:75
+#: inc/Support/FeatureCustomizer.php:76
 msgid "VK OAuth Client ID"
 msgstr "VK OAuth Client ID"
 
-#: inc/Support/FeatureCustomizer.php:76
+#: inc/Support/FeatureCustomizer.php:77
 msgid "VK OAuth Secret"
 msgstr "VK OAuth Secret"
 
-#: inc/Support/FeatureCustomizer.php:77
+#: inc/Support/FeatureCustomizer.php:78
 msgid "Вход через Яндекс"
 msgstr "Вход через Яндекс"
 
-#: inc/Support/FeatureCustomizer.php:78
+#: inc/Support/FeatureCustomizer.php:79
 msgid "Яндекс OAuth Client ID"
 msgstr "Яндекс OAuth Client ID"
 
-#: inc/Support/FeatureCustomizer.php:79
+#: inc/Support/FeatureCustomizer.php:80
 msgid "Яндекс OAuth Secret"
 msgstr "Яндекс OAuth Secret"
 
-#: inc/Support/FrontendStrings.php:13
+#: inc/Support/FrontendStrings.php:14
+msgid "Продолжить анимацию"
+msgstr "Продолжить анимацию"
+
+#: inc/Support/FrontendStrings.php:15
+msgid "Анимация отключена в настройках устройства"
+msgstr "Анимация отключена в настройках устройства"
+
+#: inc/Support/FrontendStrings.php:16
 #, php-format
 msgid "Сила пароля: %s"
 msgstr "Сила пароля: %s"
 
-#: inc/Support/FrontendStrings.php:14 parts/rating/panel.php:36
+#: inc/Support/FrontendStrings.php:17 parts/rating/panel.php:36
 #, php-format
 msgid "%s из 5"
 msgstr "%s из 5"
 
-#: inc/Support/FrontendStrings.php:15 parts/rating/panel.php:118
+#: inc/Support/FrontendStrings.php:18 parts/rating/panel.php:118
 #, php-format
 msgid "Профиль: %s"
 msgstr "Профиль: %s"
 
-#: inc/Support/FrontendStrings.php:16
+#: inc/Support/FrontendStrings.php:19
 msgid "Закладка удалена"
 msgstr "Закладка удалена"
 
-#: inc/Support/FrontendStrings.php:17 parts/content/card.php:103
+#: inc/Support/FrontendStrings.php:20 parts/content/card.php:103
 #: parts/share/actions.php:30
 msgid "Добавить в закладки"
 msgstr "Добавить в закладки"
 
-#: inc/Support/FrontendStrings.php:18 parts/content/card.php:103
+#: inc/Support/FrontendStrings.php:21 parts/content/card.php:103
 #: parts/share/actions.php:30
 msgid "Удалить из закладок"
 msgstr "Удалить из закладок"
 
-#: inc/Support/FrontendStrings.php:19
+#: inc/Support/FrontendStrings.php:22
 msgid "Избранные публикации"
 msgstr "Избранные публикации"
 
-#: inc/Support/FrontendStrings.php:20
+#: inc/Support/FrontendStrings.php:23
 msgid "Перейти к слайду {{index}}"
 msgstr "Перейти к слайду {{index}}"
 
-#: inc/Support/FrontendStrings.php:21
+#: inc/Support/FrontendStrings.php:24
 msgid "Не удалось выполнить действие. Попробуй ещё раз."
 msgstr "Не удалось выполнить действие. Попробуй ещё раз."
 
-#: inc/Support/FrontendStrings.php:22
+#: inc/Support/FrontendStrings.php:25
 msgid "Закрыть изображение"
 msgstr "Закрыть изображение"
 
-#: inc/Support/FrontendStrings.php:23
+#: inc/Support/FrontendStrings.php:26
 msgid "Предыдущее изображение"
 msgstr "Предыдущее изображение"
 
-#: inc/Support/FrontendStrings.php:24
+#: inc/Support/FrontendStrings.php:27
 msgid "Следующее изображение"
 msgstr "Следующее изображение"
 
-#: inc/Support/FrontendStrings.php:25
+#: inc/Support/FrontendStrings.php:28
 msgid "Положение выбрано. Печать проверится при отправке."
 msgstr "Положение выбрано. Печать проверится при отправке."
 
-#: inc/Support/FrontendStrings.php:26
+#: inc/Support/FrontendStrings.php:29
 msgid "Поиск..."
 msgstr "Поиск..."
 
-#: inc/Support/FrontendStrings.php:28
+#: inc/Support/FrontendStrings.php:31
 msgid "не указана"
 msgstr "не указана"
 
-#: inc/Support/FrontendStrings.php:29
+#: inc/Support/FrontendStrings.php:32
 msgid "слабая"
 msgstr "слабая"
 
-#: inc/Support/FrontendStrings.php:30
+#: inc/Support/FrontendStrings.php:33
 msgid "надёжная"
 msgstr "надёжная"
 
-#: inc/Support/FrontendStrings.php:31
+#: inc/Support/FrontendStrings.php:34
 msgid "крепкая"
 msgstr "крепкая"
 
-#: inc/Support/FrontendStrings.php:32
+#: inc/Support/FrontendStrings.php:35
 msgid "императорская"
 msgstr "императорская"
 
-#: inc/Support/FrontendStrings.php:33 parts/rating/panel.php:111
+#: inc/Support/FrontendStrings.php:36 parts/rating/panel.php:111
 msgid "Кто оценил"
 msgstr "Кто оценил"
 
-#: inc/Support/FrontendStrings.php:34 inc/Support/RussianPluralizer.php:66
+#: inc/Support/FrontendStrings.php:37 inc/Support/RussianPluralizer.php:66
 msgid "голосов"
 msgstr "голосов"
 
-#: inc/Support/FrontendStrings.php:35 inc/Support/RussianPluralizer.php:64
+#: inc/Support/FrontendStrings.php:38 inc/Support/RussianPluralizer.php:64
 msgid "голос"
 msgstr "голос"
 
-#: inc/Support/FrontendStrings.php:36 inc/Support/RussianPluralizer.php:65
+#: inc/Support/FrontendStrings.php:39 inc/Support/RussianPluralizer.php:65
 msgid "голоса"
 msgstr "голоса"
 
-#: inc/Support/FrontendStrings.php:37
+#: inc/Support/FrontendStrings.php:40
 msgid "Напишите комментарий. Markdown поддерживается."
 msgstr "Напишите комментарий. Markdown поддерживается."
 
-#: inc/Support/FrontendStrings.php:38
+#: inc/Support/FrontendStrings.php:41
 msgid "Подготовка предпросмотра..."
 msgstr "Подготовка предпросмотра..."
 
-#: inc/Support/FrontendStrings.php:40
+#: inc/Support/FrontendStrings.php:43
 msgid "Жирный текст"
 msgstr "Жирный текст"
 
-#: inc/Support/FrontendStrings.php:42
+#: inc/Support/FrontendStrings.php:45
 msgid "Курсив"
 msgstr "Курсив"
 
-#: inc/Support/FrontendStrings.php:43
+#: inc/Support/FrontendStrings.php:46
 msgid "Ц"
 msgstr "Ц"
 
-#: inc/Support/FrontendStrings.php:45
+#: inc/Support/FrontendStrings.php:48
 msgid "Блок кода"
 msgstr "Блок кода"
 
-#: inc/Support/FrontendStrings.php:48 parts/share/actions.php:48
+#: inc/Support/FrontendStrings.php:51 parts/share/actions.php:48
 msgid "Ссылка"
 msgstr "Ссылка"
 
-#: inc/Support/FrontendStrings.php:49
+#: inc/Support/FrontendStrings.php:52
 msgid "Вид"
 msgstr "Вид"
 
-#: inc/Support/FrontendStrings.php:50
+#: inc/Support/FrontendStrings.php:53
 msgid "Предпросмотр"
 msgstr "Предпросмотр"
 
-#: inc/Support/FrontendStrings.php:51
+#: inc/Support/FrontendStrings.php:54
 msgid "EasyMDE не загрузился, оставлен обычный textarea."
 msgstr "EasyMDE не загрузился, оставлен обычный textarea."
 
-#: inc/Support/FrontendStrings.php:52
+#: inc/Support/FrontendStrings.php:55
 msgid "Скопировано"
 msgstr "Скопировано"
 
-#: inc/Support/FrontendStrings.php:53
+#: inc/Support/FrontendStrings.php:56
 msgid "Скопируйте ссылку"
 msgstr "Скопируйте ссылку"
 
-#: inc/Support/FrontendStrings.php:56
+#: inc/Support/FrontendStrings.php:59
 msgid "Копировать"
 msgstr "Копировать"
 
-#: inc/Support/FrontendStrings.php:57
+#: inc/Support/FrontendStrings.php:60
 msgid "Скопируйте код"
 msgstr "Скопируйте код"
 
@@ -2430,7 +2446,7 @@ msgstr "Домашняя витрина виджетов"
 msgid "Промо, подборки и редакционные виджеты между лентой и телеграфной хроникой."
 msgstr "Промо, подборки и редакционные виджеты между лентой и телеграфной хроникой."
 
-#: inc/Support/ThemeSetup.php:44 parts/site/nav.php:10
+#: inc/Support/ThemeSetup.php:45 parts/site/nav.php:10
 msgid "Главная навигация"
 msgstr "Главная навигация"
 
@@ -3148,13 +3164,13 @@ msgstr "Бордовая печать"
 
 #: theme.json
 msgctxt "Font family name"
-msgid "Imperial Heading"
-msgstr "Imperial Heading"
+msgid "Заголовки"
+msgstr "Заголовки"
 
 #: theme.json
 msgctxt "Font family name"
-msgid "Imperial Body"
-msgstr "Imperial Body"
+msgid "Основной текст"
+msgstr "Основной текст"
 
 #: theme.json
 msgctxt "Font size name"

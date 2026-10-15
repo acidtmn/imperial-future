@@ -236,6 +236,8 @@
   gap: .32rem;
   width: max-content;
   max-width: calc(100vw - 32px);
+  flex-wrap: wrap;
+  translate: var(--popover-shift, 0px) 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-round);
   background:
@@ -251,7 +253,7 @@
 
 .imperial-rating-popover::after {
   position: absolute;
-  left: 1.1rem;
+  left: calc(1.1rem - var(--popover-shift, 0px));
   bottom: -.38rem;
   width: .7rem;
   height: .7rem;
@@ -262,8 +264,6 @@
   transform: rotate(45deg);
 }
 
-.imperial-rating__reactor:hover .imperial-rating-popover,
-.imperial-rating__reactor:focus-within .imperial-rating-popover,
 .imperial-rating.is-rating-menu-open .imperial-rating-popover {
   display: flex;
   opacity: 1;

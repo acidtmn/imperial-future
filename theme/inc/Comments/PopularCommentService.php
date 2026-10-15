@@ -40,6 +40,7 @@ final class PopularCommentService
 
     public static function excerpt(WP_Comment $comment, int $words = 26): string
     {
-        return wp_trim_words(wp_strip_all_tags((string) $comment->comment_content), $words);
+        $text = wp_trim_words(wp_strip_all_tags(MarkdownService::render((string) $comment->comment_content)), $words);
+        return html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
     }
 }

@@ -9,7 +9,7 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $themeRoot = Join-Path $projectRoot 'theme'
 $outputRoot = Join-Path $projectRoot 'output'
-$version = '1.1.1'
+$version = '1.1.2'
 $slug = 'imperial-future'
 $archivePath = Join-Path $outputRoot "$slug-$version.zip"
 $fixedTime = [DateTimeOffset]::new(2020, 1, 1, 0, 0, 0, [TimeSpan]::Zero)
@@ -111,7 +111,9 @@ $requiredFiles = @(
     'style.css', 'index.php', 'functions.php', 'theme.json', 'readme.txt', 'LICENSE',
     'THIRD-PARTY-NOTICES.md', 'composer.json', 'composer.lock', 'package.json',
     'package-lock.json', 'vite.config.js', 'src/js/main.js', 'src/scss/main.scss',
-    'assets/dist/.vite/manifest.json', 'assets/dist/icons.svg', 'vendor/autoload.php',
+    'assets/dist/.vite/manifest.json', 'assets/dist/icons.svg',
+    'assets/dist/css/critical-inline.css', 'assets/dist/css/fonts-inline.json',
+    'assets/dist/css/fonts-all.css', 'vendor/autoload.php',
     'vendor/composer/installed.json', 'vendor/composer/LICENSE',
     'languages/imperial-future.pot', 'licenses/index.json', 'licenses/README.md',
     'tools/collect-licenses.mjs', 'screenshot.png'

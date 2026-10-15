@@ -50,6 +50,7 @@ final class FeatureCustomizer
             'slider' => __('Слайдер избранных статей', 'imperial-future'),
         ]);
         self::number($customizer, 'imperial_hero_slider_count', __('Hero: количество статей в слайдере', 'imperial-future'), 'imperial_future_hero', 2, 8);
+        self::number($customizer, 'imperial_hero_autoplay_delay', __('Hero: минимальный интервал смены слайдов, секунд', 'imperial-future'), 'imperial_future_hero', 5, 30);
         self::select($customizer, 'imperial_hero_slider_background_mode', __('Hero-слайдер: источник фона', 'imperial-future'), 'imperial_future_hero', [
             'preset' => __('Готовый пресет', 'imperial-future'),
             'image' => __('Своя картинка', 'imperial-future'),

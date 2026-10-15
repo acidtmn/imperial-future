@@ -37,6 +37,8 @@ try {
     $check(str_contains($html, '<strong>Жирный</strong>') && str_contains($html, '<blockquote>') && str_contains($html, '<ul>'), 'Markdown: выделение, цитата, список');
     $check(str_contains($html, '&lt;div&gt;пример&lt;/div&gt;') && str_contains($html, 'x &lt; y'), 'Markdown: HTML и операторы внутри кода не теряются');
     $check(str_contains(MarkdownService::render('<strong>Да</strong> и <em>нет</em>'), '<strong>Да</strong>'), 'Старые HTML-комментарии совместимы');
+    $preview = \ImperialFuture\Comments\PopularCommentService::excerpt(new WP_Comment((object) ['comment_content' => "**Жирный**\n\n> Цитата\n\n`x < y`"]));
+    $check(str_contains($preview, 'Жирный') && ! str_contains($preview, '**') && str_contains($preview, 'x < y'), 'Популярный комментарий: Markdown преобразован в читаемый текст без потери кода');
     $unsafe = MarkdownService::render('[опасно](javascript:alert(1)) <img src=x onerror=alert(1)> <script>alert(1)</script>');
     $check(! preg_match('/<script|<img[^>]+onerror|href="javascript:/i', $unsafe), 'Markdown: XSS и javascript-ссылки не исполняются');
 

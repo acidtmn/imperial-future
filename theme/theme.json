@@ -34,13 +34,13 @@
       "fontFamilies": [
         {
           "slug": "imperial-heading",
-          "name": "Imperial Heading",
-          "fontFamily": "\"Oranienbaum\", \"Forum\", \"Prata\", Georgia, serif"
+          "name": "Заголовки",
+          "fontFamily": "var(--font-heading)"
         },
         {
           "slug": "imperial-body",
-          "name": "Imperial Body",
-          "fontFamily": "\"Inter\", \"IBM Plex Sans\", \"PT Sans\", Arial, sans-serif"
+          "name": "Основной текст",
+          "fontFamily": "var(--font-body)"
         }
       ],
       "fontSizes": [

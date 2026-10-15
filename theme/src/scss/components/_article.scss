@@ -681,9 +681,10 @@
   z-index: 12;
   display: none;
   flex-wrap: wrap;
-  gap: .36rem;
+  gap: .25rem;
   width: max-content;
   max-width: calc(100vw - 32px);
+  translate: var(--popover-shift, 0px) 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-round);
   background:
@@ -772,8 +773,6 @@
   position: relative;
 }
 
-.article-share-menu:hover .article-share-menu__panel,
-.article-share-menu:focus-within .article-share-menu__panel,
 .article-share-menu.is-share-menu-open .article-share-menu__panel {
   display: flex;
   opacity: 1;

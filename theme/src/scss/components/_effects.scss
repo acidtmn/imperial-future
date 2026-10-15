@@ -40,8 +40,8 @@
   background:
     radial-gradient(circle, rgba(212, 175, 55, .18), transparent 26rem),
     var(--color-void);
-  transition: opacity .42s ease, visibility .42s ease;
-  animation: preloader-release 1s 1.5s forwards;
+  transition: opacity .18s ease, visibility .18s ease;
+  animation: preloader-release .18s .08s forwards;
   pointer-events: none;
 }
 
@@ -86,7 +86,7 @@
 
 .reveal-pending [data-reveal].is-revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .reveal-pending .hero [data-reveal] {
@@ -101,6 +101,12 @@
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(18px);
 }
+
+.motion-toggle__play,
+.is-motion-paused .motion-toggle__pause { display: none; }
+.is-motion-paused .motion-toggle__play { display: block; }
+.motion-toggle:disabled { opacity: .5; cursor: default; }
+.is-motion-paused .hero__ticker-track { animation-play-state: paused; }
 
 @keyframes seal-pulse {
   0%,

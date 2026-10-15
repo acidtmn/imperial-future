@@ -116,6 +116,7 @@ final class ThemeOptions
             'imperial_search_examples' => __("интерфейсы\nархив\nмашины", 'imperial-future'),
             'imperial_hero_mode' => 'static',
             'imperial_hero_slider_count' => '4',
+            'imperial_hero_autoplay_delay' => '8',
             'imperial_hero_slider_background_mode' => 'preset',
             'imperial_hero_slider_background_preset' => 'brass',
             'imperial_hero_slider_background_image' => '',

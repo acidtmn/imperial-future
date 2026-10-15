@@ -76,6 +76,10 @@ if (! defined('ABSPATH')) {
                 <?php echo Icon::render('sun', 'theme-toggle__sun'); ?>
                 <?php echo Icon::render('moon', 'theme-toggle__moon'); ?>
             </button>
+            <button class="header-icon-button motion-toggle" type="button" data-motion-toggle aria-pressed="false" aria-label="<?php esc_attr_e('Приостановить анимацию', 'imperial-future'); ?>" title="<?php esc_attr_e('Приостановить анимацию', 'imperial-future'); ?>">
+                <?php echo Icon::render('pause', 'motion-toggle__pause'); ?>
+                <?php echo Icon::render('play', 'motion-toggle__play'); ?>
+            </button>
         </div>
     </header>
     <main class="site-main" id="content" tabindex="-1">

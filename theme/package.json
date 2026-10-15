@@ -1,6 +1,6 @@
 {
   "name": "imperial-future-theme",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Кирилл Александров (https://kodalexandrova.ru/)",
   "homepage": "https://kodalexandrova.ru/",
   "private": true,
@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "lucide-static": "^1.54.0",
+    "postcss": "8.5.30",
+    "postcss-value-parser": "4.2.0",
     "sass": "^1.94.2",
     "vite": "^7.2.7"
   }

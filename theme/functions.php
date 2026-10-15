@@ -46,6 +46,7 @@ if (! defined('ABSPATH')) {
 require_once __DIR__ . '/vendor/autoload.php';
 
 ThemeSetup::registerHooks();
+\ImperialFuture\Support\Icon::registerHooks();
 AssetLoader::registerHooks();
 CommentSupport::registerHooks();
 AdminMarkdownCommentEditor::registerHooks();
@@ -69,6 +70,7 @@ SocialAuthHandler::registerHooks();
 BookmarkAjaxController::registerHooks();
 DefaultAvatar::registerHooks();
 GeneratedFeaturedImageHooks::registerHooks();
+\ImperialFuture\Media\ResponsiveImageFormats::registerHooks();
 LiveSearchController::registerHooks();
 SlugTransliterationHooks::registerHooks();
 RatingAjaxController::registerHooks();

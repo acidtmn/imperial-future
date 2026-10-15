@@ -48,6 +48,12 @@ if ($stickyPosts !== []) {
 $heroSlider = $heroMode === 'slider' ? new WP_Query($heroQueryArgs) : null;
 ?>
 <section class="hero hero--<?php echo esc_attr($heroMode); ?>">
+    <?php if ($heroMode === 'slider' && ThemeOptions::get('imperial_hero_slider_background_mode') === 'image') : ?>
+        <picture class="hero__background" aria-hidden="true">
+            <source media="(max-width:759px)" srcset="<?php echo esc_url(ThemeOptions::mediaUrl('imperial_hero_slider_background_image', 'imperial-backdrop-mobile')); ?>">
+            <?php echo wp_get_attachment_image((int) ThemeOptions::get('imperial_hero_slider_background_image'), 'large', false, ['alt' => '', 'loading' => 'eager', 'fetchpriority' => 'high', 'sizes' => '100vw']); ?>
+        </picture>
+    <?php endif; ?>
     <div class="hero__content">
         <div class="hero__copy">
             <span class="eyebrow" data-reveal><?php echo esc_html(ThemeOptions::get('imperial_hero_eyebrow')); ?></span>
@@ -63,12 +69,12 @@ $heroSlider = $heroMode === 'slider' ? new WP_Query($heroQueryArgs) : null;
             </div>
         </div>
         <?php if ($heroSlider instanceof WP_Query && $heroSlider->have_posts()) : ?>
-            <div class="hero-feature swiper hero-swiper" data-reveal>
+            <div class="hero-feature swiper hero-swiper" data-reveal data-hero-delay="<?php echo esc_attr((string) (ThemeOptions::number('imperial_hero_autoplay_delay', 5, 30) * 1000)); ?>">
                 <div class="swiper-wrapper">
                     <?php while ($heroSlider->have_posts()) : ?>
                         <?php $heroSlider->the_post(); ?>
                         <article class="hero-feature__slide swiper-slide">
-                            <?php echo TemplateTags::featuredImage(get_the_ID(), 'imperial-hero', ['loading' => $heroSlider->current_post === 0 ? 'eager' : 'lazy', 'data-deferred-image' => $heroSlider->current_post > 0 ? '1' : false, 'sizes' => '(min-width: 920px) 540px, 92vw']); ?>
+                            <?php echo TemplateTags::featuredImage(get_the_ID(), 'imperial-hero', ['loading' => $heroSlider->current_post === 0 ? 'eager' : 'lazy', 'fetchpriority' => 'low', 'data-deferred-image' => $heroSlider->current_post > 0 ? '1' : false, 'sizes' => '(min-width: 920px) 540px, 92vw']); ?>
                             <div class="hero-feature__body">
                                 <span><?php echo esc_html(TemplateTags::primaryCategory(get_the_ID())); ?> · <?php echo esc_html(get_the_date()); ?></span>
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

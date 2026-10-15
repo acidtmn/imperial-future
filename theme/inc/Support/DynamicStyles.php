@@ -112,11 +112,7 @@ final class DynamicStyles
             $image = ThemeOptions::mediaUrl('imperial_hero_slider_background_image', 'large');
 
             if ($image !== '') {
-                $mobileImage = ThemeOptions::mediaUrl('imperial_hero_slider_background_image', 'medium_large');
-                $overlay = 'linear-gradient(90deg,rgba(15,15,18,.8),rgba(15,15,18,.48)),';
-
-                return '.hero--slider{--hero-slider-background:' . $overlay . 'url("' . esc_url($image) . '") center/cover no-repeat;}'
-                    . '@media(max-width:759px){.hero--slider{--hero-slider-background:' . $overlay . 'url("' . esc_url($mobileImage) . '") center/cover no-repeat;}}';
+                return '';
             }
         }
 

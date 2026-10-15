@@ -7,7 +7,7 @@ export function iconMarkup(name) {
   const attributes = { class: 'imperial-icon', viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '1.8', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'aria-hidden': 'true', focusable: 'false' };
   Object.entries(attributes).forEach(([key, value]) => svg.setAttribute(key, value));
   const use = document.createElementNS(namespace, 'use');
-  use.setAttribute('href', `${window.imperialFuture.themeUrl}/assets/dist/icons.svg#${name}`);
+  use.setAttribute('href', `#imperial-icon-${name}`);
   svg.append(use);
   return svg.outerHTML;
 }
