@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageLockSha256": "a53d3a886b2fc33ac1d37f6a80d5ff415e149628aac2163788b7bd3c42c835b2",
+  "packageLockSha256": "3d4b429d898504f457d978e631eeed38d0f28658165d4dd33aa56f33e2171e75",
   "composerLockSha256": "1dea365a5a0cbea9527361ba3151293e456104e1a9992e95b412c9cc3602ff9c",
   "npm": [
     {
@@ -500,7 +500,7 @@
     },
     {
       "name": "postcss",
-      "version": "8.5.29",
+      "version": "8.5.30",
       "installedPath": "node_modules/postcss",
       "license": "MIT",
       "role": "Инструмент сборки",
@@ -510,6 +510,21 @@
           "path": "licenses/npm/postcss/LICENSE",
           "source": "node_modules/postcss/LICENSE",
           "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "name": "postcss-value-parser",
+      "version": "4.2.0",
+      "installedPath": "node_modules/postcss-value-parser",
+      "license": "MIT",
+      "role": "Инструмент сборки",
+      "repository": "https://github.com/TrySound/postcss-value-parser.git",
+      "notices": [
+        {
+          "path": "licenses/npm/postcss-value-parser/LICENSE",
+          "source": "node_modules/postcss-value-parser/LICENSE",
+          "sha256": "3687447039151857a6ba378db062172c7f33d4aa70a615c87a43a9c50e990485"
         }
       ]
     },

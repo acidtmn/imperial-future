@@ -31,15 +31,9 @@ final class ExternalMetadataService
             return array_merge($fallback, $cached);
         }
 
-        $response = wp_safe_remote_get($url, [
-            'timeout' => 4,
-            'redirection' => 3,
-            'limit_response_size' => 262144,
-            'reject_unsafe_urls' => true,
-            'user-agent' => 'ImperialFutureEmbed/1.0; ' . home_url('/'),
-        ]);
+        $response = self::fetch($url);
 
-        if (is_wp_error($response) || (int) wp_remote_retrieve_response_code($response) >= 400) {
+        if ($response === false) {
             return $fallback;
         }
 
@@ -53,6 +47,58 @@ final class ExternalMetadataService
         set_transient($cacheKey, $metadata, DAY_IN_SECONDS);
 
         return array_merge($fallback, $metadata);
+    }
+
+    private static function fetch(string $url): array|false
+    {
+        $visited = [];
+
+        // Каждый адрес проверяем до запроса, не передавая переходы HTTP-транспорту.
+        for ($redirects = 0; $redirects <= 3; ++$redirects) {
+            $url = explode('#', $url, 2)[0];
+            if (isset($visited[$url]) || ! ExternalUrlGuard::isSafeMetadataTarget($url)) {
+                return false;
+            }
+            $visited[$url] = true;
+
+            $response = wp_safe_remote_get($url, [
+                'timeout' => 4,
+                'redirection' => 0,
+                'limit_response_size' => 262144,
+                'reject_unsafe_urls' => true,
+                'user-agent' => 'ImperialFutureEmbed/1.0; ' . home_url('/'),
+            ]);
+
+            if (is_wp_error($response)) {
+                return false;
+            }
+
+            $status = (int) wp_remote_retrieve_response_code($response);
+            if ($status >= 200 && $status < 300) {
+                return $response;
+            }
+            if (! in_array($status, [301, 302, 303, 307, 308], true) || $redirects === 3) {
+                return false;
+            }
+
+            $location = wp_remote_retrieve_header($response, 'location');
+            if (! is_string($location) || trim($location) === '') {
+                return false;
+            }
+
+            // Относительные Location разбираем так же, как библиотека HTTP в WordPress.
+            try {
+                $target = \WpOrg\Requests\Iri::absolutize($url, $location);
+            } catch (\WpOrg\Requests\Exception $exception) {
+                return false;
+            }
+            if ($target === false) {
+                return false;
+            }
+            $url = $target->uri;
+        }
+
+        return false;
     }
 
     private static function parse(string $html): array

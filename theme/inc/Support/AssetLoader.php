@@ -20,6 +20,7 @@ final class AssetLoader
         add_filter('script_loader_tag', [self::class, 'addModuleType'], 10, 3);
         add_filter('body_class', [self::class, 'addBodyClasses']);
         add_action('wp_head', [self::class, 'preloadBuiltStyles'], 2);
+        add_filter('style_loader_tag', [CriticalStyles::class, 'deferStylesheet'], 10, 4);
     }
 
     public static function enqueue(): void
@@ -32,6 +33,7 @@ final class AssetLoader
             return;
         }
 
+        CriticalStyles::enqueue();
         foreach (($entry['css'] ?? []) as $index => $cssFile) {
             wp_enqueue_style(
                 self::STYLE_HANDLE . '-' . $index,
@@ -39,6 +41,20 @@ final class AssetLoader
                 [],
                 self::assetVersion($cssFile)
             );
+        }
+
+        $pageStyles = [];
+        if (is_singular('post')) {
+            $pageStyles[] = 'comments';
+        }
+        if (is_page_template('page-account.php')) {
+            $pageStyles[] = 'account';
+        }
+        foreach ($pageStyles as $name) {
+            $file = $manifest['src/scss/' . $name . '.scss']['file'] ?? '';
+            if ($file !== '') {
+                wp_enqueue_style('imperial-future-' . $name, self::assetUrl($file), [], self::assetVersion($file));
+            }
         }
 
         wp_enqueue_script(
@@ -103,11 +119,11 @@ final class AssetLoader
     public static function preloadBuiltStyles(): void
     {
         if (is_front_page() && ThemeOptions::get('imperial_hero_mode') === 'slider' && ThemeOptions::get('imperial_hero_slider_background_mode') === 'image') {
-            foreach (['medium_large' => '(max-width:759px)', 'large' => '(min-width:760px)'] as $size => $media) {
-                $image = ThemeOptions::mediaUrl('imperial_hero_slider_background_image', $size);
-                if ($image !== '') {
-                    printf('<link rel="preload" href="%s" as="image" media="%s" fetchpriority="high">' . PHP_EOL, esc_url($image), esc_attr($media));
-                }
+            $id = (int) ThemeOptions::get('imperial_hero_slider_background_image');
+            $image = wp_get_attachment_image_url($id, 'large');
+            if ($image) {
+                printf('<link rel="preload" href="%s" as="image" media="(max-width:759px)" fetchpriority="high">' . PHP_EOL, esc_url(ThemeOptions::mediaUrl('imperial_hero_slider_background_image', 'imperial-backdrop-mobile')));
+                printf('<link rel="preload" href="%s" as="image" imagesrcset="%s" imagesizes="100vw" media="(min-width:760px)" fetchpriority="high">' . PHP_EOL, esc_url($image), esc_attr(wp_get_attachment_image_srcset($id, 'large') ?: ''));
             }
         }
 
@@ -118,7 +134,7 @@ final class AssetLoader
             return;
         }
 
-        foreach (($entry['css'] ?? []) as $cssFile) {
+        foreach (CriticalStyles::isLoaded() ? [] : ($entry['css'] ?? []) as $cssFile) {
             $url = add_query_arg('ver', self::assetVersion((string) $cssFile), self::assetUrl((string) $cssFile));
 
             printf(
@@ -133,12 +149,18 @@ final class AssetLoader
             'IBM Plex Sans' => 'ibm-plex-sans-cyrillic-400-normal-',
             default => 'inter-cyrillic-wght-normal-',
         };
-        foreach ([$heading, $body] as $prefix) {
+        foreach ([$heading, $body, str_replace('-cyrillic-', '-latin-', $heading), str_replace('-cyrillic-', '-latin-', $body)] as $prefix) {
+            $fontFiles = [];
             foreach (($entry['assets'] ?? []) as $file) {
-                if (str_starts_with(basename($file), $prefix) && str_ends_with($file, '.woff2')) {
-                    printf('<link rel="preload" href="%s" as="font" type="font/woff2" crossorigin>' . PHP_EOL, esc_url(self::assetUrl($file)));
-                    break;
+                $extension = pathinfo($file, PATHINFO_EXTENSION);
+                if (str_starts_with(basename($file), $prefix) && ($extension === 'woff2' || ($prefix !== $body && $prefix !== str_replace('-cyrillic-', '-latin-', $body) && $extension === 'woff'))) {
+                    $fontFiles[$file] = filesize(get_template_directory() . '/assets/dist/' . $file);
                 }
+            }
+            asort($fontFiles);
+            $file = array_key_first($fontFiles);
+            if ($file !== null) {
+                printf('<link rel="preload" href="%s" as="font" type="font/%s" crossorigin>' . PHP_EOL, esc_url(self::assetUrl($file)), esc_attr(pathinfo($file, PATHINFO_EXTENSION)));
             }
         }
     }
@@ -167,9 +189,7 @@ final class AssetLoader
 
     private static function assetVersion(string $file): string
     {
-        $path = get_template_directory() . '/assets/dist/' . ltrim($file, '/');
-
-        return is_readable($path) ? (string) filemtime($path) : self::themeVersion();
+        return pathinfo($file, PATHINFO_FILENAME);
     }
 
     private static function themeVersion(): string

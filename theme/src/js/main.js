@@ -1,11 +1,10 @@
 import { t } from './i18n.js';
 import { iconMarkup } from './icons.js';
 import { initAccount } from './account.js';
+import { initMotionControls, bindSliderMotion, isMotionPaused } from './motion.js';
 import '../scss/main.scss';
 import './fonts.js';
 import { initNotices, showNotice } from './notices.js';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const select = (selector, scope = document) => scope.querySelector(selector);
@@ -24,27 +23,25 @@ const decodeHash = (hash) => {
   }
 };
 
+const start = () => window.requestAnimationFrame(() => window.setTimeout(boot, 0));
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', boot);
+  document.addEventListener('DOMContentLoaded', start, { once: true });
 } else {
-  boot();
+  start();
 }
 
-function boot() {
+async function boot() {
   initThemeToggle();
+  initMotionControls(prefersReducedMotion);
   initPreloader();
-  initReadingProgress();
-  initRevealAnimations();
-  initParallax();
-  initTelegraph();
-  initTableOfContents();
-  initDustCanvas();
   initDragCaptcha();
   initModals();
   initAuthTabs();
   initNotices();
   initAccount();
   initLiveSearch();
+  // Отдаём управление браузеру между независимыми группами инициализации.
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
   initRatings();
   initCommentVotes();
   initMarkdownEditors();
@@ -57,6 +54,14 @@ function boot() {
   initCodeBlocks();
   initExternalExit();
   initOutsideDismiss();
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
+  initReadingProgress();
+  initTableOfContents();
+  initRevealAnimations();
+  initParallax();
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
+  initDustCanvas();
+  initTelegraph();
 }
 
 function initThemeToggle() {
@@ -100,7 +105,7 @@ function initPreloader() {
 
   const hide = () => {
     preloader.classList.add('is-leaving');
-    window.setTimeout(() => preloader.classList.add('is-hidden'), prefersReducedMotion ? 0 : 460);
+    window.setTimeout(() => preloader.classList.add('is-hidden'), prefersReducedMotion ? 0 : 220);
   };
 
   hide();
@@ -113,16 +118,23 @@ function initReadingProgress() {
     return;
   }
 
+  let pending = false;
   const update = () => {
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const ratio = documentHeight > 0 ? window.scrollY / documentHeight : 0;
 
     progress.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
+    pending = false;
+  };
+  const schedule = () => {
+    if (pending) return;
+    pending = true;
+    window.requestAnimationFrame(update);
   };
 
-  update();
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
+  schedule();
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
 }
 
 function initRevealAnimations() {
@@ -192,13 +204,13 @@ function initTelegraph() {
   }
 
   const initialize = async (target) => {
-    const [{ Swiper }, { Autoplay, FreeMode, Pagination, EffectFade, A11y }] = await Promise.all([
-      import('swiper'),
-      import('swiper/modules')
-    ]);
+    const { Swiper, Autoplay, FreeMode, Pagination, EffectFade, A11y } = await import('./slider.js');
+    // Разделяем разбор модуля и подготовку DOM, чтобы не блокировать ввод одной длинной задачей.
+    await new Promise((resolve) => window.setTimeout(resolve, 0));
 
     if (target === slider) {
-      new Swiper(slider, {
+      const instance = new Swiper(slider, {
+        init: false,
         modules: [Autoplay, FreeMode],
         slidesPerView: 'auto',
         spaceBetween: 18,
@@ -215,9 +227,17 @@ function initTelegraph() {
               disableOnInteraction: false
             }
       });
+      await new Promise((resolve) => window.setTimeout(resolve, 0));
+      instance.init();
+      bindSliderMotion(instance, prefersReducedMotion);
     }
 
     if (target === heroSlider) {
+      const delay = Number(heroSlider.dataset.heroDelay) || 8000;
+      selectAll('.hero-feature__slide', heroSlider).forEach((slide) => {
+        const words = slide.querySelector('.hero-feature__body')?.textContent.trim().split(/\s+/).length || 0;
+        slide.dataset.swiperAutoplay = String(Math.min(30000, Math.max(delay, Math.ceil(words / 180 * 60000))));
+      });
       const loadSlideImage = (swiper) => {
         const image = swiper.slides[swiper.activeIndex]?.querySelector('[data-deferred-image]');
         if (!image) return;
@@ -227,7 +247,8 @@ function initTelegraph() {
         image.src = image.dataset.deferredSrc;
         image.removeAttribute('data-deferred-image');
       };
-      new Swiper(heroSlider, {
+      const instance = new Swiper(heroSlider, {
+        init: false,
         modules: [Autoplay, Pagination, EffectFade, A11y],
         a11y: {
           containerMessage: t('Избранные публикации'),
@@ -245,10 +266,14 @@ function initTelegraph() {
         autoplay: prefersReducedMotion
           ? false
           : {
-              delay: 5200,
+              delay,
+              pauseOnMouseEnter: true,
               disableOnInteraction: false
           }
       });
+      await new Promise((resolve) => window.setTimeout(resolve, 0));
+      instance.init();
+      bindSliderMotion(instance, prefersReducedMotion);
     }
   };
 
@@ -326,6 +351,7 @@ function initDustCanvas() {
   let width = 0;
   let height = 0;
   let lastFrame = 0;
+  let frameId = 0;
 
   const resize = () => {
     const ratio = Math.min(window.devicePixelRatio || 1, animated ? 1.5 : 1);
@@ -338,8 +364,10 @@ function initDustCanvas() {
   };
 
   const render = (time = 0) => {
-    if (animated) requestAnimationFrame(render);
-    if (document.hidden || (animated && time - lastFrame < 66)) return;
+    frameId = 0;
+    if (document.hidden || isMotionPaused()) return;
+    if (animated) frameId = requestAnimationFrame(render);
+    if (animated && time - lastFrame < 66) return;
     lastFrame = time;
     context.clearRect(0, 0, width, height);
     context.fillStyle = 'rgba(244, 231, 197, .34)';
@@ -361,6 +389,9 @@ function initDustCanvas() {
 
   resize();
   render();
+  const resume = () => { if (!frameId && !document.hidden && !isMotionPaused()) render(); };
+  document.addEventListener('visibilitychange', resume);
+  document.addEventListener('imperial:motion-change', resume);
   window.addEventListener('resize', () => { resize(); if (!animated) render(); });
 }
 
@@ -617,7 +648,10 @@ function initRatings() {
     const postId = panel.dataset.postId;
     const locked = panel.dataset.ratingLocked === '1';
     const reactor = select('.imperial-rating__reactor', panel);
-    const openMenu = () => panel.classList.add('is-rating-menu-open');
+    const openMenu = () => {
+      panel.classList.add('is-rating-menu-open');
+      constrainPopover(select('.imperial-rating-popover', panel));
+    };
 
     if (reactor) {
       reactor.addEventListener('pointerenter', openMenu);
@@ -1022,6 +1056,7 @@ function initShareCopy() {
         }
 
         closeInteractivePopovers();
+        showNotice(t('Скопировано'), 'success');
       } catch (error) {
         window.prompt(t('Скопируйте ссылку'), url);
       }
@@ -1049,6 +1084,7 @@ function initCardShare() {
       try {
         await navigator.clipboard.writeText(url);
         button.classList.add('is-copied');
+        showNotice(t('Скопировано'), 'success');
         window.setTimeout(() => button.classList.remove('is-copied'), 1400);
       } catch (error) {
         window.prompt(t('Скопируйте ссылку'), url);
@@ -1060,7 +1096,10 @@ function initCardShare() {
 function initShareMenus() {
   selectAll('[data-share-menu]').forEach((menu) => {
     const button = select('.article-actionbar__button', menu);
-    const open = () => menu.classList.add('is-share-menu-open');
+    const open = () => {
+      menu.classList.add('is-share-menu-open');
+      constrainPopover(select('.article-share-menu__panel', menu));
+    };
 
     menu.addEventListener('pointerenter', open);
     menu.addEventListener('focusin', open);
@@ -1074,7 +1113,18 @@ function initShareMenus() {
   });
 }
 
+function constrainPopover(popover) {
+  if (!popover) return;
+  popover.style.setProperty('--popover-shift', '0px');
+  const rect = popover.getBoundingClientRect();
+  const shift = Math.max(16 - rect.left, Math.min(0, window.innerWidth - 16 - rect.right));
+  popover.style.setProperty('--popover-shift', `${shift}px`);
+}
+
 function initOutsideDismiss() {
+  window.addEventListener('resize', () => {
+    selectAll('.is-rating-menu-open .imperial-rating-popover, .is-share-menu-open .article-share-menu__panel').forEach(constrainPopover);
+  });
   document.addEventListener('click', (event) => {
     const target = event.target instanceof Element ? event.target : null;
 

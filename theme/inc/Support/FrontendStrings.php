@@ -10,6 +10,9 @@ final class FrontendStrings
     public static function all(): array
     {
         return [
+            'Приостановить анимацию' => __('Приостановить анимацию', 'imperial-future'),
+            'Продолжить анимацию' => __('Продолжить анимацию', 'imperial-future'),
+            'Анимация отключена в настройках устройства' => __('Анимация отключена в настройках устройства', 'imperial-future'),
             'Сила пароля: %s' => __('Сила пароля: %s', 'imperial-future'),
             '%s из 5' => __('%s из 5', 'imperial-future'),
             'Профиль: %s' => __('Профиль: %s', 'imperial-future'),

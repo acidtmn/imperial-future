@@ -39,6 +39,7 @@ final class ThemeSetup
 
         add_image_size('imperial-card', 920, 0, false);
         add_image_size('imperial-hero', 1640, 0, false);
+        add_image_size('imperial-backdrop-mobile', 480, 760, true);
 
         register_nav_menus([
             'primary' => __('Главная навигация', 'imperial-future'),
@@ -59,7 +60,13 @@ final class ThemeSetup
             return ['style.css'];
         }
 
-        $styles = [];
+        $styles = ['assets/dist/css/fonts-all.css'];
+        foreach (['critical', 'comments'] as $name) {
+            $file = $manifest['src/scss/' . $name . '.scss']['file'] ?? '';
+            if ($file !== '') {
+                $styles[] = 'assets/dist/' . $file;
+            }
+        }
 
         foreach (($entry['css'] ?? []) as $cssFile) {
             $styles[] = 'assets/dist/' . ltrim((string) $cssFile, '/');

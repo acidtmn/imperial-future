@@ -37,19 +37,23 @@ final class AvatarService
             return 0;
         }
 
-        $targetPath = trailingslashit((string) $upload['path']) . 'imperial-avatar-' . $userId . '-' . time() . '.png';
+        $filename = wp_unique_filename((string) $upload['path'], 'imperial-avatar-' . $userId . '-' . time() . '.png');
+        $targetPath = trailingslashit((string) $upload['path']) . $filename;
+        $saved = self::cropSquare($source, $targetPath, (string) $info['mime']);
 
-        if (! self::cropSquare($source, $targetPath, (string) $info['mime'])) {
+        if ($saved === false) {
             return 0;
         }
+        $targetPath = $saved['path'];
 
         $attachmentId = wp_insert_attachment([
-            'post_mime_type' => 'image/png',
+            'post_mime_type' => $saved['mime-type'],
             'post_title' => 'Imperial avatar ' . $userId,
             'post_status' => 'inherit',
         ], $targetPath);
 
-        if (is_wp_error($attachmentId)) {
+        if (is_wp_error($attachmentId) || (int) $attachmentId <= 0) {
+            wp_delete_file($targetPath);
             return 0;
         }
 
@@ -80,7 +84,7 @@ final class AvatarService
         return is_string($customUrl) ? $customUrl : $url;
     }
 
-    private static function cropSquare(string $source, string $targetPath, string $mime): bool
+    private static function cropSquare(string $source, string $targetPath, string $mime): array|false
     {
         if (! in_array($mime, ['image/jpeg', 'image/png', 'image/webp'], true)) {
             return false;
@@ -90,6 +94,10 @@ final class AvatarService
             return false;
         }
         $resized = $editor->resize(512, 512, true);
-        return ! is_wp_error($resized) && ! is_wp_error($editor->save($targetPath, 'image/png'));
+        if (is_wp_error($resized)) {
+            return false;
+        }
+        $saved = $editor->save($targetPath, 'image/png');
+        return is_array($saved) ? $saved : false;
     }
 }

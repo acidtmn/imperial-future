@@ -41,7 +41,8 @@ GSAP Standard License не заменяется GPL темы. Upstream-текс�
 | node-addon-api | 7.1.1 | Инструмент сборки | [LICENSE.md](npm/node-addon-api/LICENSE.md) |
 | picocolors | 1.1.1 | Инструмент сборки | [LICENSE](npm/picocolors/LICENSE) |
 | picomatch | 4.0.4 | Инструмент сборки | [LICENSE](npm/picomatch/LICENSE) |
-| postcss | 8.5.29 | Инструмент сборки | [LICENSE](npm/postcss/LICENSE) |
+| postcss | 8.5.30 | Инструмент сборки | [LICENSE](npm/postcss/LICENSE) |
+| postcss-value-parser | 4.2.0 | Инструмент сборки | [LICENSE](npm/postcss-value-parser/LICENSE) |
 | readdirp | 4.1.2 | Инструмент сборки | [LICENSE](npm/readdirp/LICENSE) |
 | rollup | 4.60.3 | Инструмент сборки | [LICENSE.md](npm/rollup/LICENSE.md) |
 | sass | 1.99.0 | Инструмент сборки | [LICENSE](npm/sass/LICENSE) |
