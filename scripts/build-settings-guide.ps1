@@ -5,7 +5,7 @@ param([string] $DefinitionsPath = (Join-Path $PSScriptRoot '../output/settings-d
 $ErrorActionPreference = 'Stop'
 $sections = Get-Content -LiteralPath $DefinitionsPath -Raw | ConvertFrom-Json
 $lines = [Collections.Generic.List[string]]::new()
-$lines.Add('# Все настройки Imperial Future 1.1.2')
+$lines.Add('# Все настройки Imperial Future 1.1.3')
 $lines.Add('')
 $lines.Add('Путь: **Внешний вид -> Настроить -> Imperial Future: настройки темы**. Ниже перечислены все 114 зарегистрированных полей в 13 разделах. Это исходные значения темы, не настройки или секреты конкретного сайта. Импорт демо может изменить часть оформления.')
 $lines.Add('')
