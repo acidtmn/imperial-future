@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Imperial Future 1.1.2\n"
+"Project-Id-Version: Imperial Future 1.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/acidtmn/imperial-future/issues\n"
 "Last-Translator: Кирилл Александров\n"
 "Language-Team: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-15T09:50:47+00:00\n"
-"PO-Revision-Date: 2026-10-15 09:51+0000\n"
+"POT-Creation-Date: 2026-10-16T09:54:40+00:00\n"
+"PO-Revision-Date: 2026-10-16 09:55+0000\n"
 "X-Generator: WordPress POMO\n"
 "X-Domain: imperial-future\n"
 "Language: ru_RU\n"
@@ -244,11 +244,11 @@ msgstr "Войдите, чтобы оценить комментарий."
 msgid "Слишком много оценок комментариев подряд. Попробуйте чуть позже."
 msgstr "Слишком много оценок комментариев подряд. Попробуйте чуть позже."
 
-#: inc/Comments/CommentVoteAjaxController.php:46
+#: inc/Comments/CommentVoteAjaxController.php:47
 msgid "Комментарий не найден."
 msgstr "Комментарий не найден."
 
-#: inc/Comments/CommentVoteAjaxController.php:50
+#: inc/Comments/CommentVoteAjaxController.php:51
 msgid "Такой оценки комментария нет."
 msgstr "Такой оценки комментария нет."
 
@@ -314,7 +314,7 @@ msgstr "сек. до перехода"
 msgid "Продолжить переход"
 msgstr "Продолжить переход"
 
-#: inc/Media/DefaultAvatar.php:21
+#: inc/Media/DefaultAvatar.php:23
 msgid "Имперская печать"
 msgstr "Имперская печать"
 
@@ -341,11 +341,28 @@ msgstr "Отписаться от дайджеста:"
 msgid "Еженедельный дайджест: %s"
 msgstr "Еженедельный дайджест: %s"
 
-#: inc/Newsletter/SubscriptionService.php:82
+#: inc/Newsletter/SubscriptionService.php:98
+msgid "Подтверди email"
+msgstr "Подтверди email"
+
+#: inc/Newsletter/SubscriptionService.php:98
 msgid "Подтверди подписку на дайджест"
 msgstr "Подтверди подписку на дайджест"
 
-#: inc/Newsletter/SubscriptionService.php:83
+#: inc/Newsletter/SubscriptionService.php:100
+#, php-format
+msgid ""
+"Подтверди email для уведомлений по ссылке в течение 24 часов:\n"
+"%s\n"
+"\n"
+"Это не подписывает тебя на дайджест. Если ты не запрашивал подтверждение, проигнорируй письмо."
+msgstr ""
+"Подтверди email для уведомлений по ссылке в течение 24 часов:\n"
+"%s\n"
+"\n"
+"Это не подписывает тебя на дайджест. Если ты не запрашивал подтверждение, проигнорируй письмо."
+
+#: inc/Newsletter/SubscriptionService.php:101
 #, php-format
 msgid ""
 "Подтверди подписку по ссылке в течение 24 часов:\n"
@@ -430,7 +447,7 @@ msgstr "Резервные копии"
 msgid "Файлы"
 msgstr "Файлы"
 
-#: inc/Seed/EditorialCatalog.php:16 page-account.php:76 page-account.php:142
+#: inc/Seed/EditorialCatalog.php:16 page-account.php:76 page-account.php:154
 msgid "Безопасность"
 msgstr "Безопасность"
 
@@ -2471,46 +2488,58 @@ msgid "Для этого действия нужно войти."
 msgstr "Для этого действия нужно войти."
 
 #: inc/Support/UserNotice.php:25
+msgid "Сначала подтверди email в разделе подписок. Изменения не сохранены."
+msgstr "Сначала подтверди email в разделе подписок. Изменения не сохранены."
+
+#: inc/Support/UserNotice.php:26
 msgid "Если такой аккаунт существует, письмо для восстановления отправлено на его почту."
 msgstr "Если такой аккаунт существует, письмо для восстановления отправлено на его почту."
 
-#: inc/Support/UserNotice.php:26
+#: inc/Support/UserNotice.php:27
 msgid "Вход через соцсеть не завершён. Попробуй ещё раз или войди с паролем."
 msgstr "Вход через соцсеть не завершён. Попробуй ещё раз или войди с паролем."
 
-#: inc/Support/UserNotice.php:27
+#: inc/Support/UserNotice.php:28
 msgid "Вход через соцсеть пока не настроен."
 msgstr "Вход через соцсеть пока не настроен."
 
-#: inc/Support/UserNotice.php:28
+#: inc/Support/UserNotice.php:29
 msgid "Социальный аккаунт привязан."
 msgstr "Социальный аккаунт привязан."
 
-#: inc/Support/UserNotice.php:32
+#: inc/Support/UserNotice.php:33
 msgid "Перемести печать на отмеченное место и отправь письмо ещё раз."
 msgstr "Перемести печать на отмеченное место и отправь письмо ещё раз."
 
-#: inc/Support/UserNotice.php:34
+#: inc/Support/UserNotice.php:35
 msgid "Письмо не отправлено. Попробуй позже или свяжись с автором другим способом."
 msgstr "Письмо не отправлено. Попробуй позже или свяжись с автором другим способом."
 
-#: inc/Support/UserNotice.php:37
+#: inc/Support/UserNotice.php:38
 msgid "Подписка оформлена."
 msgstr "Подписка оформлена."
 
-#: inc/Support/UserNotice.php:38
+#: inc/Support/UserNotice.php:39
 msgid "Проверь почту и подтверди подписку."
 msgstr "Проверь почту и подтверди подписку."
 
-#: inc/Support/UserNotice.php:39
+#: inc/Support/UserNotice.php:40
+msgid "Проверь почту и подтверди email. Подписки не изменены."
+msgstr "Проверь почту и подтверди email. Подписки не изменены."
+
+#: inc/Support/UserNotice.php:41
+msgid "Email подтверждён. Теперь можно включить уведомления."
+msgstr "Email подтверждён. Теперь можно включить уведомления."
+
+#: inc/Support/UserNotice.php:42
 msgid "Ты отписался от дайджеста."
 msgstr "Ты отписался от дайджеста."
 
-#: inc/Support/UserNotice.php:40
+#: inc/Support/UserNotice.php:43
 msgid "Не удалось оформить подписку. Проверь адрес и попробуй позже."
 msgstr "Не удалось оформить подписку. Проверь адрес и попробуй позже."
 
-#: inc/Support/UserNotice.php:41
+#: inc/Support/UserNotice.php:44
 msgid "Слишком много попыток. Попробуй позже."
 msgstr "Слишком много попыток. Попробуй позже."
 
@@ -2551,7 +2580,7 @@ msgid "Слишком много попыток. Подождите немног
 msgstr "Слишком много попыток. Подождите немного перед следующим действием."
 
 #: inc/Template/AccountViewModel.php:66 page-account.php:77
-#: page-account.php:238
+#: page-account.php:250
 msgid "Закладки"
 msgstr "Закладки"
 
@@ -2730,119 +2759,131 @@ msgstr "Только прямые ответы, без лишнего шума."
 msgid "Сохранить изменения"
 msgstr "Сохранить изменения"
 
+#: page-account.php:142
+msgid "Подтверждение email"
+msgstr "Подтверждение email"
+
 #: page-account.php:143
+msgid "Подтверди адрес, чтобы управлять подписками и уведомлениями."
+msgstr "Подтверди адрес, чтобы управлять подписками и уведомлениями."
+
+#: page-account.php:148
+msgid "Подтвердить email"
+msgstr "Подтвердить email"
+
+#: page-account.php:155
 msgid "Сменить пароль"
 msgstr "Сменить пароль"
 
-#: page-account.php:144
+#: page-account.php:156
 msgid "После смены пароля текущий сеанс останется активным."
 msgstr "После смены пароля текущий сеанс останется активным."
 
-#: page-account.php:149
+#: page-account.php:161
 msgid "Текущий пароль"
 msgstr "Текущий пароль"
 
-#: page-account.php:150
+#: page-account.php:162
 msgid "Новый пароль"
 msgstr "Новый пароль"
 
-#: page-account.php:153 parts/auth/modal.php:64
+#: page-account.php:165 parts/auth/modal.php:64
 msgid "Сила пароля: не указана"
 msgstr "Сила пароля: не указана"
 
-#: page-account.php:155
+#: page-account.php:167
 msgid "Повторите пароль"
 msgstr "Повторите пароль"
 
-#: page-account.php:157
+#: page-account.php:169
 msgid "Обновить пароль"
 msgstr "Обновить пароль"
 
-#: page-account.php:163
+#: page-account.php:175
 msgid "Печать"
 msgstr "Печать"
 
-#: page-account.php:164
+#: page-account.php:176
 msgid "Аватар"
 msgstr "Аватар"
 
-#: page-account.php:165
+#: page-account.php:177
 msgid "Изображение будет обрезано в квадрат и сохранено как личная печать."
 msgstr "Изображение будет обрезано в квадрат и сохранено как личная печать."
 
-#: page-account.php:172
+#: page-account.php:184
 msgid "PNG, JPG или WebP"
 msgstr "PNG, JPG или WebP"
 
-#: page-account.php:174
+#: page-account.php:186
 msgid "Выбрать изображение"
 msgstr "Выбрать изображение"
 
-#: page-account.php:175
+#: page-account.php:187
 msgid "Файл не выбран"
 msgstr "Файл не выбран"
 
-#: page-account.php:178
+#: page-account.php:190
 msgid "Обновить аватар"
 msgstr "Обновить аватар"
 
-#: page-account.php:184
+#: page-account.php:196
 msgid "Ключи"
 msgstr "Ключи"
 
-#: page-account.php:185
+#: page-account.php:197
 msgid "Социальный вход"
 msgstr "Социальный вход"
 
-#: page-account.php:186
+#: page-account.php:198
 msgid "Привяжите быстрый вход, чтобы не вспоминать пароль на каждом устройстве."
 msgstr "Привяжите быстрый вход, чтобы не вспоминать пароль на каждом устройстве."
 
-#: page-account.php:193 page-account.php:203
+#: page-account.php:205 page-account.php:215
 msgid "Привязан"
 msgstr "Привязан"
 
-#: page-account.php:195
+#: page-account.php:207
 msgid "Привязать VK"
 msgstr "Привязать VK"
 
-#: page-account.php:197 page-account.php:207
+#: page-account.php:209 page-account.php:219
 msgid "Отключён"
 msgstr "Отключён"
 
-#: page-account.php:201
+#: page-account.php:213
 msgid "Яндекс"
 msgstr "Яндекс"
 
-#: page-account.php:205
+#: page-account.php:217
 msgid "Привязать Яндекс"
 msgstr "Привязать Яндекс"
 
-#: page-account.php:215
+#: page-account.php:227
 msgid "Активность"
 msgstr "Активность"
 
-#: page-account.php:216
+#: page-account.php:228
 msgid "Мои реплики"
 msgstr "Мои реплики"
 
-#: page-account.php:217
+#: page-account.php:229
 msgid "Последние одобренные комментарии из архива."
 msgstr "Последние одобренные комментарии из архива."
 
-#: page-account.php:221
+#: page-account.php:233
 msgid "Пока нет опубликованных комментариев. Самое время оставить первую архивную пометку."
 msgstr "Пока нет опубликованных комментариев. Самое время оставить первую архивную пометку."
 
-#: page-account.php:239
+#: page-account.php:251
 msgid "Сохранённые публикации"
 msgstr "Сохранённые публикации"
 
-#: page-account.php:241
+#: page-account.php:253
 msgid "Личный список материалов, к которым удобно вернуться позже."
 msgstr "Личный список материалов, к которым удобно вернуться позже."
 
-#: page-account.php:245
+#: page-account.php:257
 msgid "Здесь появятся материалы, которые вы отметите звездой под публикацией."
 msgstr "Здесь появятся материалы, которые вы отметите звездой под публикацией."
 

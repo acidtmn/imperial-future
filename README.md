@@ -8,10 +8,10 @@
 
 ## Скачать и установить
 
-Исправленный выпуск **1.1.3** доступен в [магазине автора](https://kodalexandrova.ru/products/imperial-future) и GitHub Releases. Исправлены приватность комментариев и подписок, вывод загруженного аватара и сохранение Markdown-кода. Предыдущие релизы сохранены без подмены архивов.
+Текущий выпуск **1.1.4** дополняет исправления 1.1.3 полными каталогами перевода новых строк подтверждения email. Сохранены исправления приватности комментариев и подписок, загруженного аватара и Markdown-кода. [Страница темы у автора](https://kodalexandrova.ru/products/imperial-future). Предыдущие релизы сохранены без подмены архивов.
 
-- [Установочный архив и примечания к версии 1.1.3](https://github.com/acidtmn/imperial-future/releases/tag/v1.1.3)
-- [Скачать imperial-future-1.1.3.zip](https://github.com/acidtmn/imperial-future/releases/download/v1.1.3/imperial-future-1.1.3.zip)
+- [Установочный архив и примечания к версии 1.1.4](https://github.com/acidtmn/imperial-future/releases/tag/v1.1.4)
+- [Скачать imperial-future-1.1.4.zip](https://github.com/acidtmn/imperial-future/releases/download/v1.1.4/imperial-future-1.1.4.zip)
 - [Все выпуски](https://github.com/acidtmn/imperial-future/releases)
 
 В WordPress: **Внешний вид -> Темы -> Добавить тему -> Загрузить тему**, затем активировать Imperial Future. Используй установочный ZIP из магазина автора или Releases. Автоматический архив GitHub **Source code** содержит весь репозиторий и не предназначен для загрузки как тема.

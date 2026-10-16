@@ -1,4 +1,4 @@
-# Разработка и сборка Imperial Future 1.1.3
+# Разработка и сборка Imperial Future 1.1.4
 
 ## Структура репозитория
 
@@ -63,7 +63,7 @@ wp --path=/path/to/wordpress eval-file /path/to/repository/theme/tools/update-ru
 
 ## Справочник настроек
 
-В версии 1.1.2 Customizer содержит 114 настроек темы, включая минимальный интервал смены hero-слайдов. Экспортёр читает определения `Customizer` и `FeatureCustomizer`, **не сохранённые theme_mod**, и заменяет динамические email/название сайта нейтральными подписями. Значения по умолчанию берутся из `ThemeOptions`. На тестовом WordPress с активной темой:
+В версии 1.1.4 Customizer содержит 114 настроек темы, включая минимальный интервал смены hero-слайдов. Экспортёр читает определения `Customizer` и `FeatureCustomizer`, **не сохранённые theme_mod**, и заменяет динамические email/название сайта нейтральными подписями. Значения по умолчанию берутся из `ThemeOptions`. На тестовом WordPress с активной темой:
 
 ```sh
 wp --path=/path/to/wordpress eval-file /path/to/repository/scripts/export-settings.php --use-include > /path/to/repository/output/settings-definitions.json
@@ -84,6 +84,7 @@ wp --path=/path/to/wordpress eval-file /path/to/repository/scripts/export-settin
 ```sh
 php wp-content/themes/imperial-future/tests/theme-smoke.php
 php wp-content/themes/imperial-future/tests/newsletter.php
+php wp-content/themes/imperial-future/tests/privacy-regressions.php
 php wp-content/themes/imperial-future/tests/image-formats.php
 php wp-content/themes/imperial-future/tests/embed-security.php
 ```
@@ -116,7 +117,7 @@ docker run --rm --env AUDIT_URL=http://localhost:19080/ --env AUDIT_MODE=desktop
 
 ```powershell
 ./scripts/package-theme.ps1
-Get-FileHash output/imperial-future-1.1.3.zip -Algorithm SHA256
+Get-FileHash output/imperial-future-1.1.4.zip -Algorithm SHA256
 ```
 
 Скрипт читает `theme/` напрямую, проверяет manifest, Composer, снимок и реестр лицензий, исключает секреты/тесты/временные файлы. В ZIP один верхний каталог `imperial-future/`. Установочные файлы не копируются во второй checkout. Порядок и даты записей фиксированы, ZIP без сжатия обеспечивает воспроизводимость в одной среде .NET/PowerShell. `.gitattributes` запрещает автоматическую замену переносов строк: тексты лицензий и lock-файлы должны сохранять байты, по которым проверяется SHA-256. Не меняй исходники одновременно с упаковкой.
