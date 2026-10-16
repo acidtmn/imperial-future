@@ -4,7 +4,7 @@
 
 Проверь WordPress 7.0, PHP 8.3+, HTTPS, стандартные расширения WordPress, `mbstring`, DOM/XML и GD или Imagick. На тестовом сайте сделай резервную копию базы, загрузок и прежней темы. Перед запуском прочитай [особенности совместимости](COMPATIBILITY.md).
 
-Нужен **imperial-future-1.1.2.zip из [Releases](https://github.com/acidtmn/imperial-future/releases/tag/v1.1.2)**. Файлы `Source code.zip`/`.tar.gz` - архив репозитория, не установочный пакет. Сравни SHA-256 ZIP со скачанным файлом контрольной суммы; в PowerShell используется `Get-FileHash`, в Linux - `sha256sum`.
+Нужен **imperial-future-1.1.3.zip из [магазина автора](https://kodalexandrova.ru/products/imperial-future)**. Предыдущий GitHub-релиз 1.1.2 сохранён без изменений. Файлы `Source code.zip`/`.tar.gz` - архив репозитория, не установочный пакет. Сравни SHA-256 ZIP с суммой на странице темы; в PowerShell используется `Get-FileHash`, в Linux - `sha256sum`.
 
 ## Установка
 

@@ -175,7 +175,7 @@ try {
     }
     $assert(NewsletterHandler::subscriptionStatus($form) === 'error', 'Лимит IP действует на публичную форму');
 
-    // Сохраняем контракт кабинета и проверяем подпись отписки.
+    // Сначала доказываем владение email, затем сохраняем настройки без повторного письма.
     $userId = wp_insert_user(['user_login' => 'newsletter_' . $suffix, 'user_email' => 'newsletter-user-' . $suffix . '@example.test', 'user_pass' => wp_generate_password()]);
     if (is_wp_error($userId)) {
         throw new RuntimeException($userId->get_error_message());
@@ -183,8 +183,16 @@ try {
     $userIds[] = (int) $userId;
     $user = get_userdata((int) $userId);
     $mail = [];
+    $assert(! SubscriptionService::updateUserPreferences((int) $userId, true, true, true) && $mail === [], 'Неподтверждённый аккаунт не активирует уведомления и не запускает скрытое подтверждение');
+    wp_set_current_user((int) $userId);
+    $trackRate('newsletter_email', $user->user_email);
+    $assert(SubscriptionService::requestConfirmation($user->user_email, 'email'), 'Кабинет запрашивает отдельное подтверждение email');
+    $emailConfirmation = $urlArgs($mail[0]['message']);
+    $assert($endpoint('imperial_newsletter_confirm', $emailConfirmation) === 'email_confirmed', 'Ссылка подтверждает email без подписки на дайджест');
+    $assert(! isset(SubscriptionService::confirmedSubscribers()[$user->user_email]) && ! SubscriptionService::userDigestEnabled((int) $userId), 'Подтверждение email не создаёт дайджест');
+    $mail = [];
     SubscriptionService::updateUserPreferences((int) $userId, true, true, true);
-    $assert(SubscriptionService::userDigestEnabled((int) $userId) && isset(SubscriptionService::confirmedSubscribers()[$user->user_email]) && $mail === [], 'Preferences подписывают напрямую, без письма подтверждения');
+    $assert(SubscriptionService::userDigestEnabled((int) $userId) && isset(SubscriptionService::confirmedSubscribers()[$user->user_email]) && $mail === [], 'Подтверждённый владелец явно включает дайджест без повторного письма');
     parse_str((string) parse_url(SubscriptionService::unsubscribeUrl($user->user_email), PHP_URL_QUERY), $unsubscribe);
     $assert(! SubscriptionService::unsubscribeSigned($user->user_email, str_repeat('0', 64)), 'Поддельная подпись не отписывает');
     $assert($endpoint('imperial_newsletter_unsubscribe', $unsubscribe) === 'unsubscribed' && ! SubscriptionService::userDigestEnabled((int) $userId), 'Ссылка отписывает без входа и обновляет digest preference');
@@ -212,6 +220,54 @@ try {
     DigestScheduler::sync();
     $assert(! isset(SubscriptionService::confirmedSubscribers()[$user->user_email]), 'Новый гостевой opt-in не активируется миграцией старого preference');
     SubscriptionService::updateUserPreferences((int) $userId, false, true, true);
+
+    // Неподтверждённый профиль не получает права на гостевые подписки.
+    $subscriptionsBeforePrivacy = SubscriptionService::subscribers();
+    $victim = 'privacy-guest-' . $suffix . '@example.test';
+    $secondVictim = 'privacy-second-' . $suffix . '@example.test';
+    SubscriptionService::subscribe($victim);
+    SubscriptionService::subscribe($secondVictim);
+    $privacyUserId = wp_insert_user(['user_login' => 'privacy-' . $suffix, 'user_email' => $victim, 'user_pass' => wp_generate_password(24), 'role' => 'subscriber']);
+    if (is_wp_error($privacyUserId)) {
+        throw new RuntimeException($privacyUserId->get_error_message());
+    }
+    $userIds[] = (int) $privacyUserId;
+    wp_set_current_user((int) $privacyUserId);
+    $guestBefore = SubscriptionService::subscribers()[$victim];
+    $assert(SubscriptionService::updateUserPreferences((int) $privacyUserId, false, false, false), 'Регистрация сохраняет выключенные уведомления');
+    $assert(SubscriptionService::subscribers()[$victim] === $guestBefore, 'Регистрация на чужой email не отписывает гостя');
+    $assert(! SubscriptionService::updateUserPreferences((int) $privacyUserId, true, true, true), 'Неподтверждённый профиль не включает почтовые уведомления');
+    $assert(\ImperialFuture\Auth\ProfileService::save((int) $privacyUserId, ['display_name' => 'Читатель', 'email' => $secondVictim]), 'Профиль без уведомлений допускает смену email');
+    // После редиректа WordPress загружает текущего пользователя заново.
+    wp_set_current_user(0);
+    wp_set_current_user((int) $privacyUserId);
+    $assert(SubscriptionService::subscribers()[$victim] === $guestBefore && isset(SubscriptionService::confirmedSubscribers()[$secondVictim]), 'Смена email не меняет гостевые подписки старого и нового адреса');
+    $trackRate('newsletter_email', $secondVictim);
+    set_theme_mod('imperial_newsletter_enabled', '0');
+    $assert(SubscriptionService::requestConfirmation($secondVictim, 'email'), 'Email подтверждается независимо от включения дайджеста');
+    $privacyToken = $urlArgs($mail[array_key_last($mail)]['message'])['token'] ?? '';
+    $assert(SubscriptionService::confirm($privacyToken) && SubscriptionService::isEmailVerified((int) $privacyUserId), 'Одноразовый токен подтверждает адрес его владельцу');
+    $assert(! SubscriptionService::confirm($privacyToken), 'Токен подтверждения email нельзя использовать повторно');
+    $assert(SubscriptionService::updateUserPreferences((int) $privacyUserId, false, true, true), 'Уведомления работают при отключённом дайджесте');
+    $assert(! isset(SubscriptionService::confirmedSubscribers()[$secondVictim]), 'Подтверждённый владелец может снять старую гостевую подписку');
+    $assert(SubscriptionService::userCommentsEnabled((int) $privacyUserId) && SubscriptionService::userRepliesEnabled((int) $privacyUserId), 'Комментарии и ответы включаются отдельно от дайджеста');
+    $assert(! SubscriptionService::requestConfirmation('disabled-' . $suffix . '@example.test'), 'Отключённый дайджест не принимает гостевой opt-in');
+    $freshEmail = 'privacy-fresh-' . $suffix . '@example.test';
+    wp_update_user(['ID' => $privacyUserId, 'user_email' => $freshEmail]);
+    wp_set_current_user(0);
+    wp_set_current_user((int) $privacyUserId);
+    $trackRate('newsletter_email', $freshEmail);
+    $assert(! SubscriptionService::userCommentsEnabled((int) $privacyUserId), 'Смена email прекращает уведомления до нового подтверждения');
+    $assert(SubscriptionService::requestConfirmation($freshEmail, 'email'), 'Новый адрес получает отдельное подтверждение');
+    $freshToken = $urlArgs($mail[array_key_last($mail)]['message'])['token'] ?? '';
+    $assert(SubscriptionService::confirm($freshToken), 'Новый адрес подтверждается при выключенном дайджесте');
+    $assert(! isset(SubscriptionService::confirmedSubscribers()[$freshEmail]) && ! SubscriptionService::userDigestEnabled((int) $privacyUserId), 'Подтверждение нового адреса само не создаёт подписку');
+    wp_set_current_user(0);
+    $assert(! SubscriptionService::requestConfirmation($freshEmail, 'email'), 'Гость не может выпускать подтверждение владения для аккаунта');
+    SubscriptionService::updateUserPreferences((int) $privacyUserId, false, false, false);
+    update_option('imperial_newsletter_subscribers', $subscriptionsBeforePrivacy, false);
+    set_theme_mod('imperial_newsletter_enabled', '1');
+    wp_set_current_user((int) $userId);
 
     // Расписание не дублируется и очищается при отключении и смене темы.
     DigestScheduler::sync();

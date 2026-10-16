@@ -137,6 +137,18 @@ get_header();
                 </div>
             </form>
 
+            <?php if (! SubscriptionService::isEmailVerified($userId)) : ?>
+                <form data-account-section="profile" class="account-card" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
+                    <h3><?php esc_html_e('Подтверждение email', 'imperial-future'); ?></h3>
+                    <p><?php esc_html_e('Подтверди адрес, чтобы управлять подписками и уведомлениями.', 'imperial-future'); ?></p>
+                    <input type="hidden" name="action" value="imperial_newsletter_subscribe">
+                    <input type="hidden" name="purpose" value="email">
+                    <input type="hidden" name="newsletter_email" value="<?php echo esc_attr($user->user_email); ?>">
+                    <?php wp_nonce_field('imperial_newsletter'); ?>
+                    <button type="submit"><?php esc_html_e('Подтвердить email', 'imperial-future'); ?></button>
+                </form>
+            <?php endif; ?>
+
             <form id="account-security" data-account-section="security" class="account-card" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
                 <div class="account-card__head">
                     <span class="section-kicker"><?php esc_html_e('Безопасность', 'imperial-future'); ?></span>

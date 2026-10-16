@@ -27,24 +27,29 @@ final class ProfileService
             return false;
         }
 
+        if ((! empty($input['digest']) || ! empty($input['comments']) || ! empty($input['replies']))
+            && ! SubscriptionService::isEmailVerified($userId, $email)) {
+            return false;
+        }
+
         $result = wp_update_user(['ID' => $userId, 'display_name' => $name, 'user_email' => $email]);
 
         if (is_wp_error($result)) {
             return false;
         }
 
-        // Старый адрес исключаем из дайджеста при смене почты.
+        // При смене почты снимаем только собственную подтверждённую подписку.
         if ($email !== $user->user_email) {
-            SubscriptionService::unsubscribe((string) $user->user_email);
+            if (! SubscriptionService::unsubscribe((string) $user->user_email, $userId)) {
+                return false;
+            }
         }
 
-        SubscriptionService::updateUserPreferences(
+        return SubscriptionService::updateUserPreferences(
             $userId,
             ! empty($input['digest']),
             ! empty($input['comments']),
             ! empty($input['replies'])
         );
-
-        return true;
     }
 }

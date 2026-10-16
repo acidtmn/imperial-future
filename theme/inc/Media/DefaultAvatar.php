@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace ImperialFuture\Media;
 
+use ImperialFuture\Auth\AvatarService;
+
 if (! defined('ABSPATH')) {
     exit;
 }
@@ -34,7 +36,7 @@ final class DefaultAvatar
             return $args;
         }
 
-        $args['url'] = self::url();
+        $args['url'] = AvatarService::avatarUrl(self::url(), $idOrEmail, $args);
 
         return $args;
     }

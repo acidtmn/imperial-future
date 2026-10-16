@@ -1,4 +1,4 @@
-# Разработка и сборка Imperial Future 1.1.2
+# Разработка и сборка Imperial Future 1.1.3
 
 ## Структура репозитория
 
@@ -116,7 +116,7 @@ docker run --rm --env AUDIT_URL=http://localhost:19080/ --env AUDIT_MODE=desktop
 
 ```powershell
 ./scripts/package-theme.ps1
-Get-FileHash output/imperial-future-1.1.2.zip -Algorithm SHA256
+Get-FileHash output/imperial-future-1.1.3.zip -Algorithm SHA256
 ```
 
 Скрипт читает `theme/` напрямую, проверяет manifest, Composer, снимок и реестр лицензий, исключает секреты/тесты/временные файлы. В ZIP один верхний каталог `imperial-future/`. Установочные файлы не копируются во второй checkout. Порядок и даты записей фиксированы, ZIP без сжатия обеспечивает воспроизводимость в одной среде .NET/PowerShell. `.gitattributes` запрещает автоматическую замену переносов строк: тексты лицензий и lock-файлы должны сохранять байты, по которым проверяется SHA-256. Не меняй исходники одновременно с упаковкой.

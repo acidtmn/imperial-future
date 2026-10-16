@@ -103,7 +103,7 @@ final class CommentNotificationService
         $authorEmail = strtolower(sanitize_email((string) $comment->comment_author_email));
 
         foreach (get_users(['meta_key' => SubscriptionService::COMMENTS_META, 'meta_value' => '1']) as $user) {
-            if (! $user instanceof \WP_User) {
+            if (! $user instanceof \WP_User || ! SubscriptionService::userCommentsEnabled((int) $user->ID)) {
                 continue;
             }
 

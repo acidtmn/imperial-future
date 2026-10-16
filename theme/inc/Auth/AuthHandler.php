@@ -86,7 +86,13 @@ final class AuthHandler
             self::redirect(home_url('/'), 'login_required');
         }
 
-        $saved = ProfileService::save(get_current_user_id(), wp_unslash($_POST));
+        $input = wp_unslash($_POST);
+        if ((! empty($input['digest']) || ! empty($input['comments']) || ! empty($input['replies']))
+            && ! SubscriptionService::isEmailVerified(get_current_user_id(), sanitize_email((string) ($input['email'] ?? '')))) {
+            self::redirect(self::referer(), 'email_unverified');
+        }
+
+        $saved = ProfileService::save(get_current_user_id(), $input);
         self::redirect(self::referer(), $saved ? 'profile_saved' : 'profile_error');
     }
 

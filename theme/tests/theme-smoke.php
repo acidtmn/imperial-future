@@ -24,8 +24,14 @@ $results = [];
 $check = static function (bool $condition, string $message) use (&$results): void {
     $results[] = [$condition ? 'PASS' : 'FAIL', $message];
 };
-$mail = static fn () => true;
-add_filter('pre_wp_mail', $mail);
+$messages = [];
+$mail = static function (mixed $result, array $attributes) use (&$messages): bool {
+    $messages[] = $attributes;
+    return true;
+};
+add_filter('pre_wp_mail', $mail, 10, 2);
+$newsletterEnabled = static fn (): string => '1';
+add_filter('theme_mod_imperial_newsletter_enabled', $newsletterEnabled);
 $userIds = [];
 $commentId = 0;
 $temp = [];
@@ -37,7 +43,8 @@ try {
     $check(str_contains($html, '<strong>Жирный</strong>') && str_contains($html, '<blockquote>') && str_contains($html, '<ul>'), 'Markdown: выделение, цитата, список');
     $check(str_contains($html, '&lt;div&gt;пример&lt;/div&gt;') && str_contains($html, 'x &lt; y'), 'Markdown: HTML и операторы внутри кода не теряются');
     $check(str_contains(MarkdownService::render('<strong>Да</strong> и <em>нет</em>'), '<strong>Да</strong>'), 'Старые HTML-комментарии совместимы');
-    $preview = \ImperialFuture\Comments\PopularCommentService::excerpt(new WP_Comment((object) ['comment_content' => "**Жирный**\n\n> Цитата\n\n`x < y`"]));
+    $post = get_posts(['numberposts' => 1, 'post_type' => 'post'])[0];
+    $preview = \ImperialFuture\Comments\PopularCommentService::excerpt(new WP_Comment((object) ['comment_post_ID' => $post->ID, 'comment_content' => "**Жирный**\n\n> Цитата\n\n`x < y`"]));
     $check(str_contains($preview, 'Жирный') && ! str_contains($preview, '**') && str_contains($preview, 'x < y'), 'Популярный комментарий: Markdown преобразован в читаемый текст без потери кода');
     $unsafe = MarkdownService::render('[опасно](javascript:alert(1)) <img src=x onerror=alert(1)> <script>alert(1)</script>');
     $check(! preg_match('/<script|<img[^>]+onerror|href="javascript:/i', $unsafe), 'Markdown: XSS и javascript-ссылки не исполняются');
@@ -64,6 +71,11 @@ try {
         $userIds[] = (int) $id;
     }
     $user = get_userdata($userIds[0]);
+    wp_set_current_user($userIds[0]);
+    $check(SubscriptionService::requestConfirmation($user->user_email, 'email'), 'Почта: отдельное подтверждение запрошено');
+    preg_match('~https?://[^\s]+~', $messages[array_key_last($messages)]['message'], $confirmationUrl);
+    parse_str((string) parse_url($confirmationUrl[0], PHP_URL_QUERY), $confirmation);
+    $check(SubscriptionService::confirm($confirmation['token']), 'Почта: одноразовая ссылка подтверждает владение');
     $check(ProfileService::save($userIds[0], ['display_name' => 'Проверка профиля', 'email' => $user->user_email, 'digest' => '1']), 'Профиль: корректные поля сохраняются');
     $check(isset(SubscriptionService::subscribers()[$user->user_email]), 'Дайджест: включённая подписка сохраняется');
     $check(! ProfileService::save($userIds[0], ['display_name' => 'Неверная правка', 'email' => get_userdata($userIds[1])->user_email]), 'Профиль: занятая почта не даёт ложного успеха');
@@ -71,7 +83,6 @@ try {
     ProfileService::save($userIds[0], ['display_name' => 'Проверка профиля', 'email' => $user->user_email]);
     $check(! isset(SubscriptionService::subscribers()[$user->user_email]), 'Дайджест: снятие галочки удаляет подписку');
 
-    $post = get_posts(['numberposts' => 1, 'post_type' => 'post'])[0];
     wp_set_current_user($userIds[0]);
     $content = "**Тест**\n\n```html\n<div>пример</div>\n```";
     $commentId = (int) wp_new_comment(wp_slash(['comment_post_ID' => $post->ID, 'comment_author' => 'QA', 'comment_author_email' => $user->user_email, 'comment_author_url' => '', 'comment_content' => $content, 'user_id' => $userIds[0]]));
@@ -115,6 +126,8 @@ try {
     update_option('imperial_newsletter_subscribers', $subscribers, false);
     wp_set_current_user($originalUser);
     remove_filter('pre_wp_mail', $mail);
+    remove_filter('theme_mod_imperial_newsletter_enabled', $newsletterEnabled);
+    delete_transient('imperial_rate_limit_' . md5('newsletter_email|' . $user->user_email));
 }
 foreach ($results as [$status, $message]) echo "$status: $message\n";
 exit(count(array_filter($results, static fn ($result) => $result[0] === 'FAIL')) > 0 ? 1 : 0);

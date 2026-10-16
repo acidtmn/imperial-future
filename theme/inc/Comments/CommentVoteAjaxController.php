@@ -42,7 +42,8 @@ final class CommentVoteAjaxController
         $value = sanitize_key((string) ($_POST['value'] ?? ''));
         $comment = get_comment($commentId);
 
-        if (! $comment instanceof WP_Comment || (string) $comment->comment_approved !== '1') {
+        if (! $comment instanceof WP_Comment || (string) $comment->comment_approved !== '1'
+            || ! CommentReadAccess::forPost((int) $comment->comment_post_ID)) {
             wp_send_json_error(['message' => __('Комментарий не найден.', 'imperial-future')], 404);
         }
 

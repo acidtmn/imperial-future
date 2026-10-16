@@ -22,6 +22,7 @@ final class UserNotice
                 'registered' => ['success', __('Аккаунт создан. Добро пожаловать!', 'imperial-future')],
                 'register_error' => ['error', __('Не удалось зарегистрироваться. Проверь данные и доступность регистрации.', 'imperial-future')],
                 'login_required' => ['error', __('Для этого действия нужно войти.', 'imperial-future')],
+                'email_unverified' => ['error', __('Сначала подтверди email в разделе подписок. Изменения не сохранены.', 'imperial-future')],
                 'lost_sent' => ['success', __('Если такой аккаунт существует, письмо для восстановления отправлено на его почту.', 'imperial-future')],
                 'social_error' => ['error', __('Вход через соцсеть не завершён. Попробуй ещё раз или войди с паролем.', 'imperial-future')],
                 'social_missing' => ['error', __('Вход через соцсеть пока не настроен.', 'imperial-future')],
@@ -36,6 +37,8 @@ final class UserNotice
             'newsletter_status' => [
                 'subscribed' => ['success', __('Подписка оформлена.', 'imperial-future')],
                 'confirmation_sent' => ['success', __('Проверь почту и подтверди подписку.', 'imperial-future')],
+                'email_confirmation_sent' => ['success', __('Проверь почту и подтверди email. Подписки не изменены.', 'imperial-future')],
+                'email_confirmed' => ['success', __('Email подтверждён. Теперь можно включить уведомления.', 'imperial-future')],
                 'unsubscribed' => ['success', __('Ты отписался от дайджеста.', 'imperial-future')],
                 'error' => ['error', __('Не удалось оформить подписку. Проверь адрес и попробуй позже.', 'imperial-future')],
                 'rate_limited' => ['error', __('Слишком много попыток. Попробуй позже.', 'imperial-future')],

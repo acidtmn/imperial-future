@@ -66,12 +66,25 @@ final class AvatarService
 
     public static function avatarUrl(string $url, mixed $idOrEmail, array $args): string
     {
+        if (! empty($args['force_default'])) {
+            return $url;
+        }
+
         $user = false;
 
         if ($idOrEmail instanceof \WP_User) {
             $user = $idOrEmail;
         } elseif (is_numeric($idOrEmail)) {
             $user = get_user_by('id', (int) $idOrEmail);
+        } elseif ($idOrEmail instanceof \WP_Comment) {
+            $user = get_user_by('id', (int) $idOrEmail->user_id);
+            if (! $user instanceof \WP_User && $idOrEmail->comment_author_email !== '') {
+                $user = get_user_by('email', $idOrEmail->comment_author_email);
+            }
+        } elseif ($idOrEmail instanceof \WP_Post) {
+            $user = get_user_by('id', (int) $idOrEmail->post_author);
+        } elseif (is_string($idOrEmail) && is_email($idOrEmail)) {
+            $user = get_user_by('email', $idOrEmail);
         }
 
         if (! $user instanceof \WP_User) {

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace ImperialFuture\Newsletter;
 
+use ImperialFuture\Auth\AccountPageRegistrar;
 use ImperialFuture\Security\RateLimiter;
 use ImperialFuture\Settings\ThemeOptions;
 
@@ -31,7 +32,10 @@ final class NewsletterHandler
 
     public static function subscriptionStatus(array $input): string
     {
-        if (! ThemeOptions::enabled('imperial_newsletter_enabled') || ! isset($input['_wpnonce']) || ! is_string($input['_wpnonce']) || ! wp_verify_nonce($input['_wpnonce'], 'imperial_newsletter')) {
+        $purpose = is_string($input['purpose'] ?? null) ? $input['purpose'] : 'newsletter';
+        if (! in_array($purpose, ['email', 'newsletter'], true)
+            || ($purpose === 'newsletter' && ! ThemeOptions::enabled('imperial_newsletter_enabled'))
+            || ! isset($input['_wpnonce']) || ! is_string($input['_wpnonce']) || ! wp_verify_nonce($input['_wpnonce'], 'imperial_newsletter')) {
             return 'error';
         }
 
@@ -42,8 +46,8 @@ final class NewsletterHandler
         $email = is_string($input['newsletter_email'] ?? null) ? strtolower(sanitize_email($input['newsletter_email'])) : '';
         $user = wp_get_current_user();
 
-        if ($user->exists() && strtolower($user->user_email) === $email) {
-            if (! SubscriptionService::subscribe($email)) {
+        if ($purpose === 'newsletter' && $user->exists() && strtolower($user->user_email) === $email && SubscriptionService::isEmailVerified((int) $user->ID)) {
+            if (! SubscriptionService::subscribe($email, (int) $user->ID)) {
                 return 'error';
             }
 
@@ -52,13 +56,17 @@ final class NewsletterHandler
             return 'subscribed';
         }
 
-        return SubscriptionService::requestConfirmation($email) ? 'confirmation_sent' : 'error';
+        return SubscriptionService::requestConfirmation($email, $purpose)
+            ? ($purpose === 'email' ? 'email_confirmation_sent' : 'confirmation_sent') : 'error';
     }
 
     public static function confirm(): never
     {
         $token = is_string($_GET['token'] ?? null) ? wp_unslash($_GET['token']) : '';
-        self::redirect(home_url('/'), SubscriptionService::confirm($token) ? 'subscribed' : 'error');
+        $purpose = SubscriptionService::confirmationPurpose($token);
+        $confirmed = SubscriptionService::confirm($token);
+        $url = is_user_logged_in() ? AccountPageRegistrar::url() : home_url('/');
+        self::redirect($url, $confirmed ? ($purpose === 'email' ? 'email_confirmed' : 'subscribed') : 'error');
     }
 
     public static function unsubscribe(): never

@@ -13,6 +13,10 @@ final class PopularCommentService
 {
     public static function forPost(int $postId): ?WP_Comment
     {
+        if (! CommentReadAccess::forPost($postId)) {
+            return null;
+        }
+
         $comments = get_comments([
             'post_id' => $postId,
             'status' => 'approve',
@@ -40,6 +44,10 @@ final class PopularCommentService
 
     public static function excerpt(WP_Comment $comment, int $words = 26): string
     {
+        if (! CommentReadAccess::forPost((int) $comment->comment_post_ID)) {
+            return '';
+        }
+
         $text = wp_trim_words(wp_strip_all_tags(MarkdownService::render((string) $comment->comment_content)), $words);
         return html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
     }
